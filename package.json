@@ -1,0 +1,45 @@
+{
+  "name": "clinica-aconcagua",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Panel de operaciones de Clínica Aconcagua",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node scripts/comprobar-sintaxis.cjs",
+    "db:migrate": "node scripts/migrar-base.cjs",
+    "db:init": "node scripts/inicializar-base.cjs",
+    "admin:create": "node scripts/crear-administrador.cjs",
+    "backup": "node scripts/respaldar-instalacion.cjs",
+    "test:install": "node scripts/test-installation.cjs",
+    "test:security": "node scripts/test-production-security.cjs",
+    "test:regression": "node scripts/test-production-regression.cjs",
+    "test:ui": "node scripts/production-test-ui.cjs",
+    "prepare:github": "node scripts/preparar-github.cjs"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.2.0",
+    "express": "^4.21.2",
+    "imapflow": "^2.0.6",
+    "ldapts": "^9.2.0",
+    "mailparser": "^3.9.28",
+    "multer": "^2.0.2",
+    "mysql2": "^3.14.0",
+    "nodemailer": "^10.0.10",
+    "pdfkit": "^0.17.1",
+    "qrcode": "^1.5.4",
+    "sanitize-html": "^2.18.0",
+    "ws": "^8.22.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "devDependencies": {
+    "@phosphor-icons/core": "^2.1.1",
+    "@playwright/test": "^1.63.0"
+  }
+}

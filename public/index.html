@@ -1,0 +1,1682 @@
+    <!DOCTYPE html>
+<html lang="es" x-data="app()">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Operaciones — Clínica Aconcagua</title>
+    <script defer src="/vendor/alpine.min.js"></script>
+    <script src="/vendor/jspdf.umd.min.js"></script>
+    <script src="/vendor/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/legacy-utilities.css">
+    <link rel="stylesheet" href="/css/theme.css">
+<link rel="stylesheet" href="/css/increment3.css">
+</head>
+<body :class="{'support-theme':esSoporte,'detail-open':modalDetalle && !detWin.minimized}" @keydown.escape.window="sidebarOpen=false; notifOpen=false; profileOpen=false">
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<button class="sidebar-shade" x-show="sidebarOpen" x-cloak @click="sidebarOpen=false" aria-label="Cerrar navegación"></button>
+<aside class="sidebar" :class="{'is-open':sidebarOpen}" aria-label="Navegación principal">
+    <a href="/" class="clinic-brand"><span class="brand-mark"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#hospital"></use></svg></span><span>Clínica Aconcagua<small>Soporte informático</small></span></a>
+    <div class="sidebar-inner" x-show="usuario" x-cloak>
+        <button class="new-incident" @click="sidebarOpen=false; modalIncidente=true; resetIncidente()"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#plus"></use></svg> Nuevo incidente</button>
+        <p class="nav-label">ESPACIO DE TRABAJO</p>
+        <nav class="side-links" aria-label="Tickets y recursos">
+            <button x-show="esSoporte" :class="{'selected':modo==='bandeja' && !modalPanelAdmin}" @click="navegar('bandeja')"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#tray"></use></svg> Bandeja de soporte</button>
+            <button :class="{'selected':modo==='mistickets' && !modalPanelAdmin}" @click="navegar('mistickets')"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#ticket"></use></svg> Mis tickets</button>
+            <button :class="{'selected':modo==='historial' && !modalPanelAdmin}" @click="navegar('historial')"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#clock-counter-clockwise"></use></svg> Historial</button>
+            <button @click="sidebarOpen=false; abrirManuales()"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#book-open"></use></svg> Manuales de equipos</button>
+        </nav>
+        <div x-show="usuario && usuario.permisos==='si'">
+            <p class="nav-label">GESTIÓN</p>
+            <nav class="side-links" aria-label="Administración"><button :class="{'selected':modalPanelAdmin}" @click="navegar('admin')"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#squares-four"></use></svg> Administración</button></nav>
+        </div>
+        <nav class="side-links" x-show="usuario && usuario.esCritico && usuario.permisos!=='si'" aria-label="Recursos técnicos">
+            <button @click="sidebarOpen=false; abrirStockInsumos()"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#package"></use></svg> Stock de repuestos</button>
+            <button @click="sidebarOpen=false; abrirMapaCalor()"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#map-trifold"></use></svg> Mapa de calor</button>
+        </nav>
+    </div>
+    <div class="sidebar-foot"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#lifebuoy"></use></svg><div>Ticketera Clínica Aconcagua<small>Gestión de incidentes</small></div></div>
+</aside>
+
+
+<!-- ══════════════════════════════════════
+     SESSION DISPLACED BANNER
+══════════════════════════════════════ -->
+<div x-cloak x-show="sessionDisplaced" class="session-overlay">
+    <div class="session-box">
+        <div  class="legacy-1"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#warning"></use></svg></div>
+        <h2>Sesión cerrada</h2>
+        <p>Tu sesión fue cerrada porque se inició sesión con tu cuenta en otro dispositivo.</p>
+        <button class="btn btn-red" @click="sessionDisplaced=false">Entendido</button>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════ -->
+<nav class="navbar">
+    <button class="menu-toggle icon-button" @click="sidebarOpen=!sidebarOpen" :aria-expanded="sidebarOpen" aria-label="Abrir navegación"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#list"></use></svg></button><span class="navbar-brand">Centro de soporte</span>
+
+    <div class="navbar-search" x-show="usuario"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#magnifying-glass"></use></svg>
+        <input
+    type="text"
+    x-model="busqueda"
+    @input.debounce.300ms="onBusqueda()"
+    aria-label="Buscar ticket por ID o palabra clave" placeholder="Buscar por ID o palabra clave…"
+>
+    </div>
+
+    <div class="nav-right">
+        <button class="btn btn-outline" x-cloak x-show="esSoporte" @click="v3OpenSection('archives')">Archivo histórico</button>
+        <button class="btn btn-outline v3-error" x-cloak x-show="usuario?.permisos==='si' && v3Alerts>0" @click="v3OpenSection('logs')" x-text="v3Alerts+' fallos críticos'"></button>
+        <!-- Bell -->
+        <div x-show="usuario" class="bell-wrap" role="button" tabindex="0" aria-label="Notificaciones" :aria-expanded="notifOpen" @keydown.enter.prevent="toggleNotif()" @keydown.space.prevent="toggleNotif()" @click.stop="toggleNotif()" x-cloak>
+            <svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#bell"></use></svg>
+            <span x-show="notifTotal > 0" class="badge" x-text="notifTotal"></span>
+            <div x-show="notifOpen" @click.outside="notifOpen=false" class="notif-dropdown" x-cloak>
+                <template x-if="notifCreador.length">
+                    <div>
+                        <div class="notif-section-title"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#bell"></use></svg> Novedades en mis tickets</div>
+                        <template x-for="t in notifCreador" :key="t.id_ticket">
+                            <button class="notif-item" @click="notifOpen=false; abrirDetalle(t.id_ticket)">
+                                <span class="notif-dot notif-dot-orange"></span>
+                                <div>
+                                    <strong x-text="t.id_ticket + ' — ' + t.aparato"></strong>
+                                    <span>Hay una actualización en tu ticket</span>
+                                </div>
+                            </button>
+                        </template>
+                    </div>
+                </template>
+                <template x-if="notifTecnico.length">
+                    <div>
+                        <div class="notif-section-title"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#clipboard-text"></use></svg> Tickets asignados a mí</div>
+                        <template x-for="t in notifTecnico" :key="t.id_ticket">
+                            <button class="notif-item" @click="notifOpen=false; abrirDetalle(t.id_ticket)">
+                                <span class="notif-dot" :class="t.alerta_75_enviada==1 ? 'notif-dot-red' : 'notif-dot-blue'"></span>
+                                <div>
+                                    <strong x-text="t.id_ticket + ' — ' + t.aparato"></strong>
+                                    <span x-show="t.alerta_75_enviada==1"  class="legacy-2"> <svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#clock-countdown"></use></svg> SLA por vencer</span>
+                                    <span x-text="t.creador + ' | ' + t.fecha"></span>
+                                </div>
+                            </button>
+                        </template>
+                    </div>
+                </template>
+                <template x-if="!notifCreador.length && !notifTecnico.length">
+                    <div  class="legacy-3">Sin notificaciones nuevas.</div>
+                </template>
+            </div>
+        </div>
+
+        <!-- Profile -->
+        <div  class="legacy-4">
+            <button
+                class="profile-btn"
+                :class="usuario ? '' : 'guest'"
+                @click.stop="profileOpen=!profileOpen"
+                aria-label="Menú de perfil" :aria-expanded="profileOpen" 
+            ><span class="profile-avatar" x-show="usuario" x-text="inicialesPerfil"></span><span class="profile-copy"><strong x-text="usuario ? usuario.nombre : 'Ingresar'"></strong><small x-show="usuario" x-text="esSoporte ? 'Equipo de soporte' : 'Funcionario'"></small></span><span aria-hidden="true">⌄</span></button>
+            <div x-show="profileOpen" @click.outside="profileOpen=false" class="profile-dropdown" x-cloak>
+                <template x-if="usuario">
+                    <div>
+                        <button @click="profileOpen=false; modalIncidente=true; resetIncidente()">Generar ticket</button>
+                        <button @click="profileOpen=false; verMisTickets()">Mis tickets</button>
+                        <button @click="profileOpen=false; verHistorial()"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#folder"></use></svg> Historial de tickets</button>
+                        <button x-show="usuario && usuario.permisos==='si'" @click="navegar('admin')"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#wrench"></use></svg> Panel de Administración</button>
+                        <button x-show="usuario && usuario.esCritico && usuario.permisos!=='si'" @click="profileOpen=false; abrirStockInsumos()"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#package"></use></svg> Stock de Repuestos</button>
+                        <button x-show="usuario && usuario.esCritico && usuario.permisos!=='si'" @click="profileOpen=false; abrirMapaCalor()"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#map-trifold"></use></svg> Mapa de Calor</button>
+                        <button @click="profileOpen=false; v3OpenSection('profile')">Mi perfil</button>
+                        <button class="danger" @click="profileOpen=false; cerrarSesion()">Cerrar sesión</button>
+                    </div>
+                </template>
+                <template x-if="!usuario">
+                    <button @click="profileOpen=false; modalAuth=true">Iniciar sesión</button>
+                </template>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ══════════════════════════════════════
+     MAIN CONTENT
+══════════════════════════════════════ -->
+
+<main class="main" id="contenido" tabindex="-1" x-show="!modalPanelAdmin || !usuario">
+    <section x-show="usuario" x-cloak>
+        <div class="page-heading"><div><p class="eyebrow">TICKETERA · CLÍNICA ACONCAGUA</p><h1 x-text="tituloVista"></h1><p class="page-description" x-text="modo==='historial' ? 'Consulta los incidentes resueltos y cancelados.' : 'Gestiona y da seguimiento a los incidentes de la clínica.'"></p></div>
+            <button class="btn btn-green" @click="modalIncidente=true; resetIncidente()"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#plus"></use></svg> Nuevo incidente</button>
+        </div>
+        <div class="view-summary" x-show="!cargando && !ticketsError" aria-label="Resumen de la vista actual">
+            <div><span>Tickets en esta vista</span><strong x-text="listaTickets.length"></strong><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#ticket"></use></svg></div>
+            <div><span>En curso</span><strong x-text="contarEstado('En curso')"></strong><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#activity"></use></svg></div>
+            <div><span>Pendientes</span><strong x-text="contarEstado('Pendiente')"></strong><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#clock"></use></svg></div>
+            <div><span>En espera</span><strong x-text="contarEstado('En espera')"></strong><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#pause-circle"></use></svg></div>
+        </div>
+        <section class="ticket-surface" aria-label="Listado de tickets" :aria-busy="cargando">
+            <div class="list-heading"><div><h2 x-text="modo==='historial' ? 'Tickets cerrados' : modo==='busqueda' ? 'Tickets encontrados' : 'Tickets activos'"></h2><span class="muted" x-text="modo==='historial' ? histBannerText : 'Información de la vista seleccionada'"></span></div><button class="btn btn-outline" @click="refrescarVista()" :disabled="cargando" aria-label="Actualizar tickets"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrows-clockwise"></use></svg> Actualizar</button></div>
+            <div class="view-tabs" aria-label="Vistas de tickets">
+<button :class="{'active':modo!=='historial'}" @click="navegar(esSoporte ? 'bandeja' : 'mistickets')">Activos</button>
+<button :class="{'active':modo==='historial'}" @click="navegar('historial')">Cerrados</button>
+</div>
+<div class="quick-filters" x-show="esSoporte && modo!=='historial'" aria-label="Filtros de soporte">
+<button :class="{'active':filtroRapido==='todos'}" @click="filtroRapido='todos'">Todos</button>
+<button :class="{'active':filtroRapido==='asignados'}" @click="filtroRapido='asignados'">Mis asignados</button>
+<button :class="{'active':filtroRapido==='sin-asignar'}" @click="filtroRapido='sin-asignar'">Sin asignar</button>
+<button :class="{'active':filtroRapido==='sla'}" @click="filtroRapido='sla'">Con alerta SLA</button>
+</div>
+<div class="ticket-filters">
+                <label>Estado<select x-model="filtroEstado"><option value="">Todos los estados</option><template x-for="estado in ['Pendiente','En curso','En espera','Resuelto','Cancelado']"><option :value="estado" x-text="estado"></option></template></select></label>
+                <label>Prioridad<select x-model="filtroPrioridad"><option value="">Todas las prioridades</option><template x-for="id in prioridadesVista" :key="id"><option :value="String(id)" x-text="nombrePrioridad(id)"></option></template></select></label>
+                <label>Área<select x-model="filtroArea"><option value="">Todas las áreas</option><template x-for="area in areasVista" :key="area"><option :value="area" x-text="area"></option></template></select></label>
+                <label x-show="esSoporte">Técnico<select x-model="filtroTecnico"><option value="">Todos los técnicos</option><template x-for="tecnico in tecnicosVista" :key="tecnico"><option :value="tecnico" x-text="tecnico"></option></template></select></label>
+                <button class="btn btn-outline clear-filters" x-show="hayFiltros" @click="limpiarFiltros()">Limpiar filtros</button>
+            </div>
+            <div class="loading-state" x-show="cargando" role="status"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><p>Cargando tickets…</p></div>
+            <div class="error-state" x-show="ticketsError && !cargando" role="alert"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#warning-circle"></use></svg><h3>No pudimos cargar esta vista</h3><p x-text="ticketsError"></p><button class="btn btn-outline" @click="refrescarVista()">Reintentar</button></div>
+            <div class="empty-state" x-show="!cargando && !ticketsError && ticketsFiltrados.length===0">
+                <span class="empty-icon"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#tray"></use></svg></span>
+                <h3 x-text="hayFiltros ? 'Sin coincidencias con estos filtros' : modo==='historial' ? 'Aún no hay tickets cerrados' : modo==='busqueda' ? 'No encontramos tickets' : 'No hay tickets activos'"></h3>
+                <p x-text="hayFiltros ? 'Prueba con otro estado, prioridad o área.' : modo==='historial' ? 'Los incidentes resueltos y cancelados aparecerán aquí.' : modo==='busqueda' ? 'Prueba con otro ID o palabra clave.' : 'Cuando se registre un incidente, podrás seguir su avance aquí.'"></p>
+                <button class="btn btn-outline" x-show="hayFiltros" @click="limpiarFiltros()">Limpiar filtros</button>
+                <button class="btn btn-outline" x-show="!hayFiltros && (modo==='historial' || modo==='busqueda')" @click="navegar(esSoporte ? 'bandeja' : 'mistickets')"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-left"></use></svg> Volver a tickets activos</button>
+                <button class="btn btn-outline" x-show="!hayFiltros && modo!=='historial' && modo!=='busqueda'" @click="modalIncidente=true; resetIncidente()"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#plus"></use></svg> Crear un incidente</button>
+            </div>
+            <div class="table-scroll" x-show="!cargando && !ticketsError && ticketsFiltrados.length>0">
+                <table class="tickets-table"><caption class="sr-only">Tickets de la vista seleccionada</caption><thead><tr><th>ID</th><th>Asunto</th><th>Área</th><th>Prioridad</th><th>Estado</th><th x-show="esSoporte">Técnico</th><th x-show="esSoporte">Vencimiento SLA</th></tr></thead>
+                <tbody><template x-for="t in ticketsFiltrados" :key="t.id_ticket"><tr>
+                    <td><button class="ticket-link" @click="abrirDetalle(t.id_ticket,t)" x-text="t.id_ticket"></button></td>
+                    <td><button class="ticket-subject" @click="abrirDetalle(t.id_ticket,t)" x-text="t.aparato || t.title || 'Ver incidente'"></button><small x-text="t.creador + ' · ' + t.fecha"></small></td>
+                    <td x-text="t.habitacion || t.habitacion_ticket || 'Sin área'"></td><td><span class="priority-label" x-text="nombrePrioridad(t.ticket_priority_id)"></span></td>
+                    <td><span class="badge-estado" :class="claseEstado(t.estado)" x-text="t.estado"></span></td>
+                    <td x-show="esSoporte" x-text="t.tecnico_asignado || 'Sin asignar'"></td><td x-show="esSoporte"><span x-text="fechaSLA(t)"></span><small class="sla-warning" x-show="t.alerta_75_enviada==1 && !['Resuelto','Cancelado'].includes(t.estado)">Alerta SLA</small></td>
+                </tr></template></tbody></table>
+            </div>
+            <div class="list-footer" x-show="!cargando && !ticketsError"><span x-text="ticketsFiltrados.length + ' tickets' "></span><span>Clínica Aconcagua · Soporte informático</span></div>
+        </section>
+        <div class="help-strip"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#book-open"></use></svg><div><strong>Manuales de equipos</strong><span>Consulta las guías disponibles antes de reportar una incidencia.</span></div><button class="btn btn-outline" @click="abrirManuales()">Ver manuales <svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-right"></use></svg></button></div>
+    </section>
+    <section x-show="!usuario" class="welcome-panel"><span class="welcome-icon"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#hospital"></use></svg></span><p class="eyebrow">CLÍNICA ACONCAGUA</p><h1>Tu punto de encuentro<br>con soporte informático.</h1><p>Reporta incidentes, consulta el estado de tus tickets y encuentra los manuales de tus equipos.</p><button class="btn btn-green" @click="modalAuth=true">Iniciar sesión <svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-right"></use></svg></button><div class="welcome-caption">Ticketera Clínica Aconcagua</div></section>
+</main>
+
+<!-- ══════════════════════════════════════
+     MODAL — AUTH
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalAuth" class="modal-overlay" @click.self="modalAuth=false">
+    <div class="modal-box auth-box">
+        <button class="close-btn" @click="modalAuth=false"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+
+        <!-- Tabs -->
+        <div class="tabs" x-show="authTab!=='recover'">
+            <button :class="authTab==='login'?'active':''" @click="authTab='login'; authMsg=''">Iniciar Sesión</button>
+            <button :class="authTab==='registro'?'active':''" @click="switchRegistro()">Registrarse</button>
+        </div>
+
+        <!-- LOGIN -->
+        <div x-show="authTab==='login'">
+            <input type="text" x-model="login.rut" placeholder="RUT (ej: 12345678-9)" maxlength="11">
+            <input type="password" x-model="login.pass" placeholder="Contraseña" @keyup.enter="iniciarSesion()">
+            <button class="btn btn-green btn-block" @click="iniciarSesion()">Ingresar</button>
+            <a href="#" 
+               @click.prevent="iniciarRecovery()" class="legacy-5">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <!-- REGISTRO -->
+        <div x-show="authTab==='registro'">
+            <input type="text"     x-model="reg.nombre"  placeholder="Nombre completo">
+            <div class="rut-wrap">
+                <input
+                    type="text" x-model="reg.rut"
+                    placeholder="RUT (ej: 12345678-9)" maxlength="11"
+                    :class="reg.rut.includes('-') ? (rutValido(reg.rut) ? 'border-ok' : 'border-error') : ''"
+                    @input="authMsg=''"
+                >
+                <span class="rut-icon" x-show="reg.rut.includes('-')" aria-hidden="true" x-html="'&lt;svg class=&quot;ui-icon&quot;&gt;&lt;use href=&quot;/vendor/icons.svg#' + (rutValido(reg.rut) ? 'check-circle' : 'x-circle') + '&quot;&gt;&lt;/use&gt;&lt;/svg&gt;'"></span>
+            </div>
+            <p class="rut-feedback" :class="reg.rut.includes('-') ? (rutValido(reg.rut)?'rut-ok':'rut-error') : ''"
+               x-text="reg.rut.includes('-') ? (rutValido(reg.rut)?'RUT válido':'RUT inválido') : ''"></p>
+            <input type="email"    x-model="reg.correo"  placeholder="Correo electrónico (Opcional)">
+            <input type="password" x-model="reg.pass"    placeholder="Contraseña">
+            <button class="btn btn-green btn-block" :disabled="!rutValido(reg.rut)" @click="registrar()">Guardar</button>
+        </div>
+
+        <!-- RECOVERY -->
+        <div x-show="authTab==='recover'">
+            <!-- Stepper -->
+            <div class="stepper">
+                <div class="step-circle" :class="rec.paso>=1?(rec.paso>1?'done':'active'):''">1</div>
+                <div class="step-line"   :class="rec.paso>1?'done':''"></div>
+                <div class="step-circle" :class="rec.paso>=2?(rec.paso>2?'done':'active'):''">2</div>
+                <div class="step-line"   :class="rec.paso>2?'done':''"></div>
+                <div class="step-circle" :class="rec.paso>=3?'active':''">3</div>
+            </div>
+
+            <!-- Paso 1 -->
+            <div x-show="rec.paso===1">
+                <p  class="legacy-6">Ingresa tu RUT para recibir un código de verificación.</p>
+                <input type="text" x-model="rec.rut" placeholder="RUT (ej: 12345678-9)" maxlength="11">
+                <button class="btn btn-green btn-block" @click="recPaso1()">Enviar Código →</button>
+                <a href="#" 
+                   @click.prevent="authTab='login'; authMsg=''" class="legacy-7">Volver al inicio de sesión</a>
+            </div>
+
+            <!-- Paso 2 -->
+            <div x-show="rec.paso===2">
+                <div class="hint-box" x-text="rec.correoHint || 'Código enviado a tu correo registrado.'"></div>
+                <label>Código de 6 dígitos:</label>
+                <div  class="legacy-4">
+                    <input
+                        type="text" x-model="rec.codigo" maxlength="6" inputmode="numeric"
+                        class="code-input"
+                        :class="rec.codigoEstado==='ok'?'code-ok':(rec.codigoEstado==='error'?'code-error':'')"
+                        placeholder="······" @input="rec.codigoEstado=''; authMsg=''"
+                    >
+                    <span 
+                          x-show="rec.codigoEstado"
+                          aria-hidden="true" x-text="rec.codigoEstado==='ok'?'✓':'×'" class="legacy-8"></span>
+                </div>
+                <div x-show="rec.codigoEstado" class="chip" :class="rec.codigoEstado==='ok'?'chip-ok':'chip-error'"
+                     x-text="rec.codigoEstado==='ok'?'Código válido':'Código inválido — inténtalo de nuevo'"></div>
+                <div  class="legacy-9">
+                    <button class="btn-link" :disabled="rec.reenviarCooldown>0" @click="reenviarCodigo()"
+                            x-text="rec.reenviarCooldown>0?'Reenviar ('+rec.reenviarCooldown+'s)':'¿No llegó? Reenviar código'"></button>
+                </div>
+                <button class="btn btn-green btn-block legacy-10" 
+                        :disabled="rec.codigo.length<6 || rec.codigoEstado==='ok'"
+                        @click="recPaso2()">Verificar Código →</button>
+                <a href="#" 
+                   @click.prevent="rec.paso=1; rec.codigo=''; rec.codigoEstado=''; authMsg=''" class="legacy-11">← Cambiar RUT</a>
+            </div>
+
+            <!-- Paso 3 -->
+            <div x-show="rec.paso===3">
+                <div class="success-chip"><span  class="legacy-12"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#check-circle"></use></svg></span> Identidad verificada correctamente</div>
+                <input type="password" x-model="rec.nueva"     placeholder="Nueva contraseña">
+                <input type="password" x-model="rec.confirmar" placeholder="Confirmar nueva contraseña">
+                <button class="btn btn-green btn-block" @click="recPaso3()">Guardar Nueva Contraseña ✓</button>
+            </div>
+        </div>
+
+        <p class="msg" x-text="authMsg" :style="'color:'+authMsgColor"></p>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — NUEVO INCIDENTE
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalIncidente" class="modal-overlay" @click.self="modalIncidente=false">
+    <div class="modal-box lg">
+        <button class="close-btn" @click="modalIncidente=false"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        <h2 class="modal-title">Reportar Nuevo Incidente</h2>
+
+        <!-- Manual banner -->
+        <div x-show="manualBanner && !manualBannerIgnorado" class="manual-banner">
+            <strong><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#book-open"></use></svg> Existe un manual para este tipo de equipo</strong>
+            <p>Antes de generar el ticket, ¿revisaste el manual? Puede que encuentres la solución.</p>
+            <button class="btn btn-orange btn-pill" @click="window.open(manualUrl,'_blank')">Ver Manual</button>
+            <button class="btn btn-gray btn-pill legacy-13"    @click="manualBannerIgnorado=true">Continuar igual</button>
+        </div>
+
+        <label>Piso:</label>
+        <select x-model="inc.piso">
+            <option value="">-- Seleccione un piso --</option>
+            <option>Subterráneo</option>
+            <option>Piso 1</option>
+            <option>Piso 2</option>
+            <option>Piso 3</option>
+        </select>
+
+        <label>Habitación / Área:</label>
+        <select x-model="inc.habitacion">
+            <option value="">-- Seleccione un área --</option>
+            <option>Recepción</option>
+            <option>Box de Atención</option>
+            <option>Oficina Administrativa</option>
+            <option>Sala de Servidores</option>
+        </select>
+
+        <label>Objeto o aparato:</label>
+        <select x-model="inc.aparato" @change="verificarManual(); onCambioAparato()">
+            <option value="">-- Seleccione un aparato --</option>
+            <template x-for="c in v3Categories.filter(c=>c.is_active)" :key="c.category_id"><option :value="c.category_name" x-text="c.category_name"></option></template>
+        </select>
+
+        <!-- RF-10: Advertencia de responsabilidad externa -->
+        <div x-show="esCategoriaExterna"  class="legacy-14">
+            <p  class="legacy-15"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#warning"></use></svg> Estás reportando una falla en un sistema externo (ej. IMER)</p>
+            <p  class="legacy-16">
+                El soporte interno de la clínica no es responsable del funcionamiento de sistemas de terceros.
+                Este ticket se usará solo para coordinar la comunicación con el proveedor externo correspondiente.
+            </p>
+            <label  class="legacy-17">
+                <input type="checkbox" x-model="inc.externoConfirmado">
+                <span>Entendido, deseo continuar</span>
+            </label>
+        </div>
+
+        <!-- RF-23: Nombre del activo, obligatorio solo para Hardware/Red, con autocompletado -->
+        <label>
+            Nombre del activo/equipo <span x-show="requiereActivo"  class="legacy-18">*</span>
+            <span x-show="!requiereActivo"  class="legacy-19">(opcional)</span>
+        </label>
+        <input type="text" list="activos-datalist" x-model="inc.nombreActivo" @input="buscarSugerenciasActivo()"
+               placeholder="Ej: PC-Recepción-03, Switch-Piso2...">
+        <datalist id="activos-datalist">
+            <template x-for="s in sugerenciasActivo" :key="s">
+                <option :value="s"></option>
+            </template>
+        </datalist>
+
+        <label>Nivel de prioridad:</label>
+        <select x-model="inc.priority_id">
+            <option value="">-- Seleccione una prioridad --</option>
+            <template x-for="p in prioridades" :key="p.priority_id">
+                <option :value="p.priority_id" x-text="p.priority_name + ' (SLA: ' + p.sla_hours + ' hrs)'"></option>
+            </template>
+        </select>
+
+        <label>Descripción del incidente:</label>
+        <textarea x-model="inc.descripcion" placeholder="Describe aquí qué está fallando... (mínimo 10 caracteres)" minlength="10"></textarea>
+
+        <button class="btn btn-green btn-block" :disabled="esCategoriaExterna && !inc.externoConfirmado" @click="enviarIncidente()">Generar Ticket</button>
+        <p class="msg" x-text="incMsg" :style="'color:'+incMsgColor"></p>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — EDITAR PERFIL
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalPerfil" class="modal-overlay" @click.self="modalPerfil=false">
+    <div class="modal-box">
+        <button class="close-btn" @click="modalPerfil=false"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        <h3 class="modal-title">Editar Perfil</h3>
+
+        <label>Nombre completo:</label>
+        <input type="text" x-model="perfil.nombre" placeholder="Tu nombre">
+
+        <label>Correo electrónico <span  class="legacy-20">(Opcional)</span>:</label>
+        <input type="email" x-model="perfil.correo" placeholder="Tu correo">
+
+        <div  class="legacy-21">
+            <label>Cambiar Contraseña <span  class="legacy-20">(Opcional)</span>:</label>
+
+            <div x-show="perfil.metodo==='actual'">
+                <input type="password" x-model="perfil.passActual" placeholder="Contraseña actual">
+                <a href="#" 
+                   @click.prevent="solicitarCodigoEdicion()" class="legacy-22">Olvidé mi contraseña (usar código)</a>
+            </div>
+            <div x-show="perfil.metodo==='codigo'">
+                <p  class="legacy-23">Ingresa el código enviado a tu correo.</p>
+                <input type="text" x-model="perfil.codigo" placeholder="Código de 6 dígitos" maxlength="6">
+                <a href="#" 
+                   @click.prevent="perfil.metodo='actual'" class="legacy-22">Volver a usar contraseña actual</a>
+            </div>
+
+            <input type="password" x-model="perfil.passNueva" placeholder="Nueva Contraseña">
+        </div>
+
+        <button class="btn btn-green btn-block" @click="guardarPerfil()">Guardar Cambios</button>
+        <p class="msg" x-text="perfilMsg" :style="'color:'+perfilMsgColor"></p>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — MANUALES
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalManuales" class="modal-overlay" @click.self="modalManuales=false">
+    <div class="modal-box lg">
+        <button class="close-btn" @click="modalManuales=false"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        <h2 class="modal-title"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#file-text"></use></svg> Manuales de Equipos</h2>
+
+        <!-- Upload zone (admin only) -->
+        <div x-show="usuario && usuario.permisos==='si'">
+            <div
+                class="drop-zone"
+                :class="dropOver?'drag-over':''"
+                @click="$refs.manualInput.click()"
+                @dragover.prevent="dropOver=true"
+                @dragleave="dropOver=false"
+                @drop.prevent="onDropManual($event)"
+            >
+                <span class="drop-icon"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#folder-open"></use></svg></span>
+                <p  class="legacy-24">Haz clic o arrastra un PDF aquí</p>
+                <small  class="legacy-25">Solo archivos PDF — Máximo 50 MB</small>
+            </div>
+            <input type="file" x-ref="manualInput" accept="application/pdf"  @change="subirManual($event)" class="legacy-26">
+            <p class="msg" x-text="manualMsg" :style="'color:'+manualMsgColor"></p>
+        </div>
+
+        <p class="section-title">Manuales disponibles</p>
+
+        <div x-show="manuales.length===0 && !manualCargando"  class="legacy-27">
+            No hay manuales disponibles aún.
+        </div>
+        <div x-show="manualCargando"  class="legacy-28">Cargando...</div>
+
+        <template x-for="m in manuales" :key="m.filename">
+            <div class="manual-item">
+                <div>
+                    <div class="manual-name" x-text="'' + m.nombre"></div>
+                    <div class="manual-meta" x-text="m.tamañoMb + ' MB | Subido: ' + m.fecha"></div>
+                </div>
+                <div  class="legacy-29">
+                    <a :href="m.url" target="_blank"  class="legacy-30">
+                        <button class="btn btn-blue btn-pill">Ver / Descargar</button>
+                    </a>
+                    <button x-show="usuario && usuario.permisos==='si'"
+                            class="btn btn-red btn-pill"
+                            @click="eliminarManual(m.filename)">Eliminar</button>
+                </div>
+            </div>
+        </template>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — ESTADÍSTICAS
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalStats" class="stats-overlay" @click.self="cerrarStats()">
+    <div class="stats-box">
+        <div class="stats-header">
+            <div  class="legacy-31">
+                <span  class="legacy-32"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#chart-bar"></use></svg></span>
+                <div>
+                    <div  class="legacy-33">Panel de Estadísticas</div>
+                    <div  class="legacy-34">Vista exclusiva para administradores</div>
+                </div>
+            </div>
+            <button  @click="cerrarStats()" class="legacy-35"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        </div>
+        <div class="stats-body">
+            <div x-show="statsCargando"  class="legacy-36">
+                <div  class="legacy-37"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#hourglass"></use></svg></div>
+                <div>Cargando estadísticas...</div>
+            </div>
+            <div x-show="statsError"  class="legacy-38">
+                <div  class="legacy-37"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#warning"></use></svg></div>
+                <div>Error al cargar las estadísticas.</div>
+            </div>
+            <div x-show="!statsCargando && !statsError">
+                <div class="stats-cards" id="statsCards"></div>
+                <div class="stats-row">
+                    <div class="chart-card"><h3><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#desktop"></use></svg> Por tipo de equipo</h3><div class="chart-wrap"><canvas id="chartAparato"></canvas></div></div>
+                    <div class="chart-card"><h3><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#hospital"></use></svg> Por piso / ubicación</h3><div class="chart-wrap"><canvas id="chartPiso"></canvas></div></div>
+                </div>
+                <div class="stats-row">
+                    <div class="chart-card"><h3>⚡ Estado actual</h3><div class="chart-wrap"><canvas id="chartEstado"></canvas></div></div>
+                    <div class="chart-card"><h3><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#user"></use></svg> Top 6 usuarios</h3><div class="chart-wrap"><canvas id="chartCreador"></canvas></div></div>
+                </div>
+                <div class="chart-card">
+                    <h3><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#check-circle"></use></svg> Resueltos por semana — últimas 8 semanas</h3>
+                    <div class="chart-wrap" id="wrapSemanas"><canvas id="chartSemanas"></canvas></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PANEL DE ADMINISTRACIÓN (solo Admin)
+══════════════════════════════════════ -->
+<section id="admin-page" x-cloak x-show="modalPanelAdmin && usuario && usuario.permisos==='si'" class="admin-page" aria-label="Administración">
+    <div class="admin-content">
+        <div class="admin-heading">
+            <div  class="legacy-31">
+                <span  class="legacy-32"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#wrench"></use></svg></span>
+                <div>
+                    <h1>Administración</h1>
+                    <div  class="legacy-34">Herramientas para organizar el soporte de la clínica.</div>
+                </div>
+            </div>
+            <button class="btn btn-outline" @click="navegar(esSoporte ? 'bandeja' : 'mistickets')"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-left"></use></svg> Volver a tickets</button>
+        </div>
+        <div class="admin-sections">
+
+            <h2 class="admin-panel-seccion">Equipo de soporte</h2><div class="admin-panel-grid"><button type="button" class="admin-panel-card" @click="v3OpenSection('competencies')"><span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#wrench"></use></svg></span><span class="label">Competencias técnicas</span><span class="admin-card-description">Especialidades para la asignación de incidentes</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button><button type="button" class="admin-panel-card" @click="v3OpenSection('availability')"><span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#user"></use></svg></span><span class="label">Disponibilidad del equipo</span><span class="admin-card-description">Estado de conexión y carga de trabajo</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button></div><p class="admin-panel-seccion">Reportes y seguimiento</p>
+            <div class="admin-panel-grid">
+                <button type="button" class="admin-panel-card" @click="abrirEstadisticas()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#chart-bar"></use></svg></span><span class="label">Estadísticas</span>
+                <span class="admin-card-description">Actividad y distribución de incidentes</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+                <button type="button" class="admin-panel-card" @click="abrirReportesKPI()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#trend-up"></use></svg></span><span class="label">Reportes y KPIs</span>
+                <span class="admin-card-description">Indicadores y exportación de reportes</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+                <button type="button" class="admin-panel-card" @click="abrirInventarioConsolidado()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#coins"></use></svg></span><span class="label">Inventario Consolidado</span>
+                <span class="admin-card-description">Consumo y costos de materiales</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+                <button type="button" class="admin-panel-card" @click="abrirMapaCalor()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#map-trifold"></use></svg></span><span class="label">Mapa de Calor</span>
+                <span class="admin-card-description">Incidentes por área y ubicación</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+                <button type="button" class="admin-panel-card" @click="abrirMonitoreoSLA()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#warning-circle"></use></svg></span><span class="label">Monitoreo de SLA</span>
+                <span class="admin-card-description">Seguimiento de plazos de atención</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+                <button type="button" class="admin-panel-card" @click="abrirReportesProgramados()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#calendar-check"></use></svg></span><span class="label">Reportes Automáticos</span>
+                <span class="admin-card-description">Programación de envíos gerenciales</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+                <button type="button" class="admin-panel-card" @click="abrirDesempeno()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#user"></use></svg></span><span class="label">Desempeño por Técnico</span>
+                <span class="admin-card-description">Carga y tiempos de atención</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+            <button type="button" class="admin-panel-card" @click="v3OpenSection('archives')"><span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#tray"></use></svg></span><span class="label">Archivo histórico</span><span class="admin-card-description">Búsqueda y consulta de tickets archivados</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+<button type="button" class="admin-panel-card" @click="v3OpenSection('surveys')"><span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#chart-bar"></use></svg></span><span class="label">Encuestas de satisfacción</span><span class="admin-card-description">Preguntas, versiones y respuestas recibidas</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+</div>
+
+            <p class="admin-panel-seccion">Configuración</p>
+            <div class="admin-panel-grid">
+                <button type="button" class="admin-panel-card" @click="abrirPrioridades()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#gear"></use></svg></span><span class="label">Prioridades y SLA</span>
+                <span class="admin-card-description">Niveles y plazos de respuesta</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+                <button type="button" class="admin-panel-card" @click="abrirMatriz()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#compass"></use></svg></span><span class="label">Matriz de Asignación</span>
+                <span class="admin-card-description">Categorías, prioridades y responsables</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+                <button type="button" class="admin-panel-card" @click="abrirHorarioOperativo()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#clock"></use></svg></span><span class="label">Ventana Operativa</span>
+                <span class="admin-card-description">Horario para el envío de correos</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+                <button type="button" class="admin-panel-card" @click="abrirFeriados()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#calendar"></use></svg></span><span class="label">Calendario de Feriados</span>
+                <span class="admin-card-description">Excepciones al horario de atención</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+                <button type="button" class="admin-panel-card" @click="abrirIntegracionExterna()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#plugs-connected"></use></svg></span><span class="label">Integraciones Externas</span>
+                <span class="admin-card-description">Conexión con proveedores externos</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+            <button type="button" class="admin-panel-card" @click="v3OpenSection('categories')"><span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#squares-four"></use></svg></span><span class="label">Categorías de incidentes</span><span class="admin-card-description">Clasificación y disponibilidad de categorías</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+<button type="button" class="admin-panel-card" @click="v3OpenSection('config')"><span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#gear"></use></svg></span><span class="label">Parámetros del sistema</span><span class="admin-card-description">Límites de archivos y aprobación de costos</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+<button type="button" class="admin-panel-card" @click="v3OpenSection('templates')"><span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#envelope"></use></svg></span><span class="label">Mensajes institucionales</span><span class="admin-card-description">Contenido de las comunicaciones del sistema</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+<button type="button" class="admin-panel-card" @click="v3OpenSection('integrations')"><span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#plugs-connected"></use></svg></span><span class="label">Correo y directorio</span><span class="admin-card-description">Recepción de solicitudes y cuentas institucionales</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+</div>
+
+            <p class="admin-panel-seccion">Recursos técnicos</p>
+            <div class="admin-panel-grid">
+                <button type="button" class="admin-panel-card" @click="abrirStockInsumos()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#package"></use></svg></span><span class="label">Stock de Repuestos</span>
+                <span class="admin-card-description">Existencias y entradas de materiales</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+                <button type="button" class="admin-panel-card" @click="abrirQrActivos()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#qr-code"></use></svg></span><span class="label">QR de Activos</span>
+                <span class="admin-card-description">Códigos para identificar equipos</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+                <button type="button" class="admin-panel-card" @click="abrirEquipos()">
+                    <span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#desktop"></use></svg></span><span class="label">Gestionar Equipos</span>
+                <span class="admin-card-description">Catálogo de equipos de la clínica</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+            <button type="button" class="admin-panel-card" @click="v3OpenSection('trash')"><span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#trash"></use></svg></span><span class="label">Papelera de evidencias</span><span class="admin-card-description">Consulta y recuperación de archivos retirados</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+</div>
+
+        </div>
+    </div>
+<section class="admin-sections"><h2 class="admin-panel-seccion">Control y mantenimiento</h2><div class="admin-panel-grid"><button type="button" class="admin-panel-card" @click="v3OpenSection('logs')"><span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#warning-circle"></use></svg></span><span class="label">Registro de errores</span><span class="admin-card-description">Seguimiento y diagnóstico de fallos del sistema</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button><button type="button" class="admin-panel-card" @click="v3OpenSection('jobs')"><span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#clock"></use></svg></span><span class="label">Mantenimiento</span><span class="admin-card-description">Tareas programadas y resultados de ejecución</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button></div></section><section class="acceptance-tools" aria-label="Usuarios y respaldo">
+<h2 class="admin-panel-seccion">Usuarios y respaldo</h2>
+<div class="admin-panel-grid"><button type="button" class="admin-panel-card" @click="v3OpenSection('import')"><span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#upload-simple"></use></svg></span><span class="label">Importar usuarios desde Excel</span><span class="admin-card-description">Plantilla, validación y carga de cuentas</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button><button type="button" class="admin-panel-card" @click="modalUsuariosCSV=true; csvMessage=''; csvErrors=[]"><span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#upload-simple"></use></svg></span><span class="label">Importar usuarios desde CSV</span><span class="admin-card-description">Carga de cuentas y validación de RUT</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button>
+<button type="button" class="admin-panel-card" @click="respaldoManual()" :disabled="backupBusy"><span class="icono"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#tray"></use></svg></span><span class="label" x-text="backupBusy ? 'Preparando respaldo…' : 'Respaldar base de datos'"></span><span class="admin-card-description">Descarga de una copia de seguridad</span><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrow-up-right"></use></svg></button></div>
+<p role="status" x-text="backupMessage"></p></section>
+</section>
+
+<!-- ══════════════════════════════════════
+     MODAL — RF-05: PRIORIDADES Y SLA
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalPrioridades" class="modal-overlay" @click.self="modalPrioridades=false">
+    <div class="modal-box lg">
+        <button class="close-btn" @click="modalPrioridades=false"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        <h2 class="modal-title"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#gear"></use></svg> Configuración de Niveles de Prioridad y SLA</h2>
+        <p  class="legacy-39">
+            Modelo de tiempo continuo 24/7. Los cambios aquí solo aplican a tickets nuevos —
+            los tickets ya creados conservan su fecha límite de SLA original y no se recalculan en masa.
+        </p>
+
+        <p class="section-title">Prioridades configuradas</p>
+        <div x-show="prioridades.length===0"  class="legacy-40">
+            No hay prioridades configuradas aún.
+        </div>
+        <table  class="legacy-41">
+            <thead>
+                <tr  class="legacy-42">
+                    <th  class="legacy-43">Nombre</th>
+                    <th  class="legacy-43">SLA (horas)</th>
+                    <th  class="legacy-43">Color</th>
+                    <th  class="legacy-43">Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template x-for="p in prioridades" :key="p.priority_id">
+                    <tr  class="legacy-44">
+                        <td  x-text="p.priority_name" class="legacy-43"></td>
+                        <td  x-text="p.sla_hours" class="legacy-43"></td>
+                        <td  class="legacy-43">
+                            <span :style="'display:inline-block;width:16px;height:16px;border-radius:3px;background:'+p.color_hex+';vertical-align:middle;margin-right:6px'"></span>
+                            <span x-text="p.color_hex"></span>
+                        </td>
+                        <td  class="legacy-43">
+                            <button class="btn btn-blue btn-pill legacy-45"  @click="editarPrioridad(p)">Editar</button>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+
+        <p class="section-title" x-text="prioridadForm.priority_id ? 'Editar prioridad' : 'Nueva prioridad'"></p>
+        <label>Nombre:</label>
+        <input type="text" x-model="prioridadForm.priority_name" placeholder="Ej: Crítica, Alta, Media, Baja">
+
+        <label>Tiempo máximo de resolución (horas):</label>
+        <input type="number" x-model="prioridadForm.sla_hours" placeholder="Ej: 4">
+
+        <label>Color identificador:</label>
+        <input type="color" x-model="prioridadForm.color_hex"  class="legacy-46">
+
+        <div  class="legacy-47">
+            <button class="btn btn-gray legacy-48"  x-show="prioridadForm.priority_id" @click="resetPrioridadForm()">Cancelar edición</button>
+            <button class="btn btn-green legacy-48"  @click="guardarPrioridad()">Confirmar configuración</button>
+        </div>
+        <p class="msg" x-text="prioridadMsg" :style="'color:'+prioridadMsgColor"></p>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — RF-06: MATRIZ DE ASIGNACIÓN
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalMatriz" class="modal-overlay" @click.self="modalMatriz=false">
+    <div class="modal-box lg">
+        <button class="close-btn" @click="modalMatriz=false"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        <h2 class="modal-title"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#compass"></use></svg> Motor de Asignación — Matriz Categoría vs Prioridad</h2>
+
+        <p class="section-title">Técnico idóneo por Categoría / Prioridad</p>
+        <div x-show="categorias.length===0 || prioridades.length===0"  class="legacy-40">
+            Configura al menos una prioridad para habilitar la matriz.
+        </div>
+        <table  x-show="categorias.length && prioridades.length" class="legacy-49">
+            <thead>
+                <tr  class="legacy-42">
+                    <th  class="legacy-43">Categoría</th>
+                    <th  class="legacy-43">Prioridad</th>
+                    <th  class="legacy-43">Técnico idóneo</th>
+                    <th  class="legacy-43">Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template x-for="c in categorias" :key="c.category_id">
+                    <template x-for="p in prioridades" :key="p.priority_id">
+                        <tr  class="legacy-44">
+                            <td  x-text="c.category_name" class="legacy-43"></td>
+                            <td  x-text="p.priority_name" class="legacy-43"></td>
+                            <td  class="legacy-43">
+                                <select x-model="matrizForm[c.category_id+'_'+p.priority_id]"  class="legacy-50">
+                                    <option value="">Sin preferencia</option>
+                                    <template x-for="t in tecnicos" :key="t.user_id">
+                                        <option :value="t.user_id" x-text="t.first_name"></option>
+                                    </template>
+                                </select>
+                            </td>
+                            <td  class="legacy-43">
+                                <button class="btn btn-blue btn-pill legacy-45" 
+                                        @click="guardarMatriz(c.category_id, p.priority_id)">Guardar</button>
+                            </td>
+                        </tr>
+                    </template>
+                </template>
+            </tbody>
+        </table>
+
+        <p class="section-title">Técnico Crítico (fallback sin técnicos disponibles)</p>
+        <div x-show="tecnicos.length===0"  class="legacy-40">
+            No hay técnicos activos registrados.
+        </div>
+        <template x-for="t in tecnicos" :key="t.user_id">
+            <label  class="legacy-51">
+                <input type="checkbox" :checked="t.is_critical_tech==1" @change="marcarTecnicoCritico(t.user_id, $event.target.checked)">
+                <span x-text="t.first_name"></span>
+            </label>
+        </template>
+        <p class="msg" x-text="matrizMsg" :style="'color:'+matrizMsgColor"></p>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — RF-14: VENTANA OPERATIVA
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalHorarioOperativo" class="modal-overlay" @click.self="modalHorarioOperativo=false">
+    <div class="modal-box">
+        <button class="close-btn" @click="modalHorarioOperativo=false"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        <h2 class="modal-title"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#clock"></use></svg> Configuración de la Ventana Operativa</h2>
+        <p  class="legacy-39">
+            Los correos del sistema (nuevos tickets, resoluciones, reaperturas, derivaciones) solo se envían dentro de este rango.
+            Fuera de él, se encolan automáticamente para la siguiente jornada.
+        </p>
+
+        <label>Hora de inicio:</label>
+        <input type="time" x-model="horarioForm.hora_inicio">
+
+        <label>Hora de término:</label>
+        <input type="time" x-model="horarioForm.hora_fin">
+
+        <button class="btn btn-green btn-block legacy-52"  @click="guardarHorarioOperativo()">Confirmar configuración</button>
+        <p class="msg" x-text="horarioMsg" :style="'color:'+horarioMsgColor"></p>
+
+        <div  class="legacy-53">
+            <p  class="legacy-54">
+                <svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#envelope"></use></svg> Correos pendientes en cola: <strong x-text="horarioCorreosEncolados"></strong>
+            </p>
+            <button class="btn btn-gray btn-block" @click="procesarColaCorreos()">Procesar cola ahora</button>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — RF-25: INVENTARIO CONSOLIDADO
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalInventario" class="stats-overlay" @click.self="modalInventario=false">
+    <div class="stats-box">
+        <div class="stats-header">
+            <div  class="legacy-31">
+                <span  class="legacy-32"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#coins"></use></svg></span>
+                <div>
+                    <div  class="legacy-33">Inventario Consolidado</div>
+                    <div  class="legacy-34">Gasto de materiales asociados a tickets</div>
+                </div>
+            </div>
+            <button  @click="modalInventario=false" class="legacy-35"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        </div>
+        <div class="stats-body">
+            <div  class="legacy-55">
+                <div>
+                    <label  class="legacy-56">Desde:</label>
+                    <input type="date" x-model="inventarioFiltros.desde" @change="cargarInventarioConsolidado()">
+                </div>
+                <div>
+                    <label  class="legacy-56">Hasta:</label>
+                    <input type="date" x-model="inventarioFiltros.hasta" @change="cargarInventarioConsolidado()">
+                </div>
+                <button class="btn btn-green btn-pill legacy-57"  @click="exportarInventarioConsolidado()"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#chart-bar"></use></svg> Exportar a Excel</button>
+            </div>
+            <p class="msg" x-text="inventarioExportMsg" :style="'color:'+inventarioExportMsgColor"></p>
+
+            <div x-show="inventarioCargando"  class="legacy-36">
+                <div  class="legacy-37"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#hourglass"></use></svg></div>
+                <div>Consolidando inventario...</div>
+            </div>
+
+            <div x-show="!inventarioCargando && inventarioSinDatos"  class="legacy-36">
+                <div  class="legacy-37"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#tray"></use></svg></div>
+                <div>No hay movimientos de materiales en el periodo seleccionado.</div>
+            </div>
+
+            <div x-show="!inventarioCargando && !inventarioSinDatos && inventarioData">
+                <div class="stats-cards">
+                    <div class="chart-card legacy-58" >
+                        <h3>Gasto total</h3>
+                        <p  x-text="inventarioData ? '$'+Number(inventarioData.totalGastado).toLocaleString('es-CL') : '$0'" class="legacy-59"></p>
+                    </div>
+                    <div class="chart-card legacy-58" >
+                        <h3>Movimientos</h3>
+                        <p  x-text="inventarioData ? inventarioData.totalMovimientos : 0" class="legacy-59"></p>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <h3>Desglose por insumo</h3>
+                    <table  class="legacy-60">
+                        <thead>
+                            <tr  class="legacy-42">
+                                <th  class="legacy-43">Insumo</th>
+                                <th  class="legacy-43">Cantidad</th>
+                                <th  class="legacy-43">Costo promedio</th>
+                                <th  class="legacy-43">Costo acumulado</th>
+                                <th  class="legacy-43"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="(g,i) in (inventarioData ? inventarioData.porInsumo : [])" :key="i">
+                                <template x-if="true">
+                                    <tr  class="legacy-44">
+                                        <td  x-text="g.insumo" class="legacy-43"></td>
+                                        <td  x-text="g.cantidadTotal" class="legacy-43"></td>
+                                        <td  x-text="'$'+Number(g.costoPromedio).toLocaleString('es-CL')" class="legacy-43"></td>
+                                        <td  x-text="'$'+Number(g.costoAcumulado).toLocaleString('es-CL')" class="legacy-43"></td>
+                                        <td  class="legacy-43">
+                                            <button class="btn btn-gray btn-pill legacy-61"  @click="g._abierto = !g._abierto">
+                                                <span x-text="g._abierto ? 'Ocultar' : 'Ver detalle'"></span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </template>
+
+                            <!-- RF-25: drill-down de cada ítem -->
+                            <template x-for="(g,i) in (inventarioData ? inventarioData.porInsumo : [])" :key="'detalle-'+i">
+                                <template x-if="g._abierto">
+                                    <tr>
+                                        <td colspan="5"  class="legacy-62">
+                                            <table  class="legacy-63">
+                                                <thead>
+                                                    <tr  class="legacy-64">
+                                                        <th  class="legacy-65">Ticket</th>
+                                                        <th  class="legacy-65">Cantidad</th>
+                                                        <th  class="legacy-65">Costo unitario</th>
+                                                        <th  class="legacy-65">Costo total</th>
+                                                        <th  class="legacy-65">Técnico</th>
+                                                        <th  class="legacy-65">Fecha</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <template x-for="mv in g.movimientos" :key="mv.ticket_material_id">
+                                                        <tr  class="legacy-66">
+                                                            <td  x-text="mv.ticket_code" class="legacy-65"></td>
+                                                            <td  x-text="mv.cantidad" class="legacy-65"></td>
+                                                            <td  x-text="'$'+Number(mv.costo_unitario).toLocaleString('es-CL')" class="legacy-65"></td>
+                                                            <td  x-text="'$'+Number(mv.costo_total).toLocaleString('es-CL')" class="legacy-65"></td>
+                                                            <td  x-text="mv.tecnico || 'N/D'" class="legacy-65"></td>
+                                                            <td  x-text="mv.fecha" class="legacy-65"></td>
+                                                        </tr>
+                                                    </template>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — RF-29: MONITOREO DE SLA
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalMonitoreoSLA" class="stats-overlay" @click.self="cerrarMonitoreoSLA()">
+    <div class="stats-box">
+        <div class="stats-header">
+            <div  class="legacy-31">
+                <span  class="legacy-32"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#warning-circle"></use></svg></span>
+                <div>
+                    <div  class="legacy-33">Monitoreo de Vencimiento SLA</div>
+                    <div  class="legacy-34">Se actualiza automáticamente cada 30 segundos</div>
+                </div>
+            </div>
+            <button  @click="cerrarMonitoreoSLA()" class="legacy-35"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        </div>
+        <div class="stats-body">
+            <div x-show="monitoreoSLACargando && ticketsRiesgoSLA.length===0"  class="legacy-36"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#hourglass"></use></svg> Cargando...</div>
+            <div x-show="!monitoreoSLACargando && ticketsRiesgoSLA.length===0"  class="legacy-36">
+                <svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#check-circle"></use></svg> No hay tickets activos (pendientes, en curso o en espera) en este momento.
+            </div>
+            <table x-show="ticketsRiesgoSLA.length>0"  class="legacy-60">
+                <thead>
+                    <tr  class="legacy-42">
+                        <th  class="legacy-43">Ticket</th>
+                        <th  class="legacy-43">Estado</th>
+                        <th  class="legacy-43">Prioridad</th>
+                        <th  class="legacy-43">Técnico</th>
+                        <th  class="legacy-43">% SLA consumido</th>
+                        <th  class="legacy-43">Riesgo</th>
+                        <th  class="legacy-43"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template x-for="t in ticketsRiesgoSLA" :key="t.id_ticket">
+                        <tr  class="legacy-44">
+                            <td  x-text="t.id_ticket" class="legacy-43"></td>
+                            <td  x-text="t.estado" class="legacy-43"></td>
+                            <td  x-text="t.priority_name" class="legacy-43"></td>
+                            <td  x-text="t.tecnico_asignado || 'Sin asignar'" class="legacy-43"></td>
+                            <td  x-text="t.pctConsumido + '%'" class="legacy-43"></td>
+                            <td  class="legacy-43">
+                                <span x-show="t.indicador==='rojo'"  class="legacy-67"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#warning-circle"></use></svg> VENCIDO</span>
+                                <span x-show="t.indicador==='amarillo'"  class="legacy-68"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#warning"></use></svg> EN RIESGO</span>
+                                <span x-show="t.indicador==='verde'"  class="legacy-69"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#check-circle"></use></svg> OK</span>
+                            </td>
+                            <td  class="legacy-43">
+                                <button class="btn btn-blue btn-pill legacy-70"  @click="cerrarMonitoreoSLA(); abrirDetalle(t.id_ticket)">Ver ticket</button>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — RF-33: REPORTES AUTOMÁTICOS A GERENCIA
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalReportesProgramados" class="modal-overlay" @click.self="modalReportesProgramados=false">
+    <div class="modal-box">
+        <button class="close-btn" @click="modalReportesProgramados=false"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        <h2 class="modal-title"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#calendar-check"></use></svg> Reportes Automáticos a Gerencia</h2>
+        <p  class="legacy-39">
+            El sistema genera y envía automáticamente un PDF con los KPIs del periodo a los destinatarios indicados, según la periodicidad configurada.
+        </p>
+
+        <label>Destinatarios (correos separados por coma):</label>
+        <textarea x-model="reporteProgramadoForm.destinatarios" placeholder="gerencia@clinica.cl, direccion@clinica.cl"  class="legacy-71"></textarea>
+
+        <label>Periodicidad:</label>
+        <select x-model="reporteProgramadoForm.periodicidad">
+            <option>Diario</option>
+            <option>Semanal</option>
+            <option>Mensual</option>
+        </select>
+
+        <label  class="legacy-72">
+            <input type="checkbox" x-model="reporteProgramadoForm.activo">
+            <span>Envío automático activo</span>
+        </label>
+
+        <p  x-show="reporteProgramadoForm.ultima_ejecucion" class="legacy-73">
+            Última ejecución: <span x-text="reporteProgramadoForm.ultima_ejecucion"></span>
+        </p>
+
+        <button class="btn btn-green btn-block legacy-10"  @click="guardarReporteProgramado()">Guardar configuración</button>
+        <button class="btn btn-gray btn-block legacy-74"  @click="enviarReporteProgramadoAhora()">Enviar ahora (prueba)</button>
+        <p class="msg" x-text="reporteProgramadoMsg" :style="'color:'+reporteProgramadoMsgColor"></p>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — RF-45: CALENDARIO DE FERIADOS
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalFeriados" class="modal-overlay" @click.self="modalFeriados=false">
+    <div class="modal-box">
+        <button class="close-btn" @click="modalFeriados=false"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        <h2 class="modal-title"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#calendar"></use></svg> Calendario Operativo — Feriados</h2>
+
+        <div  class="legacy-75">
+            <table  class="legacy-60">
+                <tbody>
+                    <template x-for="f in feriados" :key="f.holiday_id">
+                        <tr  class="legacy-44">
+                            <td  x-text="f.fecha" class="legacy-76"></td>
+                            <td  x-text="f.nombre" class="legacy-76"></td>
+                            <td  class="legacy-77">
+                                <button class="btn btn-red btn-pill legacy-78"  @click="eliminarFeriado(f.holiday_id)">Eliminar</button>
+                            </td>
+                        </tr>
+                    </template>
+                    <tr x-show="feriados.length===0"><td colspan="3"  class="legacy-79">No hay feriados registrados.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <label>Fecha:</label>
+        <input type="date" x-model="feriadoForm.fecha">
+        <label>Nombre del feriado:</label>
+        <input type="text" x-model="feriadoForm.nombre" placeholder="Ej: Día de las Glorias Navales">
+
+        <button class="btn btn-green btn-block legacy-52"  @click="guardarFeriado()">Registrar feriado</button>
+        <p class="msg" x-text="feriadoMsg" :style="'color:'+feriadoMsgColor"></p>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — RF-47: INTEGRACIONES EXTERNAS
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalIntegracionExterna" class="modal-overlay" @click.self="modalIntegracionExterna=false">
+    <div class="modal-box">
+        <button class="close-btn" @click="modalIntegracionExterna=false"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        <h2 class="modal-title"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#plugs-connected"></use></svg> Integraciones con Sistemas Externos</h2>
+        <p  class="legacy-39">
+            Configura la URL del sistema externo (ej. IMER) que se probará cuando un técnico verifique la conexión desde un ticket de esa categoría.
+        </p>
+
+        <label>URL del endpoint externo:</label>
+        <input type="text" x-model="integracionExternaForm.external_endpoint_url" placeholder="https://sistema-externo.ejemplo.cl">
+
+        <button class="btn btn-green btn-block legacy-52"  @click="guardarIntegracionExterna()">Guardar</button>
+        <p class="msg" x-text="integracionExternaMsg" :style="'color:'+integracionExternaMsgColor"></p>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — RF-52: STOCK DE REPUESTOS
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalStockInsumos" class="modal-overlay" @click.self="modalStockInsumos=false">
+    <div class="modal-box lg">
+        <button class="close-btn" @click="modalStockInsumos=false"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        <h2 class="modal-title"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#package"></use></svg> Stock de Repuestos Técnicos</h2>
+
+        <table  class="legacy-41">
+            <thead>
+                <tr  class="legacy-42">
+                    <th  class="legacy-43">Insumo</th>
+                    <th  class="legacy-43">Stock actual</th>
+                    <th  class="legacy-43">Stock mínimo</th>
+                    <th  class="legacy-43"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <template x-for="i in stockInsumos" :key="i.material_id">
+                    <tr  class="legacy-44">
+                        <td  x-text="i.nombre" class="legacy-43"></td>
+                        <td  x-text="i.stock_actual" class="legacy-43"></td>
+                        <td  x-text="i.stock_minimo" class="legacy-43"></td>
+                        <td  class="legacy-43">
+                            <span x-show="i.stock_actual <= i.stock_minimo"  class="legacy-80"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#warning"></use></svg> Stock bajo</span>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+
+        <p class="section-title">Registrar entrada de stock</p>
+        <select x-model="stockEntradaForm.material_id">
+            <option value="">-- Seleccione un insumo --</option>
+            <template x-for="i in stockInsumos" :key="i.material_id">
+                <option :value="i.material_id" x-text="i.nombre"></option>
+            </template>
+        </select>
+        <input type="number" min="1" x-model="stockEntradaForm.cantidad" placeholder="Cantidad">
+        <button class="btn btn-green btn-block legacy-52"  @click="registrarEntradaStock()">Registrar entrada</button>
+        <p class="msg" x-text="stockMsg" :style="'color:'+stockMsgColor"></p>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — RF-60: DESEMPEÑO POR TÉCNICO
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalDesempeno" class="modal-overlay" @click.self="modalDesempeno=false">
+    <div class="modal-box">
+        <button class="close-btn" @click="modalDesempeno=false"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        <h2 class="modal-title"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#user"></use></svg> Desempeño por Técnico</h2>
+
+        <label>Selecciona un técnico:</label>
+        <select x-model="desempenoTecnicoId" @change="cargarDesempenoTecnico()">
+            <option value="">-- Seleccione --</option>
+            <template x-for="t in tecnicos" :key="t.user_id">
+                <option :value="t.user_id" x-text="t.first_name"></option>
+            </template>
+        </select>
+
+        <p  x-show="desempenoMsg" x-text="desempenoMsg" class="legacy-81"></p>
+
+        <div x-show="desempenoData"  class="legacy-82">
+            <div class="stats-cards">
+                <div class="stats-card legacy-83" >
+                    <div class="val" x-text="desempenoData ? desempenoData.totalResueltos : 0"></div>
+                    <div class="lbl">Tickets resueltos</div>
+                </div>
+                <div class="stats-card legacy-84" >
+                    <div class="val" x-text="desempenoData ? desempenoData.totalReabiertos : 0"></div>
+                    <div class="lbl">Reaperturas</div>
+                </div>
+                <div class="stats-card legacy-85" >
+                    <div class="val" x-text="(desempenoData ? desempenoData.promedioHoras : 0) + ' hrs'"></div>
+                    <div class="lbl">Promedio propio</div>
+                </div>
+                <div class="stats-card legacy-86" >
+                    <div class="val" x-text="(desempenoData ? desempenoData.promedioEquipoHoras : 0) + ' hrs'"></div>
+                    <div class="lbl">Promedio del equipo</div>
+                </div><div class="stats-card"><div class="val" x-text="(desempenoData?.promedioMinutosTraslado||0)+' min'"></div><div class="lbl">Traslado promedio validado</div></div><div class="stats-card"><div class="val" x-text="desempenoData?.marcacionesObservadas||0"></div><div class="lbl">Marcaciones observadas</div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — RF-64: QR DE ACTIVOS
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalQrActivos" class="modal-overlay" @click.self="modalQrActivos=false">
+    <div class="modal-box">
+        <button class="close-btn" @click="modalQrActivos=false"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        <h2 class="modal-title"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#qr-code"></use></svg> Generar QR de un Activo</h2>
+        <p  class="legacy-39">
+            Genera un código QR para pegar en un equipo. Al escanearlo, se abrirá el formulario de nuevo incidente con la ubicación y el equipo pre-completados.
+        </p>
+
+        <label>Buscar equipo:</label>
+        <input type="text" x-model="qrActivoBusqueda" @input="buscarActivoParaQr()" placeholder="Ej: PC-Recepción-03">
+        <div x-show="qrActivoSugerencias.length>0"  class="legacy-87">
+            <template x-for="s in qrActivoSugerencias" :key="s.equipment_id">
+                <div  @click="generarQrActivo(s.equipment_id)" x-text="s.equipment_name" class="legacy-88"></div>
+            </template>
+        </div>
+
+        <div x-show="qrActivoDataUrl"  class="legacy-89">
+            <p  x-text="qrActivoSeleccionado" class="legacy-90"></p>
+            <img :src="qrActivoDataUrl"  class="legacy-91">
+            <div>
+                <button class="btn btn-blue btn-pill legacy-92"  @click="imprimirQrActivo()">Imprimir QR</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — GESTIONAR EQUIPOS
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalEquipos" class="modal-overlay" @click.self="modalEquipos=false">
+    <div class="modal-box lg">
+        <button class="close-btn" @click="modalEquipos=false"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        <h2 class="modal-title"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#desktop"></use></svg> Agregar Equipo</h2>
+        <p  class="legacy-39">
+            Registra un equipo nuevo para que quede disponible al crear tickets y para generarle su etiqueta QR (sin necesidad de que primero exista un ticket).
+        </p>
+
+        <label>Nombre del equipo:</label>
+        <input type="text" x-model="equipoForm.equipment_name" placeholder="Ej: PC-Recepción-03">
+
+        <label>Piso:</label>
+        <select x-model="equipoForm.piso">
+            <option value="">-- Seleccione un piso --</option>
+            <option>Subterráneo</option>
+            <option>Piso 1</option>
+            <option>Piso 2</option>
+            <option>Piso 3</option>
+        </select>
+
+        <label>Habitación / Área:</label>
+        <input type="text" x-model="equipoForm.habitacion" placeholder="Ej: Sala de Servidores, Recepción...">
+
+        <label>Tipo de equipo:</label>
+        <select x-model="equipoForm.equipment_type">
+            <option value="">-- Seleccione un tipo --</option>
+            <option>Computador/Hardware</option>
+            <option>Impresora</option>
+            <option>Teléfono IP</option>
+            <option>Sistema/Software</option>
+            <option>Red/Internet</option>
+            <option>Sistema Externo (ej. IMER)</option>
+        </select>
+
+        <button class="btn btn-green btn-block legacy-52"  @click="guardarEquipo()">Agregar equipo</button>
+        <p class="msg" x-text="equipoMsg" :style="'color:'+equipoMsgColor"></p>
+
+        <p class="section-title legacy-93" >Equipos registrados (<span x-text="listaEquipos.length"></span>)</p>
+        <div  class="legacy-94">
+            <table  class="legacy-60">
+                <thead>
+                    <tr  class="legacy-42">
+                        <th  class="legacy-76">Nombre</th>
+                        <th  class="legacy-76">Ubicación</th>
+                        <th  class="legacy-76">Tipo</th>
+                        <th  class="legacy-76"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template x-for="e in listaEquipos" :key="e.equipment_id">
+                        <tr  class="legacy-44">
+                            <td  x-text="e.equipment_name" class="legacy-76"></td>
+                            <td  x-text="e.location" class="legacy-76"></td>
+                            <td  x-text="e.equipment_type" class="legacy-76"></td>
+                            <td  class="legacy-76">
+                                <button class="btn btn-red btn-pill legacy-78"  @click="eliminarEquipo(e.equipment_id)">Eliminar</button>
+                            </td>
+                        </tr>
+                    </template>
+                    <tr x-show="listaEquipos.length===0"><td colspan="4"  class="legacy-79">No hay equipos registrados aún.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — RF-55: MAPA DE CALOR
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalMapaCalor" class="stats-overlay" @click.self="modalMapaCalor=false">
+    <div class="stats-box">
+        <div class="stats-header">
+            <div  class="legacy-31">
+                <span  class="legacy-32"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#map-trifold"></use></svg></span>
+                <div>
+                    <div  class="legacy-33">Mapa de Calor por Ubicación</div>
+                    <div  class="legacy-34">Concentración de incidencias por piso</div>
+                </div>
+            </div>
+            <button  @click="modalMapaCalor=false" class="legacy-35"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        </div>
+        <div class="stats-body">
+            <label  class="legacy-56">Filtrar por categoría:</label>
+            <select x-model="mapaCalorFiltroCategoria" @change="cargarMapaCalor()">
+                <option value="">Todas las categorías</option>
+                <template x-for="c in categorias" :key="c.category_id">
+                    <option :value="c.category_id" x-text="c.category_name"></option>
+                </template>
+            </select>
+
+            <div x-show="mapaCalorCargando"  class="legacy-36"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#hourglass"></use></svg> Cargando...</div>
+            <div x-show="!mapaCalorCargando && mapaCalorData.length===0"  class="legacy-36">
+                No hay tickets con ubicación registrada para este filtro.
+            </div>
+
+            <div x-show="!mapaCalorCargando && mapaCalorData.length>0"  class="legacy-95">
+                <template x-for="p in mapaCalorData" :key="p.piso">
+                    <div :style="'flex:1;min-width:140px;padding:16px;border-radius:8px;text-align:center;background:'+intensidadColor(p.total, mapaCalorData[0].total)">
+                        <div  x-text="p.piso" class="legacy-96"></div>
+                        <div  x-text="p.total" class="legacy-97"></div>
+                        <div  class="legacy-98">tickets</div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     MODAL — RF-12: REPORTES Y KPIs
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalReportesKPI" class="stats-overlay" @click.self="modalReportesKPI=false">
+    <div class="stats-box">
+        <div class="stats-header">
+            <div  class="legacy-31">
+                <span  class="legacy-32"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#trend-up"></use></svg></span>
+                <div>
+                    <div  class="legacy-33">Reportes y KPIs</div>
+                    <div  class="legacy-34">MTTR y cumplimiento de SLA en tiempo real</div>
+                </div>
+            </div>
+            <button  @click="modalReportesKPI=false" class="legacy-35"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></button>
+        </div>
+        <div class="stats-body">
+            <div  class="legacy-99">
+                <div>
+                    <label  class="legacy-56">Desde:</label>
+                    <input type="date" x-model="kpiFiltros.desde" @change="cargarKPI()">
+                </div>
+                <div>
+                    <label  class="legacy-56">Hasta:</label>
+                    <input type="date" x-model="kpiFiltros.hasta" @change="cargarKPI()">
+                </div>
+                <div>
+                    <label  class="legacy-56">Área:</label>
+                    <select x-model="kpiFiltros.area" @change="cargarKPI()">
+                        <option value="">Todas</option>
+                        <option>Subterráneo</option>
+                        <option>Piso 1</option>
+                        <option>Piso 2</option>
+                        <option>Piso 3</option>
+                    </select>
+                </div>
+                <div>
+                    <label  class="legacy-56">Prioridad:</label>
+                    <select x-model="kpiFiltros.priority_id" @change="cargarKPI()">
+                        <option value="">Todas</option>
+                        <template x-for="p in prioridades" :key="p.priority_id">
+                            <option :value="p.priority_id" x-text="p.priority_name"></option>
+                        </template>
+                    </select>
+                </div>
+                <div x-show="puedeExportar"  class="legacy-100">
+                    <button class="btn btn-green btn-pill legacy-57"  @click="exportarReporte('excel')"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#chart-bar"></use></svg> Excel</button>
+                    <button class="btn btn-blue btn-pill legacy-57"  @click="exportarReporte('csv')"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#file-text"></use></svg> CSV</button>
+                    <button class="btn btn-outline btn-pill legacy-57"  @click="exportarReporte('pdf')"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#file-text"></use></svg> PDF</button>
+                </div>
+            </div>
+            <p class="msg" x-text="exportMsg" :style="'color:'+exportMsgColor"></p>
+
+            <div x-show="kpiCargando"  class="legacy-36">
+                <div  class="legacy-37"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#hourglass"></use></svg></div>
+                <div>Calculando KPIs...</div>
+            </div>
+
+            <div x-show="!kpiCargando && kpiSinDatos"  class="legacy-36">
+                <div  class="legacy-37"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#tray"></use></svg></div>
+                <div>No hay datos de tickets resueltos en el periodo seleccionado.</div>
+            </div>
+
+            <div x-show="!kpiCargando && !kpiSinDatos && kpiData">
+                <div class="stats-cards">
+                    <div class="chart-card legacy-58" >
+                        <h3>Tickets resueltos</h3>
+                        <p  x-text="kpiData ? kpiData.totalTickets : 0" class="legacy-101"></p>
+                    </div>
+                    <div class="chart-card legacy-58" >
+                        <h3>MTTR promedio</h3>
+                        <p  x-text="(kpiData ? kpiData.mttrHoras : 0) + ' hrs'" class="legacy-101"></p>
+                    </div>
+                    <div class="chart-card legacy-58" >
+                        <h3>Cumplimiento SLA</h3>
+                        <p  x-text="(kpiData ? kpiData.cumplimientoSlaPct : 0) + '%'" class="legacy-101"></p>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3>Cumplimiento de SLA por prioridad</h3>
+                    <div class="chart-wrap"><canvas id="chartKpiPrioridad"></canvas></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     FLOATING DETAIL WINDOW
+══════════════════════════════════════ -->
+<div x-cloak x-show="modalDetalle" class="detail-overlay" aria-label="Detalle del ticket">
+    <div
+        class="detail-window"
+        :class="detWin.maximized?'maximized':(detWin.minimized?'minimized':'')"
+        x-ref="detWin"
+        id="detailWindow"
+    >
+        <div class="detail-header" id="detailHeader">
+            <span class="detail-header-title" x-text="detWin.headerTitle"></span>
+            <div  class="legacy-102">
+                <span class="win-ctrl" role="button" tabindex="0" @keydown.enter.prevent="$el.click()" @keydown.space.prevent="$el.click()" @click="toggleMinimize()" title="Minimizar">_</span>
+                <span class="win-ctrl" role="button" tabindex="0" @keydown.enter.prevent="$el.click()" @keydown.space.prevent="$el.click()" @click="toggleMaximize()" title="Maximizar" x-text="detWin.maximized?'❐':'□'"></span>
+                <span class="win-ctrl close" role="button" tabindex="0" @keydown.enter.prevent="$el.click()" @keydown.space.prevent="$el.click()" @click="cerrarDetalle()" title="Cerrar"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#x"></use></svg></span>
+            </div>
+        </div>
+
+        <div class="detail-body" x-show="!detWin.minimized">
+            <!-- Top row -->
+            <div  class="legacy-103">
+                <div class="action-row">
+                    <h2  x-text="'Ticket ' + (detTicket.id_ticket||'')" class="legacy-104"></h2>
+                    <template x-if="!['Resuelto','Cancelado','Cerrado'].includes(detTicket.estado)">
+                        <div class="action-row">
+                            <button x-show="puedeGestionarTicket && detTicket.estado==='En espera'"
+                                    class="btn btn-green btn-pill" @click="accionTicket('continuar')">Continuar</button>
+                            <button x-show="puedeGestionarTicket && detTicket.estado==='En curso'"
+                                    class="btn btn-yellow btn-pill" @click="accionTicket('espera')">En Espera</button>
+                            <button x-show="puedeGestionarTicket && detTicket.estado==='En curso'"
+                                    class="btn btn-green btn-pill" @click="accionTicket('resolver')"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#check-circle"></use></svg> Resolver</button>
+                            <button x-show="puedeGestionarTicket"
+                                    class="btn btn-gray btn-pill" @click="accionTicket('cancelar')">Cancelar</button>
+                        </div>
+                    </template>
+                    <button class="btn btn-outline btn-pill" @click="exportarPDF()"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#file-text"></use></svg> PDF</button>
+                </div>
+                <span class="badge-estado" :class="claseEstado(detTicket.estado||'')" x-text="detTicket.estado||'En curso'"></span>
+            </div>
+
+            <!-- Info block -->
+            <div class="ticket-info-block">
+                <p><strong>Creador:</strong> <span x-text="detTicket.creador"></span> &nbsp;|&nbsp; <strong>Fecha:</strong> <span x-text="detTicket.fecha"></span></p>
+                <p><strong>Ubicación:</strong> <span x-text="(detTicket.piso||'S/I') + ' — ' + (detTicket.habitacion||'S/I')"></span></p>
+                <p><strong>Aparato:</strong> <span x-text="detTicket.aparato"></span></p>
+                <p><strong>Técnico asignado:</strong> <span  x-text="detTicket.tecnico_asignado||'Sin asignar'" class="legacy-105"></span></p>
+                <p x-show="detTicket.ticket_origin"><strong>Canal:</strong> <span x-text="detTicket.ticket_origin==='email'?'Email':(detTicket.ticket_origin==='web'?'Web':detTicket.ticket_origin)"></span></p>
+                <p><strong>Descripción:</strong> <span x-text="detTicket.descripcion"></span></p>
+            </div>
+
+            <div class="controls-bar">
+<button class="btn btn-outline" x-show="esSoporte && detTicket.estado==='En curso'" @click="v3OpenSection('travel')">Desplazamiento</button>
+<button class="btn btn-outline" x-show="esAdmin" @click="v3OpenSection('attachments')">Gestionar evidencias</button>
+<button class="btn btn-outline" x-show="esSolicitanteDe(detTicket) && ['Resuelto','Cerrado'].includes(detTicket.estado)" @click="v3OpenSection('survey')">Encuesta de satisfacción</button>
+<button class="btn btn-green" x-show="detTicket.estado==='Resuelto' && (esAdmin||esSolicitanteDe(detTicket))" @click="v3CloseTicket()">Confirmar cierre</button>
+</div>
+<section x-show="esAdmin && ['Pendiente','En curso','En espera'].includes(detTicket.estado)" class="controls-bar">
+<h3 class="section-title">Escalar a jefatura</h3>
+<label>Administrador responsable<select x-model="escalamiento.jefatura_id"><option value="">Selecciona una jefatura</option><template x-for="tec in tecnicos" :key="tec.user_id"><option :value="tec.user_id" x-text="tec.nombre || tec.first_name"></option></template></select></label>
+<label>Motivo del escalamiento<textarea x-model="escalamiento.motivo"></textarea></label>
+<button class="btn btn-outline" @click="escalarJefatura()">Registrar escalamiento</button><p role="status" x-text="escalamientoMessage"></p>
+</section>
+<!-- Comments -->
+            <p class="section-title">Bitácora de Seguimiento</p>
+            <div class="comments-area" id="commentsArea">
+                <template x-if="detComentarios.length===0">
+                    <p  class="legacy-106">Sin actualizaciones.</p>
+                </template>
+                <template x-for="(c,i) in detComentarios" :key="i">
+                    <div class="comment-box" :class="(c.texto && c.texto.startsWith('📋')?'bitacora':'') + (c.privado==1?' privado':'')">
+                        <div class="comment-meta"><strong x-text="c.usuario"></strong> el <span x-text="c.fecha"></span></div>
+                        <div class="comment-text" x-html="c.texto"></div>
+                    </div>
+                </template>
+            </div>
+
+            <!-- RF-17: Nota técnica privada -->
+            <div x-show="puedeNotaPrivada"  class="legacy-107">
+                <p  class="legacy-108"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#lock"></use></svg> Nota técnica privada (no visible para el solicitante)</p>
+                <textarea x-model="detNotaPrivada" placeholder="Diagnóstico interno, coordinación con otros técnicos..."  class="legacy-71"></textarea>
+                <div class="footer legacy-109" >
+                    <button class="btn btn-gray btn-pill legacy-110"  @click="enviarNotaPrivada()">Guardar nota privada</button>
+                </div>
+                <p class="msg" x-text="detNotaPrivadaMsg" :style="'color:'+detNotaPrivadaMsgColor"></p>
+            </div>
+
+            <!-- RF-18: Reabrir ticket -->
+            <div x-show="puedeReabrir"  class="legacy-111">
+                <template x-if="!reabrirLimiteAlcanzado">
+                    <div>
+                        <p  class="legacy-112">
+                            <svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrows-clockwise"></use></svg> ¿La solución no fue efectiva? Reabre este ticket
+                            (<span x-text="detTicket.reaperturas||0"></span>/3 reaperturas usadas)
+                        </p>
+                        <textarea x-model="detJustificacionReapertura" placeholder="Justifica por qué necesitas reabrir el ticket (mínimo 10 caracteres)..."  minlength="10" class="legacy-71"></textarea>
+                        <div class="footer legacy-109" >
+                            <button class="btn btn-yellow btn-pill legacy-110"  @click="reabrirTicket()">Reabrir ticket</button>
+                        </div>
+                    </div>
+                </template>
+                <template x-if="reabrirLimiteAlcanzado">
+                    <p  class="legacy-113">
+                        <svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#prohibit"></use></svg> Alcanzaste el límite de 3 reaperturas para este ticket. Por favor genera un ticket nuevo.
+                    </p>
+                </template>
+                <p class="msg" x-text="reabrirMsg" :style="'color:'+reabrirMsgColor"></p>
+            </div>
+
+            <!-- RF-21: Ajustar prioridad técnicamente -->
+            <div x-show="puedeAjustarPrioridad"  class="legacy-114">
+                <p  class="legacy-115"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#gear"></use></svg> Ajustar prioridad según diagnóstico técnico</p>
+                <select x-model="ajustePrioridadForm.priority_id">
+                    <option value="">-- Nuevo nivel de prioridad --</option>
+                    <template x-for="p in prioridades" :key="p.priority_id">
+                        <option :value="p.priority_id" x-text="p.priority_name + ' (SLA: ' + p.sla_hours + ' hrs)'"></option>
+                    </template>
+                </select>
+                <textarea x-model="ajustePrioridadForm.justificacion" placeholder="Justificación técnica del ajuste (mínimo 10 caracteres)..."  minlength="10" class="legacy-71"></textarea>
+                <div class="footer legacy-109" >
+                    <button class="btn btn-blue btn-pill legacy-110"  @click="ajustarPrioridad()">Ajustar prioridad</button>
+                </div>
+                <p class="msg" x-text="ajustePrioridadMsg" :style="'color:'+ajustePrioridadMsgColor"></p>
+            </div>
+
+            <!-- RF-24: Imputar materiales consumidos -->
+            <div x-show="puedeImputarMateriales || (esAdmin && detMateriales.length>0)"  class="legacy-116">
+                <p  class="legacy-117"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#wrench"></use></svg> Materiales / insumos utilizados</p>
+
+                <template x-if="detMateriales.length>0">
+                    <table  class="legacy-118">
+                        <thead>
+                            <tr  class="legacy-119">
+                                <th  class="legacy-65">Insumo</th>
+                                <th  class="legacy-65">Cant.</th>
+                                <th  class="legacy-65">Costo total</th>
+                                <th  class="legacy-65">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="m in detMateriales" :key="m.ticket_material_id">
+                                <tr  class="legacy-120">
+                                    <td  x-text="m.nombre" class="legacy-65"></td>
+                                    <td  x-text="m.cantidad" class="legacy-65"></td>
+                                    <td  x-text="'$'+Number(m.costo_total).toLocaleString('es-CL')" class="legacy-65"></td>
+                                    <td  class="legacy-65">
+                                        <span x-show="!m.requiere_aprobacion || m.aprobado==1"  class="legacy-121">✔ OK</span>
+                                        <span x-show="m.requiere_aprobacion==1 && m.aprobado!=1"  class="legacy-122"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#hourglass"></use></svg> Pendiente aprobación</span>
+                                        <button x-show="esAdmin && m.requiere_aprobacion==1 && m.aprobado!=1" class="btn btn-green btn-pill legacy-123"  @click="aprobarMaterial(m.ticket_material_id)">Aprobar</button>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </template>
+
+                <div x-show="puedeImputarMateriales">
+                    <select x-model="materialForm.material_id" @change="onSeleccionMaterial()">
+                        <option value="">-- Seleccione un insumo del catálogo --</option>
+                        <template x-for="m in catalogoMateriales" :key="m.material_id">
+                            <option :value="m.material_id" x-text="m.nombre"></option>
+                        </template>
+                    </select>
+                    <div  class="legacy-124">
+                        <input type="number" min="1" x-model="materialForm.cantidad" placeholder="Cantidad"  class="legacy-48">
+                        <input type="number" min="0" x-model="materialForm.costo_unitario" placeholder="Costo unitario"  class="legacy-48">
+                    </div>
+                    <p  class="legacy-125">Costo total estimado: <strong x-text="'$'+costoTotalMaterialPreview.toLocaleString('es-CL')"></strong></p>
+                    <div class="footer">
+                        <button class="btn btn-purple btn-pill legacy-126"  @click="registrarMaterial()">Registrar material</button>
+                    </div>
+                    <p class="msg" x-text="materialMsg" :style="'color:'+materialMsgColor"></p>
+                </div>
+            </div>
+
+            <!-- RF-47: Verificar conexión con sistema externo -->
+            <div x-show="puedeVerificarExterno"  class="legacy-127">
+                <p  class="legacy-128"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#plugs-connected"></use></svg> Este ticket es de un sistema externo</p>
+                <button class="btn btn-green btn-pill legacy-110"  @click="verificarConexionExterna()">Verificar conexión</button>
+                <p class="msg" x-text="verificarExternoMsg" :style="'color:'+verificarExternoMsgColor"></p>
+            </div>
+
+            <!-- RF-48: Imprimir etiqueta QR -->
+            <div x-show="puedeImprimirEtiqueta"  class="legacy-114">
+                <p  class="legacy-115"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#qr-code"></use></svg> Identificar físicamente el equipo</p>
+                <div  class="legacy-129">
+                    <button class="btn btn-blue btn-pill legacy-130"  @click="imprimirEtiquetaQR()">Imprimir etiqueta</button>
+                    <button class="btn btn-gray btn-pill legacy-130"  @click="descargarEtiquetaPDF()">Descargar PDF</button>
+                </div>
+            </div>
+
+            <!-- RF-57: Descargar todos los adjuntos -->
+            <div x-show="usuario && puedeGestionarTicket"  class="legacy-52">
+                <button class="btn btn-gray btn-pill legacy-131"  @click="descargarAdjuntosZip()"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#package"></use></svg> Descargar todos los adjuntos (.zip)</button>
+                <p class="msg" x-text="adjuntosZipMsg" :style="'color:'+adjuntosZipMsgColor"></p>
+            </div>
+
+            <!-- RF-61: aviso si el ticket fue cerrado automáticamente -->
+            <div x-show="detTicket.auto_cerrado==1"  class="legacy-132">
+                <svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#lock"></use></svg> Este ticket fue cerrado automáticamente por inactividad (7 días sin respuesta).
+            </div>
+
+            <!-- RF-53: Reasignación forzada por jefatura -->
+            <div x-show="puedeReasignarForzado"  class="legacy-133">
+                <p  class="legacy-134"><svg class="ui-icon" aria-hidden="true"><use href="/vendor/icons.svg#arrows-clockwise"></use></svg> Reasignar forzadamente (jefatura)</p>
+                <select x-model="reasignarForm.nuevo_tecnico_id">
+                    <option value="">-- Seleccione un técnico --</option>
+                    <template x-for="t in tecnicos" :key="t.user_id">
+                        <option :value="t.user_id" x-text="t.first_name + (t.en_vacaciones==1 ? ' (en vacaciones/licencia)' : '')"></option>
+                    </template>
+                </select>
+                <textarea x-model="reasignarForm.motivo" placeholder="Motivo del cambio (licencia médica, vacaciones, carga excesiva...)"  class="legacy-71"></textarea>
+                <div class="footer legacy-109" >
+                    <button class="btn btn-blue btn-pill legacy-110"  @click="reasignarTicketForzado(false)">Reasignar</button>
+                </div>
+                <div x-show="reasignarAdvertencia"  class="legacy-135">
+                    <p  x-text="reasignarAdvertencia" class="legacy-136"></p>
+                    <button class="btn btn-gray btn-pill legacy-137"  @click="reasignarTicketForzado(true)">Sí, continuar de todas formas</button>
+                </div>
+                <p class="msg" x-text="reasignarMsg" :style="'color:'+reasignarMsgColor"></p>
+            </div>
+
+            <!-- Controls -->
+            <div x-show="!['Resuelto','Cancelado','Cerrado'].includes(detTicket.estado)" class="controls-bar">
+                <textarea x-model="detComentarioNuevo" placeholder="Escribe aquí tu actualización o respuesta..."></textarea>
+                <div x-show="puedeEscribir"  class="legacy-74">
+                    <label  class="legacy-138">Adjuntar archivo (Imagen, Doc) — Máx 10MB:</label>
+                    <input type="file" x-ref="adjunto"  class="legacy-139">
+                </div>
+                <div class="footer">
+                    <button class="btn btn-blue btn-pill legacy-140"  @click="publicarComentario()">Publicar</button>
+                </div>
+            </div>
+            <p class="msg" x-text="detMsg" :style="'color:'+detMsgColor"></p>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     CUSTOM PROMPT MODAL
+══════════════════════════════════════ -->
+<div x-cloak x-show="prompt.open" class="modal-overlay">
+    <div class="modal-box sm">
+        <p  x-text="prompt.titulo" class="legacy-141"></p>
+        <textarea x-model="prompt.valor"  :placeholder="prompt.placeholder||'Escribe aquí...'" class="legacy-142"></textarea>
+        <p x-show="prompt.error"  class="legacy-143">No puedes dejar este campo vacío.</p>
+        <div  class="legacy-144">
+            <button class="btn btn-gray legacy-48"  @click="prompt.resolve(null); prompt.open=false">Cancelar</button>
+            <button class="btn btn-green legacy-48"  @click="confirmPrompt()">Confirmar</button>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     CUSTOM ALERT MODAL
+══════════════════════════════════════ -->
+<div x-cloak x-show="alerta.open" class="modal-overlay">
+    <div class="modal-box sm">
+        <h3  x-text="alerta.titulo||'Aviso'" class="legacy-145"></h3>
+        <p  x-text="alerta.msg" class="legacy-146"></p>
+        <button class="btn btn-blue btn-block legacy-82"  @click="alerta.open=false">Aceptar</button>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     ALPINE.JS APP
+══════════════════════════════════════ -->
+<div class="modal-overlay" x-cloak x-show="modalUsuariosCSV" @click.self="modalUsuariosCSV=false">
+<div class="modal-box lg"><button class="close-btn" aria-label="Cerrar" @click="modalUsuariosCSV=false">×</button><h2 class="modal-title">Importar usuarios CSV</h2>
+<p>Columnas: nombre, rut, correo, password. Hasta 1000 filas. Se valida el archivo completo antes de guardar; las cuentas nuevas tendrán perfil Usuario.</p>
+<label>Archivo CSV<input type="file" accept=".csv,text/csv" x-ref="usuariosCSV"></label>
+<button class="btn btn-green" @click="importarUsuariosCSV()" :disabled="csvBusy">Importar usuarios</button><p role="status" x-text="csvMessage"></p>
+<ul><template x-for="(error,i) in csvErrors" :key="i"><li x-text="'Fila '+error.fila+': '+error.error"></li></template></ul>
+</div></div>
+<!-- INCREMENT3 START -->
+<!-- Fragmento fuente incorporado en index.html por scripts/build-increment3.cjs -->
+<div class="modal-overlay v3-overlay" x-cloak x-show="v3Open" @click.self="v3Close()" role="dialog" aria-modal="true" aria-label="Gestión administrativa">
+<section class="modal-box v3-panel">
+ <button type="button" class="close-btn" aria-label="Cerrar gestión" @click="v3Close()" x-show="!v3MustReset">×</button>
+ <h2 class="modal-title" x-text="v3Title"></h2>
+ <p class="v3-message" role="status" :class="{'v3-error':v3Error}" x-text="v3Busy?'Procesando…':v3Message"></p>
+ <fieldset :disabled="v3Busy" class="v3-content">
+ <template x-if="v3Tab==='profile'"><div>
+  <dl class="v3-profile"><template x-for="key in ['nombre','rut','username','correo','rol','cargo']"><div><dt x-text="key"></dt><dd x-text="v3Form[key]||'Sin indicar'"></dd></div></template></dl>
+  <p>El nombre, RUT y nombre de usuario son de solo lectura.</p>
+  <label>Área<input x-model="v3Form.area" maxlength="100"></label><label>Piso<input x-model="v3Form.piso" maxlength="50"></label>
+  <button class="btn btn-green" @click="v3SaveProfile()">Guardar área y piso</button> <button class="btn btn-outline" @click="v3OpenSection('password')">Cambiar contraseña</button>
+ </div></template>
+ <template x-if="v3Tab==='password'"><div>
+  <p x-show="v3MustReset">Debes cambiar tu contraseña temporal antes de usar el sistema.</p>
+  <label x-show="!v3MustReset">Contraseña actual<input type="password" x-model="v3Form.current" autocomplete="current-password"></label>
+  <label>Nueva contraseña<input type="password" x-model="v3Form.password" minlength="8" maxlength="72" autocomplete="new-password"></label>
+  <label>Repetir nueva contraseña<input type="password" x-model="v3Form.confirm" autocomplete="new-password"></label>
+  <button class="btn btn-green" @click="v3Password()">Guardar contraseña</button>
+ </div></template>
+ <template x-if="v3Tab==='categories'"><div>
+  <div class="v3-table"><table><thead><tr><th>Categoría</th><th>Estado</th><th>Acción</th></tr></thead><tbody><template x-for="row in v3Rows" :key="row.category_id"><tr><td x-text="row.category_name"></td><td x-text="row.is_active?'Activa':'Inactiva'"></td><td><button class="btn btn-outline" @click="v3Selected=row.category_id;v3Form={nombre:row.category_name,activo:!!row.is_active}">Editar</button></td></tr></template></tbody></table></div>
+  <div x-show="v3Selected"><label>Nombre<input x-model="v3Form.nombre" maxlength="100"></label><label><input type="checkbox" x-model="v3Form.activo"> Activa para nuevos tickets</label><button class="btn btn-green" @click="v3SaveCategory()">Guardar categoría</button></div>
+ </div></template>
+ <template x-if="v3Tab==='config'"><div>
+  <label>Límite de evidencia (1–50 MB)<input type="number" min="1" max="50" x-model.number="v3Form.upload_mb"></label>
+  <label>Límite de manual (1–100 MB)<input type="number" min="1" max="100" x-model.number="v3Form.manual_mb"></label>
+  <label>Umbral de aprobación de costos (0–100000000)<input type="number" min="0" max="100000000" x-model.number="v3Form.cost_threshold"></label>
+  <label>Capacidad máxima por técnico (3 tickets)<input type="number" readonly x-model.number="v3Form.saturation"></label>
+  <button class="btn btn-green" @click="v3SaveConfig()">Aplicar parámetros</button>
+ </div></template>
+ <template x-if="v3Tab==='import'"><div>
+  <p>Excel de hasta 5 MB y 1000 filas. Se importan las filas válidas y se informa cada rechazo. Las cuentas nuevas reciben el rol Usuario y cambio obligatorio de contraseña.</p>
+  <button class="btn btn-outline" @click="v3TemplateFile()">Descargar plantilla Excel</button>
+  <label>Archivo .xlsx<input type="file" accept=".xlsx" x-ref="v3Excel"></label><button class="btn btn-green" @click="v3Import()">Importar Excel</button>
+  <button class="btn btn-outline" x-show="v3Errors.length" @click="v3DownloadErrors()">Descargar errores CSV</button>
+  <ul><template x-for="e in v3Errors"><li x-text="'Fila '+e.fila+': '+e.error"></li></template></ul>
+ </div></template>
+ <template x-if="v3Tab==='archives'"><div>
+  <p>Registros archivados de solo lectura. La búsqueda textual usa el índice de texto de MySQL.</p>
+  <div class="v3-filter"><label>Texto o código<input x-model="v3Filter.q"></label><label>Desde<input type="date" x-model="v3Filter.desde"></label><label>Hasta<input type="date" x-model="v3Filter.hasta"></label><label>Categoría<select x-model="v3Filter.category_id"><option value="">Todas</option><template x-for="c in v3Categories"><option :value="c.category_id" x-text="c.category_name"></option></template></select></label></div>
+  <button class="btn btn-green" @click="v3SearchArchive()">Buscar archivados</button>
+  <button class="btn btn-outline" x-show="usuario?.permisos==='si'" @click="v3Job('archive')">Ejecutar archivado de cerrados &gt;30 días</button>
+  <p x-show="!v3Rows.length&&!v3Busy">No hay registros para estos filtros.</p>
+  <template x-for="r in v3Rows" :key="r.ticket_code"><article class="v3-card"><strong x-text="r.ticket_code"></strong> <span x-text="r.title"></span> <button class="btn btn-outline" @click="v3ReadArchive(r.ticket_code)">Consultar</button></article></template>
+  <template x-if="v3Detail?.ticket"><article class="v3-card"><h3 x-text="v3Detail.ticket.ticket_code+' · Solo lectura'"></h3><p x-text="v3Detail.ticket.description"></p><template x-for="c in v3Detail.comments"><p x-text="c.texto||c.content"></p></template></article></template>
+ </div></template>
+ <template x-if="v3Tab==='jobs'||v3Tab==='integrations'"><div>
+  <template x-if="v3Tab==='integrations'"><div><button class="btn btn-outline" @click="v3OpenSection('integrationActivity')">Ver actividad de correo y cuentas sincronizadas</button><p>Los conectores utilizan credenciales del servidor. No se exponen en el navegador.</p><p x-text="'Correo IMAP: '+(v3Integrations.imap?'Configurado; sondeo cada 60 segundos':'No configurado')"></p><p x-text="'LDAP/AD: '+(v3Integrations.ldap?'Configurado; sincronización diaria':'No configurado')"></p><p x-text="'WhatsApp: '+(v3Integrations.whatsapp?'Configurado':'No configurado')"></p><button class="btn btn-outline" @click="v3Job('mail')">Consultar correo ahora</button> <button class="btn btn-outline" @click="v3Job('directory')">Sincronizar directorio ahora</button></div></template>
+  <p x-show="v3Tab==='jobs'">Archivado diario a las 02:00 y mantenimiento semanal a las 03:00, hora de Chile, mientras el servidor está encendido. El mantenimiento purga evidencias eliminadas hace más de 48 horas.</p>
+  <button x-show="v3Tab==='jobs'" class="btn btn-green" @click="v3Job('maintenance')">Ejecutar mantenimiento</button>
+  <template x-for="r in v3Rows" :key="r.name"><article class="v3-card"><h3 x-text="v3JobName(r.name)"></h3><p x-text="'Último éxito: '+v3Date(r.last_success)"></p><p x-text="v3JobSummary(r.result,r.name)"></p></article></template>
+ </div></template>
+ <template x-if="v3Tab==='logs'"><div><button class="btn btn-outline" @click="v3OpenSection('backup')">Consultar respaldo local de errores</button><p>Los fallos críticos requieren revisión administrativa. Los secretos se omiten del contexto técnico.</p><p x-show="!v3Rows.length">Sin fallos registrados.</p><template x-for="r in v3Rows" :key="r.id"><article class="v3-card"><p x-text="v3Date(r.created_at)"></p><strong x-text="r.severity==='critical'?'Incidente crítico registrado':'Error registrado'"></strong><p x-text="v3LogMessage(r)"></p><p>El detalle técnico se conserva en el registro para diagnóstico.</p></article></template></div></template>
+ <template x-if="v3Tab==='trash'||v3Tab==='attachments'"><div><p>La restauración está disponible durante las primeras 48 horas, si el archivo sigue existiendo.</p><p x-show="!v3Rows.length">No hay evidencias en esta vista.</p><template x-for="r in v3Rows" :key="r.attachment_id"><article class="v3-card"><strong x-text="r.file_name"></strong><p x-text="r.ticket_code||detTicket?.id_ticket"></p><p x-text="r.purged_at?'Archivo purgado':r.deleted_at?'Eliminado: '+v3Date(r.deleted_at):'Disponible'"></p><button class="btn btn-outline" x-show="!r.deleted_at&&v3Tab==='attachments'" @click="v3Attachment(r.attachment_id,'delete')">Enviar a papelera</button><button class="btn btn-green" x-show="r.deleted_at&&!r.purged_at" @click="v3Attachment(r.attachment_id,'restore')">Restaurar</button></article></template></div></template>
+ <template x-if="v3Tab==='templates'"><div><label>Canal<select x-model="v3Form.channel" @change="v3ChooseTemplate()"><option value="email">Correo</option><option value="whatsapp">WhatsApp</option></select></label><p>Variables: {{usuario}}, {{nombre_ticket}}, {{contenido}}. Los correos aplican la plantilla a los avisos futuros.</p><label>Contenido HTML<textarea rows="9" x-model="v3Form.body"></textarea></label><button class="btn btn-green" @click="v3SaveTemplate()">Guardar plantilla</button><label>Destino para prueba (correo o número internacional)<input x-model="v3Form.destino"></label><button class="btn btn-outline" @click="v3TestTemplate()">Enviar prueba al destino indicado</button></div></template>
+ <template x-if="v3Tab==='surveys'"><div><label>Una pregunta por línea (máximo 10)<textarea rows="6" x-model="v3Questions"></textarea></label><button class="btn btn-green" @click="v3SaveSurvey()">Publicar nueva versión</button><button class="btn btn-outline" @click="v3SurveyResults()">Consultar respuestas históricas</button><template x-for="r in v3Rows" :key="r.id"><article class="v3-card"><strong x-text="'Versión '+r.id+' · '+v3Date(r.created_at)"></strong><ol><template x-for="q in v3Parse(r.questions)"><li x-text="q"></li></template></ol></article></template><template x-for="r in v3Aux" :key="r.ticket_id"><article class="v3-card"><strong x-text="r.ticket_code+' · Versión '+r.version_id"></strong><template x-for="(q,i) in v3Parse(r.questions)"><p x-text="q+': '+v3Parse(r.answers)[i]+'/5'"></p></template></article></template></div></template>
+ <template x-if="v3Tab==='survey'&&v3Detail"><div><p x-show="v3Detail.answered">Ya respondiste esta encuesta.</p><template x-for="(q,i) in v3Parse(v3Detail.questions)"><label><span x-text="q"></span><select x-model.number="v3Answers[i]" :disabled="v3Detail.answered"><option value="1">1 · Muy insatisfecho</option><option value="2">2 · Insatisfecho</option><option value="3">3 · Neutral</option><option value="4">4 · Satisfecho</option><option value="5">5 · Muy satisfecho</option></select></label></template><button class="btn btn-green" :disabled="v3Detail.answered" @click="v3AnswerSurvey()">Enviar respuestas</button></div></template>
+ <template x-if="v3Tab==='competencies'"><div><label>Técnico<select x-model="v3SkillUser" @change="v3ChooseSkills()"><option value="">Selecciona</option><template x-for="t in v3Techs"><option :value="t.user_id" x-text="t.first_name"></option></template></select></label><template x-for="c in v3Categories"><label class="v3-check"><input type="checkbox" :value="String(c.category_id)" x-model="v3SkillIds"><span x-text="c.category_name"></span></label></template><p>Al guardar sin especialidades, el técnico queda excluido de nuevas asignaciones automáticas.</p><button class="btn btn-green" @click="v3SaveSkills()">Guardar competencias</button></div></template>
+ <template x-if="v3Tab==='availability'&&v3Availability"><div><p x-text="'Última actualización: '+v3Date(v3Availability.updated_at)+' · WebSocket · Actualización cada 15 segundos'"></p><p role="alert" class="v3-warning" x-show="!v3Availability.rows.some(t=>t.online)">Mesa de ayuda sin cobertura: no hay técnicos conectados.</p><template x-for="t in v3Availability.rows" :key="t.user_id"><article class="v3-card"><strong x-text="t.first_name"></strong><p :class="t.carga>=3?'v3-error':t.carga===2?'v3-warning':'v3-success'" x-text="(t.online?'Conectado':'Desconectado')+' · '+t.carga+' tickets En curso'+(t.carga>=v3Availability.threshold?' · Saturado':' · Capacidad disponible')+(t.en_vacaciones?' · En vacaciones':'')"></p><p x-text="'Última actividad: '+(t.last_seen?v3Date(t.last_seen):'Sin actividad reciente')"></p></article></template></div></template>
+ <template x-if="v3Tab==='travel'"><div><p>Valida la llegada escaneando el QR del área. Los traslados mayores a 60 minutos requieren justificación.</p><label>Código leído del QR del área<input x-model="v3Form.qr" placeholder="CLINICA-AREA:…" autocomplete="off"></label><label>Justificación (si supera 60 minutos)<textarea x-model="v3Form.justification" maxlength="1000"></textarea></label><button x-show="usuario?.permisos==='si'" class="btn btn-outline" @click="v3AreaQR()">Generar QR del área para imprimir</button><template x-if="v3Detail?.qr"><div class="v3-card"><strong x-text="v3Detail.piso+' · '+v3Detail.area"></strong><img :src="v3Detail.qr" alt="QR del área" width="240"><p>Imprime este QR y ubícalo en el área indicada. Un lector QR puede ingresar el código en el campo de llegada.</p><code x-text="v3Detail.payload"></code></div></template><button class="btn btn-green" @click="v3Travel('start')">Iniciar traslado</button> <button class="btn btn-outline" @click="v3Travel('arrive')">Registrar arribo</button><p x-show="!v3Rows.length">Sin traslados registrados.</p><template x-for="r in v3Rows" :key="r.id"><article class="v3-card"><strong x-text="r.first_name"></strong><p class="v3-warning" x-show="r.observed">Marcación observada: ubicación distinta del ticket.</p><p x-show="r.justification" x-text="r.justification"></p><p x-text="'Inicio: '+v3Date(r.started_at)"></p><p x-text="r.arrived_at?'Arribo: '+v3Date(r.arrived_at)+' · '+r.seconds+' segundos':'En desplazamiento'"></p></article></template></div></template>
+ <template x-if="v3Tab==='backup'&&v3Detail"><article class="v3-card"><strong x-text="v3Detail.exists?'Respaldo local disponible':'Sin respaldo local registrado'"></strong><p>Los errores se guardan en un archivo local cuando no es posible escribir en la base de datos.</p><p x-show="v3Detail.exists" x-text="'Última escritura: '+v3Date(v3Detail.updated_at)"></p><p x-show="v3Detail.exists" x-text="'Tamaño del respaldo: '+v3Detail.bytes+' bytes'"></p><p>El contenido técnico se conserva para diagnóstico y no se muestra en esta vista.</p></article></template>
+ <template x-if="v3Tab==='integrationActivity'&&v3Detail"><div><template x-for="(m,i) in v3Detail.messages" :key="i"><article class="v3-card v3-inbox"><strong x-text="m.outcome==='ignored'?'Mensaje descartado: remitente no registrado':'Solicitud recibida por correo'"></strong><p x-text="v3Date(m.created_at)"></p><p x-show="m.outcome!=='ignored'" x-text="m.receipt_sent?'Acuse entregado al servicio de correo':'Acuse de correo pendiente'"></p><p x-text="m.outcome==='ignored'?'No se generó un ticket para este mensaje.':('Ticket generado: '+m.receipt_code)"></p></article></template><template x-for="(u,i) in v3Detail.users" :key="i"><article class="v3-card v3-directory-user"><strong x-text="u.first_name"></strong><p>Cuenta vinculada al directorio institucional</p><p x-text="'Área: '+(u.operational_area||'Sin indicar')"></p><p x-text="'Cargo: '+(u.job_title||'Sin indicar')"></p><p x-text="u.user_status?'Cuenta activa':'Cuenta deshabilitada'"></p></article></template><p x-show="!v3Detail.messages.length&&!v3Detail.users.length">No hay actividad registrada.</p></div></template>
+ </fieldset>
+</section></div>
+
+<!-- INCREMENT3 END -->
+<script src="/js/increment3.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+TICKETERA CLÍNICA ACONCAGUA — ENTREGA PARA EL EQUIPO
+Fecha: 3 de octubre de 2026
+
+QUÉ RECIBISTE
+La aplicación actual completa: interfaz, servidor Node.js, estructura inicial de MySQL, catálogos, ampliaciones del Incremento III y scripts de instalación y pruebas.
+No es la copia del video. No contiene cuentas, contraseñas, tickets o archivos privados de Benjamín.
+Cada compañero tendrá sus propios datos en su PC. No se sincronizan entre computadores.
+
+ANTES DE INSTALAR
+1. Extrae todo el ZIP en una carpeta propia.
+2. Instala Node.js 24 y MySQL SERVER 8.4. MySQL Workbench es opcional como cliente; Workbench solo no sustituye al servidor.
+3. Asegúrate de que MySQL esté encendido y de conocer la contraseña de su administrador en TU computador.
+4. Abre la carpeta que contiene package.json en Visual Studio Code y abre una terminal PowerShell.
+
+SIGUE LA GUÍA
+Abre docs/INSTALACION.md. Contiene los comandos completos y su orden:
+dependencias > .env > base y usuario MySQL > db:init > db:migrate > npm start > administrador.
+No hay una contraseña predeterminada para la página. Cada compañero crea su administrador y elige su clave.
+
+IMPORTANTE SOBRE LAS CONTRASEÑAS
+- root: contraseña ya existente del servidor MySQL de TU computador; se utiliza temporalmente para preparar las ampliaciones.
+- clinica_app: contraseña que eliges al crear el usuario MySQL de la aplicación; va en DB_PASSWORD dentro de .env.
+- Administrador de la página: otra contraseña nueva, de al menos 12 caracteres, elegida al crear esa cuenta.
+No compartas .env ni copies las contraseñas de otra persona.
+
+USAR Y CERRAR
+Con MySQL encendido, ejecuta npm start en la carpeta del proyecto.
+Abre http://localhost:3000 (o el puerto elegido en .env).
+Ctrl+C en esa terminal detiene la página; no elimina los datos ni apaga MySQL.
+
+BUSCAR Y REPORTAR ERRORES
+Abre docs/PRUEBAS-DEL-EQUIPO.md: incluye una lista de funciones para probar y una plantilla para reportar errores.
+Prueba con cuentas y documentos propios de prueba, sin datos de pacientes.
+Para probar correo o integraciones debes configurar tus propios servicios. No vienen conectados a servicios institucionales.
+Si encuentras un error, envía los pasos exactos, resultado esperado y observado, rol, navegador y captura sin contraseñas.
+
+ANTES DE SUBIR A GITHUB
+Enviar código y documentación. No enviar .env, node_modules, respaldos, logs ni documentos o datos privados.
+GitHub guarda el código: no pone en funcionamiento automáticamente el servidor ni MySQL.
+La puesta en uso en la clínica necesita configuración y aceptación por TI.
