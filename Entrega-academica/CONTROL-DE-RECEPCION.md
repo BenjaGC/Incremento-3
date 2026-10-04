@@ -24,7 +24,7 @@ No se recibió PDF separado del informe ni manual de usuario independiente. No s
 
 La presentación dura 13 min 08 s y la guía de instalación 8 min 55 s. Se mantienen completas. Si la evaluación exige un máximo de siete minutos por video, estas versiones exceden ese límite.
 
-Las grabaciones se alojan como adjuntos de una entrega privada, con enlaces desde el README. [GitHub recomienda las entregas para distribuir archivos grandes](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Las grabaciones se alojan como adjuntos de una entrega pública, con enlaces desde el README. [GitHub recomienda las entregas para distribuir archivos grandes](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 - `Guia-instalacion-local.mov`: 309766162 bytes; SHA-256 `9036e1be9a79fc0ac4d1d293d7f2c0ac01f2923da3a53e27e9cb1659e70cde6b`.
 - `Video-presentacion-Incremento-III.mp4`: 913994977 bytes; SHA-256 `9a1387921593ac0fd23175160e26ec5704edf4d04b7b464def70b60ccb18b94d`.

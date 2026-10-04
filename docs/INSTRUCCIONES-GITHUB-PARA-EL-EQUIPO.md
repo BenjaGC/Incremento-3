@@ -2,7 +2,7 @@
 
 Para Benjamín y el equipo — Incremento III
 
-Repositorio: https://github.com/BenjaGC/Ticketera-Clinica-Aconcagua
+Repositorio: https://github.com/BenjaGC/Incremento-3
 
 ## 1. Qué se está entregando
 
@@ -99,7 +99,7 @@ Si se subió una contraseña por accidente, eliminar el archivo no borra el hist
 ## 7. Cómo subir los documentos desde el navegador
 
 1. Iniciar sesión en la cuenta de GitHub que tiene permiso para escribir en el repositorio.
-2. Abrir https://github.com/BenjaGC/Ticketera-Clinica-Aconcagua.
+2. Abrir https://github.com/BenjaGC/Incremento-3.
 3. Revisar lo que ya existe. No borrar ni reemplazar el documento del Incremento II para subir el III: son entregas diferentes.
 4. En el computador, crear `Entrega-academica` y organizar dentro las carpetas de la sección 3 que tengan archivos.
 5. En GitHub, pulsar **Add file** y luego **Upload files**.

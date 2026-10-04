@@ -4,7 +4,7 @@ Sistema de soporte informático con tickets, seguimiento SLA, inventario, report
 
 ## Documentación del Incremento III
 
-Repositorio privado del equipo, administrado por Benjamín (BenjaGC). El código se encuentra en la raíz; los documentos académicos están organizados en carpetas.
+Repositorio público del equipo, administrado por Benjamín (BenjaGC). El código se encuentra en la raíz; los documentos académicos están organizados en carpetas.
 
 - [Informe del Incremento III](Entrega-academica/01-Informe-Incremento-III/)
 - [Casos de uso](Entrega-academica/02-Casos-de-uso/)
@@ -18,11 +18,11 @@ Material del Grupo 11 incorporado el 4 de octubre de 2026: informe, diagramas, p
 
 ## Videos del Incremento III
 
-- [Video de presentación](https://github.com/BenjaGC/Ticketera-Clinica-Aconcagua/releases/download/incremento-iii-20261004/Video-presentacion-Incremento-III.mp4)
-- [Video de instalación local](https://github.com/BenjaGC/Ticketera-Clinica-Aconcagua/releases/download/incremento-iii-20261004/Guia-instalacion-local.mov)
-- [Ver la entrega y descargar los videos](https://github.com/BenjaGC/Ticketera-Clinica-Aconcagua/releases/tag/incremento-iii-20261004)
+- [Video de presentación](https://github.com/BenjaGC/Incremento-3/releases/download/incremento-iii-20261004/Video-presentacion-Incremento-III.mp4)
+- [Video de instalación local](https://github.com/BenjaGC/Incremento-3/releases/download/incremento-iii-20261004/Guia-instalacion-local.mov)
+- [Ver la entrega y descargar los videos](https://github.com/BenjaGC/Incremento-3/releases/tag/incremento-iii-20261004)
 
-Las descargas requieren acceso al repositorio privado. Las evidencias Q-01 a Q-08 están identificadas como datos de ejemplo y no certifican mediciones reales. Consultar el [control de recepción](Entrega-academica/CONTROL-DE-RECEPCION.md).
+Los documentos y videos están disponibles desde este repositorio público. Las evidencias Q-01 a Q-08 están identificadas como datos de ejemplo y no certifican mediciones reales. Consultar el [control de recepción](Entrega-academica/CONTROL-DE-RECEPCION.md).
 
 ## Estado de la entrega
 
