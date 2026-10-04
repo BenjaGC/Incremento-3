@@ -2,6 +2,12 @@
 
 Sistema de soporte informático con tickets, seguimiento SLA, inventario, reportes, manuales y administración. Backend Node.js/Express, base MySQL y frontend HTML/CSS/JavaScript con Alpine.js.
 
+## Entregas del proyecto
+
+- [Incremento 1: código y documentación histórica](https://github.com/BenjaGC/Incremento-1)
+- [Incremento 2: código y documentación histórica](https://github.com/BenjaGC/Incremento-2)
+- [Incremento 3: versión actual revisada](https://github.com/BenjaGC/Incremento-3)
+
 ## Documentación del Incremento III
 
 Repositorio público del equipo, administrado por Benjamín (BenjaGC). El código se encuentra en la raíz; los documentos académicos están organizados en carpetas.
