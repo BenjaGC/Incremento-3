@@ -1,0 +1,649 @@
+<mxfile host="Electron">
+  <diagram id="seq" name="Página-1">
+    <mxGraphModel dx="2356" dy="1411" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1700" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d0_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-63 – Flujo principal&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="38" y="3" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_a" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="técnico" vertex="1">
+          <mxGeometry height="60" width="30" x="173" y="59" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_a" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="188" y="148" as="sourcePoint" />
+            <mxPoint x="188" y="646.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_v" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_DetalleTicketMovil" vertex="1">
+          <mxGeometry height="40" width="142" x="534" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_v" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="605" y="114" as="sourcePoint" />
+            <mxPoint x="605" y="649.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_DesplazamientoController" vertex="1">
+          <mxGeometry height="40" width="171" x="852" y="71" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_s" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="937" y="111" as="sourcePoint" />
+            <mxPoint x="936.76" y="643.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_db" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1506" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="451" width="10" x="183" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_v" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="434" width="10" x="600" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="387" width="10" x="932" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_db" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="331" width="10" x="1586" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_m0" edge="1" parent="1" source="d0_bar_a" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=0.003;entryY=0.085;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.041;exitY=0.077;exitDx=0;exitDy=0;exitPerimeter=0;" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;1. Presiona &quot;Iniciar traslado&quot; en el detalle del ticket #204&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.0001" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="71.88" y="185.84" as="sourcePoint" />
+            <mxPoint x="599.03" y="186.26" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_m1" edge="1" parent="1" source="d0_bar_v" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.17;exitY=0.138;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.06;entryY=0.027;entryDx=0;entryDy=0;entryPerimeter=0;" target="d0_bar_s" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="609.0000000000001" y="213.09500000000003" as="sourcePoint" />
+            <mxPoint x="1190.24" y="211.743" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-115" connectable="0" parent="d0_m1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. POST /api/tickets/204/travel/start" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="32" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-134" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-63 – Excepción 1: Marcación fuera de rango&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="102" y="684" as="geometry" />
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-135" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Times New Roman&amp;quot;,serif;mso-fareast-font-family:Aptos;mso-font-kerning:&lt;br/&gt;0pt;mso-ligatures:none;mso-ansi-language:ES-CL;mso-fareast-language:ES-CL;&lt;br/&gt;mso-bidi-language:AR-SA&quot;&gt;CU-63 – Excepción 2: Llegada sin inicio de traslado&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="452" x="2616" y="-9" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-5" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.077;entryY=0.032;entryDx=0;entryDy=0;entryPerimeter=0;" target="d0_bar_db" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="942" y="247.69499999999994" as="sourcePoint" />
+            <mxPoint x="1516.4" y="244.99599999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-6" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. INSERT INTO desplazamiento_tecnico (ticket_id, tecnico_id, start_time, status) VALUES (204, 34, NOW(), &#39;IN_TRANSIT&#39;);" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="55" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-8" edge="1" parent="1" source="d0_bar_db" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.024;exitY=0.12;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Confirma registro de inicio de traslado { travelId: 512 }">
+          <mxGeometry relative="1" x="0.0043" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1515.5299999999997" y="274.0030000000001" as="sourcePoint" />
+            <mxPoint x="942" y="275.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-9" edge="1" parent="1" source="d0_bar_s" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.063;exitY=0.928;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="14. 200 OK { success: true, durationMinutes: 14,&amp;nbsp;&lt;div&gt;message: &quot;Llegada validada exitosamente&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0024" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1048.6" y="562.9970000000001" as="sourcePoint" />
+            <mxPoint x="611.0000000000001" y="563.3820000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-10" edge="1" parent="1" source="d0_bar_v" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.028;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.95;entryY=0.944;entryDx=0;entryDy=0;entryPerimeter=0;" target="d0_bar_a" value="15. Detiene cronómetro y muestra mensaje: &quot;Llegada confirmada&amp;nbsp;&lt;div&gt;(14 min). Desplazamiento registrado en métricas del ticket.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0005" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="599.03" y="613.23" as="sourcePoint" />
+            <mxPoint x="75.41" y="581.07" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-103" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.127;entryY=0.468;entryDx=0;entryDy=0;entryPerimeter=0;" target="d0_bar_db" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="943" y="390.9049999999999" as="sourcePoint" />
+            <mxPoint x="1515.77" y="389" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-104" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-103" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="9. SELECT d.start_time, u.qr_token, u.latitude, u.longitude FROM ticket t JOIN ubicacion_area u ON&amp;nbsp;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;t.ubicacion_id = u.id JOIN desplazamiento_tecnico d ON d.ticket_id = t.id WHERE d.id = 512;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="61" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-106" edge="1" parent="1" source="d0_bar_db" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=1.055;entryY=0.565;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.026;exitY=0.565;exitDx=0;exitDy=0;exitPerimeter=0;" target="d0_bar_s" value="10. Retorna { startTime: &quot;10:15:00&quot;, targetQr: &quot;BOX-302-PABELLON&quot;, targetLat: -33.432, targetLng: -70.612 }">
+          <mxGeometry relative="1" x="0.0035" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1515.69" y="421" as="sourcePoint" />
+            <mxPoint x="944" y="423.05" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_ll_db" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1590" y="109" as="sourcePoint" />
+            <mxPoint x="1590" y="657.86" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-2" edge="1" parent="1" source="d0_bar_s" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.028;exitY=0.239;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="5. 200 OK { success: true, travelId: 512, startTime: &quot;10:15:00&quot; }">
+          <mxGeometry relative="1" x="-0.0024" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1047.6" y="298.99700000000007" as="sourcePoint" />
+            <mxPoint x="610.0000000000001" y="299.38200000000006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-3" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.028;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.005;entryY=0.371;entryDx=0;entryDy=0;entryPerimeter=0;" target="d0_bar_a" value="6. Despliega cronómetro de traslado activo y habilita botón &quot;Marcar llegada&quot;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="599" y="316" as="sourcePoint" />
+            <mxPoint x="65" y="319" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-4" edge="1" parent="1" source="d0_bar_a" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.889;exitY=0.475;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.059;entryY=0.483;entryDx=0;entryDy=0;entryPerimeter=0;" target="d0_bar_v" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;7. Arriba a destino, escanea código QR del box/piso y presiona &quot;Marcar llegada&quot;&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.001" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="70.73" y="363.4" as="sourcePoint" />
+            <mxPoint x="599.65" y="363.89" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-5" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.06;entryY=0.45;entryDx=0;entryDy=0;entryPerimeter=0;" target="d0_bar_s" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="610.0000000000001" y="379.005" as="sourcePoint" />
+            <mxPoint x="929.58" y="378.15" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-6" connectable="0" parent="TZWgmRDGuZkw4-vjBlUF-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. POST /api/tickets/204/travel/arrive { travelId: 512, qrToken:&lt;div&gt;&amp;nbsp;&quot;BOX-302-PABELLON&quot;, coords: { lat: -33.432, lng: -70.612 } }&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="31" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-7" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="11. Valida correspondencia de QR/coordenadas y calcula diferencial: 14 minutos transcurridos (14 &amp;lt;= 60 min)">
+          <mxGeometry relative="1" x="-0.9164" y="2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="992" y="452" />
+              <mxPoint x="992" y="474" />
+            </Array>
+            <mxPoint x="942" y="452" as="sourcePoint" />
+            <mxPoint x="942" y="474" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-8" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.127;entryY=0.866;entryDx=0;entryDy=0;entryPerimeter=0;" target="d0_bar_db" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="943" y="522.905" as="sourcePoint" />
+            <mxPoint x="1515.77" y="521" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-9" connectable="0" parent="TZWgmRDGuZkw4-vjBlUF-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="12. START TRANSACTION; UPDATE desplazamiento_tecnico SET end_time = NOW(), duration_minutes = 14,&amp;nbsp;&lt;div&gt;status = &#39;COMPLETED&#39; WHERE id = 512; UPDATE ticket SET travel_time_minutes = 14 WHERE id = 204;&amp;nbsp;&lt;/div&gt;&lt;div&gt;INSERT INTO bitacora (...) VALUES (...); COMMIT;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="48" y="-22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-10" edge="1" parent="1" source="d0_bar_db" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=1.055;entryY=0.565;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.077;exitY=0.957;exitDx=0;exitDy=0;exitPerimeter=0;" value="13. Confirma transacción: métrica adjuntada al ticket e incorporada para informes de desempeño">
+          <mxGeometry relative="1" x="0.0035" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1515.69" y="551" as="sourcePoint" />
+            <mxPoint x="943" y="553" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-11" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="técnico" vertex="1">
+          <mxGeometry height="60" width="30" x="1" y="759" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-12" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="16" y="848" as="sourcePoint" />
+            <mxPoint x="16" y="1346.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_DetalleTicketMovil" vertex="1">
+          <mxGeometry height="40" width="142" x="423" y="774" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-14" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="494" y="814" as="sourcePoint" />
+            <mxPoint x="494" y="1349.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_DesplazamientoController" vertex="1">
+          <mxGeometry height="40" width="171" x="849" y="771" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-16" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="934" y="811" as="sourcePoint" />
+            <mxPoint x="933.76" y="1343.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1703" y="769" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="451" width="10" x="11" y="852" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="434" width="10" x="489" y="856" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="257" width="10" x="929" y="904" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="204" width="10" x="1783" y="934" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-22" edge="1" parent="1" source="TZWgmRDGuZkw4-vjBlUF-18" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.041;exitY=0.077;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.091;entryY=0.071;entryDx=0;entryDy=0;entryPerimeter=0;" target="TZWgmRDGuZkw4-vjBlUF-19" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;1. Presiona &quot;Marcar llegada&quot; reportando ubicación o QR&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="0.0026" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="15.879999999999995" y="885.84" as="sourcePoint" />
+            <mxPoint x="483.54999999999995" y="885.46" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-23" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.17;exitY=0.138;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.06;entryY=0.027;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="499.6999999999998" y="915.892" as="sourcePoint" />
+            <mxPoint x="927.4000000000001" y="914.4490000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-24" connectable="0" parent="TZWgmRDGuZkw4-vjBlUF-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. POST /api/tickets/204/travel/arrive { travelId: 512, coords:&lt;div&gt;&amp;nbsp;{ lat: -33.445, lng: -70.620 }, qrToken: &quot;INVALID_OR_REMOTE_SCAN&quot; }&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="24" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-25" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.98;exitY=0.102;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.091;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="939.8000000000002" y="943.4739999999999" as="sourcePoint" />
+            <mxPoint x="1783.0900000000001" y="942.2750000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-26" connectable="0" parent="TZWgmRDGuZkw4-vjBlUF-25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. SELECT d.start_time, u.qr_token, u.latitude, u.longitude, u.radius_meters FROM ticket t JOIN ubicacion_area&amp;nbsp;&lt;div&gt;u ON t.ubicacion_id = u.id JOIN desplazamiento_tecnico d ON d.ticket_id = t.id WHERE d.id = 512;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="55" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-27" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.024;exitY=0.12;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna { startTime: &quot;10:15:00&quot;, targetLat: -33.432, targetLng: -70.612, radiusMeters: 50 }">
+          <mxGeometry relative="1" x="-0.0006" y="-1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1784.2399999999998" y="973.72" as="sourcePoint" />
+            <mxPoint x="940" y="975.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-28" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.063;exitY=0.928;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.225;entryY=0.684;entryDx=0;entryDy=0;entryPerimeter=0;" value="8. 200 OK { success: true, observed: true, warning: &quot;GEO_LOCATION_MISMATCH&quot;,&amp;nbsp;&lt;div&gt;message: &quot;Marcación registrada con advertencia por inconsistencia geográfica&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0012" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="924.3699999999999" y="1149.9959999999996" as="sourcePoint" />
+            <mxPoint x="500.25" y="1152.8559999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-29" edge="1" parent="1" source="TZWgmRDGuZkw4-vjBlUF-19" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.028;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.95;entryY=0.944;entryDx=0;entryDy=0;entryPerimeter=0;" target="TZWgmRDGuZkw4-vjBlUF-18" value="10. Despliega aviso en interfaz: &quot;Alerta de inconsistencia: Su ubicación actual no coincide con&amp;nbsp;&lt;div&gt;la zona del ticket. La marcación fue registrada como observada para auditoría técnica.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0008" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="543.03" y="1313.23" as="sourcePoint" />
+            <mxPoint x="19.409999999999997" y="1281.0700000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-30" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.127;entryY=0.468;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="941" y="1090.905" as="sourcePoint" />
+            <mxPoint x="1782.7299999999996" y="1088.908" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-31" connectable="0" parent="TZWgmRDGuZkw4-vjBlUF-30" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="6. START TRANSACTION; UPDATE desplazamiento_tecnico SET end_time = NOW(), duration_minutes = TIMESTAMPDIFF(MINUTE, start_time, NOW()), status =&amp;nbsp;&lt;div&gt;&#39;OBSERVED_GEO_MISMATCH&#39;, observation = &#39;Marcación a 1.4km de la ubicación oficial&#39; WHERE id = 512; INSERT INTO bitacora (action, details) VALUES&amp;nbsp;&lt;/div&gt;&lt;div&gt;(&#39;TRAVEL_GEO_MISMATCH_WARNING&#39;, &#39;Desplazamiento 512 marcado fuera de rango geográfico&#39;); COMMIT;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="74" y="-22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-32" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=1.055;entryY=0.565;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.026;exitY=0.565;exitDx=0;exitDy=0;exitPerimeter=0;" value="7. Confirma registro de marcación observada y auditoría">
+          <mxGeometry relative="1" x="0.0036" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1783.7399999999998" y="1121.0149999999999" as="sourcePoint" />
+            <mxPoint x="940.5500000000002" y="1122.6549999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-33" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1787" y="809" as="sourcePoint" />
+            <mxPoint x="1787" y="1357.8600000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-39" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="9. Alpine.js detiene el cronómetro y coloca indicador visual &#39;Marcación Observada&#39;">
+          <mxGeometry relative="1" x="-0.9164" y="2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="550" y="1175" />
+              <mxPoint x="550" y="1197" />
+            </Array>
+            <mxPoint x="500" y="1175" as="sourcePoint" />
+            <mxPoint x="500" y="1197" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-45" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Calcula distancia: 1.4 km de distancia (&amp;gt; 50 m de tolerancia) -&amp;gt; Inconsistencia de rango geográfico detectada">
+          <mxGeometry relative="1" x="-0.9209" y="2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="990" y="1006" />
+              <mxPoint x="990" y="1028" />
+            </Array>
+            <mxPoint x="940" y="1006" as="sourcePoint" />
+            <mxPoint x="940" y="1028" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-47" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="técnico" vertex="1">
+          <mxGeometry height="60" width="30" x="2246" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-48" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2261" y="175" as="sourcePoint" />
+            <mxPoint x="2261" y="673.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_DetalleTicketMovil" vertex="1">
+          <mxGeometry height="40" width="142" x="2608" y="101" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-50" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2679" y="141" as="sourcePoint" />
+            <mxPoint x="2679" y="676.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_DesplazamientoController" vertex="1">
+          <mxGeometry height="40" width="171" x="3034" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-52" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3119" y="138" as="sourcePoint" />
+            <mxPoint x="3118.76" y="670.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="3669" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="451" width="10" x="2256" y="179" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="434" width="10" x="2674" y="183" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="260" width="10" x="3114" y="231" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-57" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="202" width="10" x="3749" y="261" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-58" edge="1" parent="1" source="TZWgmRDGuZkw4-vjBlUF-54" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.041;exitY=0.077;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.091;entryY=0.071;entryDx=0;entryDy=0;entryPerimeter=0;" target="TZWgmRDGuZkw4-vjBlUF-55" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;1. Intenta pulsar &quot;Marcar llegada&quot; (o escanear QR) sin haber iniciado el traslado&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="0.0035" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2200.88" y="212.84000000000003" as="sourcePoint" />
+            <mxPoint x="2668.55" y="212.46000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-59" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.17;exitY=0.138;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.06;entryY=0.027;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2684.7000000000007" y="242.89200000000005" as="sourcePoint" />
+            <mxPoint x="3112.4000000000005" y="241.44900000000007" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-60" connectable="0" parent="TZWgmRDGuZkw4-vjBlUF-59" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. POST /api/tickets/204/travel/arrive { qrToken: &quot;BOX-302-PABELLON&quot; }" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="24" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-61" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.98;exitY=0.102;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.042;entryY=0.041;entryDx=0;entryDy=0;entryPerimeter=0;" target="TZWgmRDGuZkw4-vjBlUF-57" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3124.8" y="270.47400000000016" as="sourcePoint" />
+            <mxPoint x="3968.09" y="269.2750000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-62" connectable="0" parent="TZWgmRDGuZkw4-vjBlUF-61" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. SELECT id, start_time FROM desplazamiento_tecnico WHERE ticket_id = 204 AND tecnico_id = 34 AND end_time IS NULL;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="55" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-63" edge="1" parent="1" source="TZWgmRDGuZkw4-vjBlUF-57" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.093;exitY=0.196;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna Empty set (No existe registro de traslado en curso para este ticket)">
+          <mxGeometry relative="1" x="-0.0011" y="-1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3967.24" y="300.72" as="sourcePoint" />
+            <mxPoint x="3123" y="302.95000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-64" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.063;exitY=0.928;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.225;entryY=0.684;entryDx=0;entryDy=0;entryPerimeter=0;" target="TZWgmRDGuZkw4-vjBlUF-55" value="8. 409 Conflict { success: false, error: &quot;NO_ACTIVE_TRAVEL&quot;, message:&lt;div&gt;&amp;nbsp;&quot;No se puede marcar llegada sin haber iniciado el traslado.&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0003" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3110.37" y="476.99599999999964" as="sourcePoint" />
+            <mxPoint x="2790" y="477.24199999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-65" edge="1" parent="1" source="TZWgmRDGuZkw4-vjBlUF-55" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.028;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.95;entryY=0.944;entryDx=0;entryDy=0;entryPerimeter=0;" target="TZWgmRDGuZkw4-vjBlUF-54" value="10. Despliega aviso en pantalla: &quot;Acción bloqueada:&amp;nbsp;&lt;div&gt;Debe presionar &#39;Iniciar traslado&#39; antes de registrar la llegada al área del ticket.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0005" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2728.0299999999997" y="640.23" as="sourcePoint" />
+            <mxPoint x="2204.41" y="608.0700000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-66" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.008;entryY=0.768;entryDx=0;entryDy=0;entryPerimeter=0;" target="TZWgmRDGuZkw4-vjBlUF-57" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3124" y="417.905" as="sourcePoint" />
+            <mxPoint x="3965.7299999999996" y="415.90800000000013" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-67" connectable="0" parent="TZWgmRDGuZkw4-vjBlUF-66" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="6. INSERT INTO bitacora (user_id, ticket_id, action, details, created_at) VALUES&amp;nbsp;&lt;div&gt;(34, 204, &#39;TRAVEL_ARRIVAL_REJECTED&#39;, &#39;Intento de marcar llegada sin registrar inicio de traslado&#39;, NOW());&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="74" y="-22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-68" edge="1" parent="1" source="TZWgmRDGuZkw4-vjBlUF-57" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=1.055;entryY=0.565;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.093;exitY=0.924;exitDx=0;exitDy=0;exitPerimeter=0;" value="7. Confirma registro de auditoría">
+          <mxGeometry relative="1" x="0.0033" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3967.74" y="448.0150000000001" as="sourcePoint" />
+            <mxPoint x="3124.55" y="449.655" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-69" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3753" y="136" as="sourcePoint" />
+            <mxPoint x="3755.7" y="681.83" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-70" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="9. Alpine.js detiene el escáner,&amp;nbsp;&lt;div&gt;desactiva la marcación de llegada y resalta el botón &quot;Iniciar traslado&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.918" y="2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2735" y="524" />
+              <mxPoint x="2735" y="546" />
+            </Array>
+            <mxPoint x="2685" y="524" as="sourcePoint" />
+            <mxPoint x="2685" y="546" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-74" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Bloquea acción: condición previa no cumplida (traslado no iniciado)">
+          <mxGeometry relative="1" x="-0.9209" y="2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="3175" y="333" />
+              <mxPoint x="3175" y="355" />
+            </Array>
+            <mxPoint x="3125" y="333" as="sourcePoint" />
+            <mxPoint x="3125" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-76" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-63 – Excepción 3: Tiempo excesivo&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="2461" y="697" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-77" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="técnico" vertex="1">
+          <mxGeometry height="60" width="30" x="2218" y="787" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-78" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2233" y="876" as="sourcePoint" />
+            <mxPoint x="2233" y="1374.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-79" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_DetalleTicketMovil" vertex="1">
+          <mxGeometry height="40" width="142" x="2606" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-80" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2677" y="840" as="sourcePoint" />
+            <mxPoint x="2677" y="1375.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-81" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_DesplazamientoController" vertex="1">
+          <mxGeometry height="40" width="171" x="3147" y="797" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-82" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3232" y="837" as="sourcePoint" />
+            <mxPoint x="3231.76" y="1369.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-83" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="3959" y="795" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-84" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="451" width="10" x="2228" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-85" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="434" width="10" x="2672" y="882" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-86" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="320" width="10" x="3227" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-87" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="277" width="10" x="4039" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-88" edge="1" parent="1" source="TZWgmRDGuZkw4-vjBlUF-84" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.337;exitY=0.098;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.119;entryY=0.09;entryDx=0;entryDy=0;entryPerimeter=0;" target="TZWgmRDGuZkw4-vjBlUF-85" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;1. Escanea código QR del área tras 75 minutos de traslado y presiona &quot;Marcar llegada&quot;&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.0029" y="9" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2198.88" y="911.84" as="sourcePoint" />
+            <mxPoint x="2671.09" y="912.81" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-89" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.17;exitY=0.138;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.029;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" target="TZWgmRDGuZkw4-vjBlUF-86" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2682.7000000000007" y="941.892" as="sourcePoint" />
+            <mxPoint x="3110.4000000000005" y="940.4490000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-90" connectable="0" parent="TZWgmRDGuZkw4-vjBlUF-89" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. POST /api/tickets/204/travel/arrive&amp;nbsp;&lt;div&gt;{ travelId: 512, qrToken: &quot;BOX-302-PABELLON&quot;, justification: null }&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="24" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-91" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.98;exitY=0.102;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.002;entryY=0.03;entryDx=0;entryDy=0;entryPerimeter=0;" target="TZWgmRDGuZkw4-vjBlUF-87" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3236.8" y="969.4740000000002" as="sourcePoint" />
+            <mxPoint x="3860.58" y="968.2819999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-92" connectable="0" parent="TZWgmRDGuZkw4-vjBlUF-91" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. SELECT start_time FROM desplazamiento_tecnico WHERE id = 512 AND status = &#39;IN_TRANSIT&#39;;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="55" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-93" edge="1" parent="1" source="TZWgmRDGuZkw4-vjBlUF-87" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.084;exitY=0.143;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna { start_time: &quot;09:00:00&quot; }">
+          <mxGeometry relative="1" x="-0.0004" y="-1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3860.0699999999997" y="999.5920000000001" as="sourcePoint" />
+            <mxPoint x="3235" y="1001.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-95" edge="1" parent="1" source="TZWgmRDGuZkw4-vjBlUF-85" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.028;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.95;entryY=0.944;entryDx=0;entryDy=0;entryPerimeter=0;" target="TZWgmRDGuZkw4-vjBlUF-84" value="13. Cierra modal y despliega confirmación: &quot;Llegada confirmada&amp;nbsp;&lt;div&gt;(75 min). Justificación guardada para auditoría de logística.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0015" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2726.0299999999997" y="1339.23" as="sourcePoint" />
+            <mxPoint x="2202.41" y="1307.0700000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-99" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4043" y="835" as="sourcePoint" />
+            <mxPoint x="4045.7" y="1380.83" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-101" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Calcula diferencial: 75 minutos transcurridos (&amp;gt; 60 min límite) &amp;amp;&amp;amp; !justification -&amp;gt; Exige justificación">
+          <mxGeometry relative="1" x="-0.9209" y="2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="3288" y="1038" />
+              <mxPoint x="3288" y="1060" />
+            </Array>
+            <mxPoint x="3238" y="1038" as="sourcePoint" />
+            <mxPoint x="3238" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-102" edge="1" parent="1" source="TZWgmRDGuZkw4-vjBlUF-86" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.008;exitY=0.456;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.954;entryY=0.449;entryDx=0;entryDy=0;entryPerimeter=0;" target="TZWgmRDGuZkw4-vjBlUF-85" value="6. 422 Unprocessable Entity { success: false, error: &quot;TRAVEL_TIME_EXCEEDED&quot;, elapsedMinutes: 75,&amp;nbsp;&lt;div&gt;requiresJustification: true, message: &quot;Tiempo de traslado superior a 60 minutos. Ingrese una justificación.&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0003" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3110.37" y="1075.9959999999996" as="sourcePoint" />
+            <mxPoint x="2686" y="1079" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-103" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.028;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.008;entryY=0.493;entryDx=0;entryDy=0;entryPerimeter=0;" target="TZWgmRDGuZkw4-vjBlUF-84" value="7. Despliega modal obligatorio: &quot;Traslado excedió los 60 minutos (75 min).&lt;div&gt;&amp;nbsp;Ingrese la justificación del retraso antes de continuar.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0005" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2671" y="1099" as="sourcePoint" />
+            <mxPoint x="2263" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-104" edge="1" parent="1" source="TZWgmRDGuZkw4-vjBlUF-84" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.983;exitY=0.614;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.091;entryY=0.071;entryDx=0;entryDy=0;entryPerimeter=0;" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;8. Ingresa &quot;Retención por protocolo de aislamiento en&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;ascensor central&quot; y presiona &quot;Confirmar llegada&quot;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="0.0012" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2264" y="1155" as="sourcePoint" />
+            <mxPoint x="2671" y="1155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-105" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.17;exitY=0.138;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="TZWgmRDGuZkw4-vjBlUF-86" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2682.000000000001" y="1172.442" as="sourcePoint" />
+            <mxPoint x="3108.99" y="1170.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-106" connectable="0" parent="TZWgmRDGuZkw4-vjBlUF-105" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="9. POST /api/tickets/204/travel/arrive { travelId: 512, qrToken: &quot;BOX-302-PABELLON&quot;,&amp;nbsp;&lt;div&gt;justification: &quot;Retención por protocolo de aislamiento en ascensor central&quot; }&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="37" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-107" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.17;exitY=0.138;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.045;entryY=0.796;entryDx=0;entryDy=0;entryPerimeter=0;" target="TZWgmRDGuZkw4-vjBlUF-87" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3237.000000000001" y="1182.442" as="sourcePoint" />
+            <mxPoint x="3858.98" y="1179.11" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-108" connectable="0" parent="TZWgmRDGuZkw4-vjBlUF-107" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="10. START TRANSACTION; UPDATE desplazamiento_tecnico SET end_time = NOW(), duration_minutes = 75, status = &#39;EXCEEDED_WITH_JUSTIFICATION&#39;,&amp;nbsp;&lt;div&gt;justification = &#39;Retención por protocolo...&#39; WHERE id = 512; UPDATE ticket SET travel_time_minutes = 75 WHERE id = 204; INSERT INTO&amp;nbsp;&lt;/div&gt;&lt;div&gt;bitacora (action, details) VALUES (&#39;TRAVEL_TIME_EXCEEDED_JUSTIFIED&#39;, &#39;Desplazamiento de 75 min justificado: Retención por protocolo...&#39;); COMMIT;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="71" y="-23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-109" edge="1" parent="1" source="TZWgmRDGuZkw4-vjBlUF-87" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.041;exitY=0.907;exitDx=0;exitDy=0;exitPerimeter=0;" value="11. Confirma transacción: métrica guardada con justificación para reportes de desempeño">
+          <mxGeometry relative="1" x="-0.0004" y="-1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3861.0699999999997" y="1211.0020000000002" as="sourcePoint" />
+            <mxPoint x="3236" y="1213.3600000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TZWgmRDGuZkw4-vjBlUF-110" edge="1" parent="1" source="TZWgmRDGuZkw4-vjBlUF-86" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.097;exitY=0.977;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.954;entryY=0.449;entryDx=0;entryDy=0;entryPerimeter=0;" value="12. 200 OK { success: true, durationMinutes: 75,&amp;nbsp;&lt;div&gt;justified: true, message: &quot;Llegada registrada exitosamente con justificación&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0003" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3111.37" y="1242.9959999999996" as="sourcePoint" />
+            <mxPoint x="2683" y="1244" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

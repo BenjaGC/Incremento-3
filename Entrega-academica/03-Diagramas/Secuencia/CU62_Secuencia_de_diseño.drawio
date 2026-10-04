@@ -1,0 +1,779 @@
+<mxfile host="Electron">
+  <diagram id="seq" name="Página-1">
+    <mxGraphModel dx="3082" dy="1580" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1700" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d0_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;-62 – Flujo principal&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="-11" y="-173" as="geometry" />
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-135" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-62 – Excepción 2: Categoría sin técnicos&lt;br/&gt;competentes&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="452" x="2432" y="-121" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-104" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-62 – Excepción 1: Técnico sin especialidades&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="452" x="168" y="667" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-163" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-62 – Excepcion 3: Falla la recalibración del motor&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="452" x="2263" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-515" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_MatrizCompetencias" vertex="1">
+          <mxGeometry height="40" width="152" x="2286" y="708" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-516" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2362" y="747" as="sourcePoint" />
+            <mxPoint x="2362" y="1304.86" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-517" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_CompetenciaController" vertex="1">
+          <mxGeometry height="40" width="171" x="2755" y="704" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-518" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2840" y="744" as="sourcePoint" />
+            <mxPoint x="2837.7799999999997" y="1307.27" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-519" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="486" width="10" x="2357" y="789" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-520" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="444" width="10" x="2833" y="823" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-521" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-519" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.15;entryY=0.043;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.044;exitY=0.109;exitDx=0;exitDy=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-520" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2525.34" y="833.915" as="sourcePoint" />
+            <mxPoint x="2793.8300000000004" y="832.002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-522" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-521" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. PUT /api/technicians/34/competencies&amp;nbsp;&lt;div&gt;{ skills: [{ categoryId: 3, level: &#39;CRITICO&#39; }] }&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="34" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-523" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.117;entryY=0.27;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-539" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2842" y="860.9200000000001" as="sourcePoint" />
+            <mxPoint x="3661.531" y="858.6979999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-524" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-523" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span&gt;3. START TRANSACTION; DELETE FROM competencia_tecnico WHERE tecnico_id = 34;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span&gt;INSERT INTO competencia_tecnico (tecnico_id, categoria_id, nivel) VALUES (34, 3, &#39;CRITICO&#39;); COMMIT;`&lt;/span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1436&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="66" y="-27" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-525" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="1743" y="691" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-526" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1758" y="780" as="sourcePoint" />
+            <mxPoint x="1758" y="1312.37" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-527" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-541" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.063;exitY=0.043;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.052;entryY=0.069;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-519" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1910.27" y="820.8240000000001" as="sourcePoint" />
+            <mxPoint x="2173.13" y="818.835" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-528" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-527" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Modifica especialidades del técnico ID 34 y pulsa &quot;Guardar y Recalibrar&quot;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-529" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="167" x="3354" y="704" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-530" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3438" y="744" as="sourcePoint" />
+            <mxPoint x="3437.41" y="1313.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-531" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-539" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.021;exitY=0.815;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Confirma actualización exitosa de registros en base de datos">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3660.6580000000004" y="892.098" as="sourcePoint" />
+            <mxPoint x="2842.67" y="893.3800000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-539" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="60" width="9" x="3433" y="843" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-540" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-519" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.032;exitY=0.985;exitDx=0;exitDy=0;entryX=1.058;entryY=0.973;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-541" value="12. Despliega aviso en interfaz: &quot;Las competencias fueron guardadas.&amp;nbsp;&lt;div&gt;El motor de asignación automática no pudo recalibrarse de inmediato y mantiene la matriz anterior mientras el sistema&amp;nbsp;&lt;/div&gt;&lt;div&gt;reintenta la sincronización en segundo plano.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0012" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2175.81" y="1265.999999999999" as="sourcePoint" />
+            <mxPoint x="1765" y="1266.5080000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-541" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="478" width="10" x="1753" y="802" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-548" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;7. Captura excepción: mantiene matriz anterior en motor y programa reintento asíncrono&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1435&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2897" y="1017" />
+              <mxPoint x="2897" y="1039" />
+            </Array>
+            <mxPoint x="2847" y="1017" as="sourcePoint" />
+            <mxPoint x="2847" y="1039" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-549" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="11. Alpine.js detiene el spinner y coloca indicador de &#39;Sincronización de motor pendiente&#39;">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2419" y="1223" />
+              <mxPoint x="2419" y="1245" />
+            </Array>
+            <mxPoint x="2369" y="1223" as="sourcePoint" />
+            <mxPoint x="2369" y="1245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-551" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_AssignmentEngine" vertex="1">
+          <mxGeometry height="40" width="167" x="3526" y="704" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-552" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3610" y="744" as="sourcePoint" />
+            <mxPoint x="3609.41" y="1316.87" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-560" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.071;entryY=0.16;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-687" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2847.84" y="1133.02" as="sourcePoint" />
+            <mxPoint x="3659.79" y="1135.1100000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-561" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-560" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;8. INSERT INTO cola_reintento (task_name, payload, status, retry_count, next_attempt_at) VALUES (&#39;RECALIBRATE_ENGINE&#39;,&lt;/p&gt;&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&amp;nbsp;&#39;{&quot;technicianId&quot;:34}&#39;, &#39;PENDING&#39;, 1, DATE_ADD(NOW(), INTERVAL 30 SECOND)); INSERT INTO bitacora (...) VALUES (...);&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1436&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="74" y="-40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-562" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-687" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.04;exitY=0.691;exitDx=0;exitDy=0;exitPerimeter=0;" value="9. Confirma registro de tarea de reintento y auditoría">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3659.19" y="1166.42" as="sourcePoint" />
+            <mxPoint x="2847.7" y="1165.2600000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-566" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-520" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.014;exitY=0.84;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.974;entryY=0.807;entryDx=0;entryDy=0;entryPerimeter=0;" value="10. 202 Accepted { success: true, savedInDb: true, recalibrationPending: true, warning:&lt;div&gt;&amp;nbsp;&quot;ENGINE_TIMEOUT_RETRY_SCHEDULED&quot;, message: &quot;Competencias guardadas en BD.&amp;nbsp;&lt;/div&gt;&lt;div&gt;Motor en reintento automático manteniendo matriz previa.&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2790.88" y="1195.9099999999999" as="sourcePoint" />
+            <mxPoint x="2367.0000000000005" y="1195.004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-606" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_MatrizCompetencias" vertex="1">
+          <mxGeometry height="40" width="152" x="-100" y="-50" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-607" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-24" y="-11" as="sourcePoint" />
+            <mxPoint x="-24" y="586.5999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-608" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_CompetenciaController" vertex="1">
+          <mxGeometry height="40" width="171" x="327" y="-54" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-609" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="412" y="-14" as="sourcePoint" />
+            <mxPoint x="409.78" y="549.27" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-610" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="542" width="10" x="-29" y="31" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-611" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="444" width="10" x="405" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-612" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-610" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.15;entryY=0.043;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.978;exitY=0.096;exitDx=0;exitDy=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-611" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="139.34000000000015" y="75.91499999999996" as="sourcePoint" />
+            <mxPoint x="407.8300000000004" y="74.00199999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-613" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-612" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. GET /api/technicians/34/competencies" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="23" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-614" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.211;entryY=0.052;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-623" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="415.0000000000001" y="102.92000000000007" as="sourcePoint" />
+            <mxPoint x="1073.748" y="102.39999999999964" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-615" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-614" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;3. SELECT * FROM categoria WHERE is_active = 1; SELECT * FROM competencia_tecnico WHERE tecnico_id = 34;&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1436&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="61" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-616" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="-461" y="-67" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-617" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-446" y="22" as="sourcePoint" />
+            <mxPoint x="-446" y="618.5999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-618" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-625" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.063;exitY=0.043;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.052;entryY=0.069;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-610" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-293.73" y="62.82400000000007" as="sourcePoint" />
+            <mxPoint x="-30.87000000000012" y="60.835000000000036" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-619" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-618" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Accede a &quot;Personal técnico &amp;gt; Matriz de competencias&quot; y&amp;nbsp;&lt;div&gt;selecciona al técnico ID 34&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-620" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="167" x="1155" y="-54" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-621" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1239" y="-14" as="sourcePoint" />
+            <mxPoint x="1238.41" y="555.6700000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-622" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-623" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.038;exitY=0.147;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna listado de categorías activas y competencias registradas">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1073.217" y="134.1239999999998" as="sourcePoint" />
+            <mxPoint x="415.6700000000001" y="135.3800000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-623" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="334" width="9" x="1234" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-624" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1.084;entryY=0.956;entryDx=0;entryDy=0;entryPerimeter=0;" value="16. Muestra confirmación: &quot;Matriz de competencias guardada.&amp;nbsp;&lt;div&gt;El motor de asignación automática ha sido recalibrado correctamente.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0012" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-30.190000000000026" y="562.9999999999991" as="sourcePoint" />
+            <mxPoint x="-441.00000000000006" y="563.5080000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-625" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="550" width="10" x="-451" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-626" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;9. Valida cantidad de especialidades: skills.length &amp;gt;= 1 (Técnico posee al menos una especialidad)&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1435&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="469" y="259" />
+              <mxPoint x="469" y="281" />
+            </Array>
+            <mxPoint x="419" y="259" as="sourcePoint" />
+            <mxPoint x="419" y="281" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-627" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="15. Alpine.js detiene loading y refresca indicadores de cobertura global">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="31" y="527" />
+              <mxPoint x="31" y="549" />
+            </Array>
+            <mxPoint x="-19" y="527" as="sourcePoint" />
+            <mxPoint x="-19" y="549" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-628" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_AssignmentEngine" vertex="1">
+          <mxGeometry height="40" width="167" x="1327" y="-54" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-629" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1411" y="-14" as="sourcePoint" />
+            <mxPoint x="1410.41" y="558.8699999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-630" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="49" width="9" x="1406" y="451" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-631" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.238;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.974;entryY=0.807;entryDx=0;entryDy=0;entryPerimeter=0;" value="5. 200 OK { technician: { id: 34, name: &#39;Juan Soto&#39; }, categories: [...], currentSkills: [...] }">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="406.88000000000034" y="154.90999999999985" as="sourcePoint" />
+            <mxPoint x="-16.99999999999976" y="154.0039999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-632" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1.084;entryY=0.956;entryDx=0;entryDy=0;entryPerimeter=0;" value="6. Despliega matriz interactiva con checkboxes de&amp;nbsp;&lt;div&gt;categorías y selectores de nivel (&quot;Básico&quot;, &quot;Crítico&quot;)&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0012" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-29.190000000000026" y="172.9999999999991" as="sourcePoint" />
+            <mxPoint x="-440.00000000000006" y="173.50800000000027" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-633" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.063;exitY=0.043;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.077;entryY=0.509;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-441" y="213" as="sourcePoint" />
+            <mxPoint x="-29.769999999999982" y="212.97800000000007" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-634" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-633" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7. Marca categorías &quot;Redes&quot; (Crítico) y &quot;Soporte HW&quot;&amp;nbsp;&lt;div&gt;(Básico), y presiona &quot;Guardar y Recalibrar&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-635" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.978;exitY=0.096;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-18" y="237" as="sourcePoint" />
+            <mxPoint x="408.8300000000004" y="238.00199999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-636" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-635" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. PUT /api/technicians/34/competencies { skills: [{ categoryId: 2,&lt;div&gt;level: &#39;CRITICO&#39; }, { categoryId: 5, level: &#39;BASICO&#39; }] }&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="26" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-637" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="419.8399999999999" y="375.02" as="sourcePoint" />
+            <mxPoint x="1231.79" y="377.1100000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-638" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-637" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;10. START TRANSACTION; DELETE FROM competencia_tecnico WHERE tecnico_id = 34; INSERT INTO competencia_tecnico (tecnico_id, categoria_id, nivel) }&lt;/p&gt;&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;VALUES (34, 2, &#39;CRITICO&#39;), (34, 5, &#39;BASICO&#39;); SELECT c.id FROM categoria c WHERE c.is_active = 1 AND c.id NOT IN&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(SELECT DISTINCT categoria_id FROM competencia_tecnico); INSERT INTO bitacora (...) VALUES (...); COMMIT;&lt;/span&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1436&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="74" y="-40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-639" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;" value="11. Confirma transacción: registros actualizados y 0 categorías activas sin cobertura técnica">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1231.19" y="408.4200000000001" as="sourcePoint" />
+            <mxPoint x="419.70000000000005" y="407.2600000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-640" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="418.0000000000001" y="455.52" as="sourcePoint" />
+            <mxPoint x="1402.73" y="457.3499999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-641" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-640" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;12. recalibrateSkillsMatrix({ updatedTechnicianId: 34 })&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1436&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="61" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-642" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-630" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" value="13. Confirma recalibración de matriz en memoria y actualización de colas de despacho">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1385.27" y="489" as="sourcePoint" />
+            <mxPoint x="415" y="486" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-643" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.238;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.974;entryY=0.807;entryDx=0;entryDy=0;entryPerimeter=0;" value="14. 200 OK { success: true, message:&lt;div&gt;&amp;nbsp;&quot;Competencias actualizadas y motor recalibrado exitosamente&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="403.88000000000034" y="502.90999999999985" as="sourcePoint" />
+            <mxPoint x="-19.99999999999976" y="502.0039999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-644" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_MatrizCompetencias" vertex="1">
+          <mxGeometry height="40" width="152" x="-172" y="747" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-645" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-96" y="786" as="sourcePoint" />
+            <mxPoint x="-96" y="1280.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-646" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_CompetenciaController" vertex="1">
+          <mxGeometry height="40" width="171" x="337" y="743" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-647" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="422" y="783" as="sourcePoint" />
+            <mxPoint x="419.78" y="1279.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-648" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="412" width="10" x="-101" y="828" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-649" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="351" width="10" x="415" y="862" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-650" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-648" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=0.067;entryY=0.027;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.978;exitY=0.107;exitDx=0;exitDy=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-649" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="149.34000000000015" y="872.915" as="sourcePoint" />
+            <mxPoint x="417.8300000000004" y="871.002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-651" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-650" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. PUT /api/technicians/34/competencies { skills: [], confirmedEmpty: false }" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="38" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-654" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="-553" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-655" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-538" y="824" as="sourcePoint" />
+            <mxPoint x="-538" y="1289.73" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-656" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-663" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.063;exitY=0.043;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.052;entryY=0.069;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-648" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-365.73" y="859.8240000000001" as="sourcePoint" />
+            <mxPoint x="-102.87000000000012" y="857.835" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-657" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-656" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Desmarca todas las categorías del técnico y presiona &quot;Guardar y Recalibrar&quot;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="40" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-658" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="167" x="1165" y="743" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-659" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1249" y="783" as="sourcePoint" />
+            <mxPoint x="1248.41" y="1246.53" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-661" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="62" width="9" x="1244" y="1061" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-662" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1.01;entryY=0.957;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-663" value="13. Cierra modal y muestra confirmación en interfaz: &quot;Matriz actualizada:&amp;nbsp;&lt;div&gt;El técnico no tiene especialidades y quedó fuera del motor de asignación automática.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0012" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-101.19000000000003" y="1233.999999999999" as="sourcePoint" />
+            <mxPoint x="-512" y="1234.5080000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-663" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="411" width="10" x="-543" y="841" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-664" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;3. Evalúa especialidades: skills.length === 0 &amp;amp;&amp;amp; !confirmedEmpty -&amp;gt; Requiere advertencia y confirmación&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1435&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="475" y="902" />
+              <mxPoint x="475" y="924" />
+            </Array>
+            <mxPoint x="425" y="902" as="sourcePoint" />
+            <mxPoint x="425" y="924" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-666" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_AssignmentEngine" vertex="1">
+          <mxGeometry height="40" width="167" x="1337" y="743" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-667" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1421" y="783" as="sourcePoint" />
+            <mxPoint x="1420.41" y="1248.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-668" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="49" width="9" x="1416" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-669" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-649" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.067;exitY=0.218;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.268;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-648" value="4. 409 Conflict { success: false, warning: &quot;NO_SKILLS_ASSIGNED&quot;, message:&amp;nbsp;&lt;div&gt;&quot;El técnico no tendrá especialidades y no recibirá asignaciones automáticas. ¿Desea confirmar?&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="410.56999999999994" y="924.9959999999999" as="sourcePoint" />
+            <mxPoint x="-10.999999999999758" y="941.694" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-670" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.984;entryY=0.315;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-663" value="5. Despliega modal de advertencia: &quot;El técnico no recibirá asignaciones&lt;div&gt;&amp;nbsp;automáticas del motor. ¿Confirmar guardado sin especialidades?&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0012" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-101.19000000000003" y="969.9999999999991" as="sourcePoint" />
+            <mxPoint x="-512" y="970.5080000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-671" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-663" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.959;exitY=0.412;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.077;entryY=0.509;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-513" y="1010" as="sourcePoint" />
+            <mxPoint x="-101.76999999999998" y="1009.9780000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-672" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-671" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="6. Pulsa &quot;Sí, confirmar&quot;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-673" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-648" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-8" y="1034" as="sourcePoint" />
+            <mxPoint x="418.8300000000004" y="1035.002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-674" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-673" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7. PUT /api/technicians/34/competencies { skills: [], confirmedEmpty: true }" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="26" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-675" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="425.99999999999994" y="1070" as="sourcePoint" />
+            <mxPoint x="1237.95" y="1072.0900000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-676" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-675" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;8. START TRANSACTION; DELETE FROM competencia_tecnico WHERE tecnico_id = 34;&lt;/p&gt;&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&amp;nbsp;INSERT INTO bitacora (action, details) VALUES (&#39;TECHNICIAN_SKILLS_CLEARED&#39;, &#39;Técnico ID 34 dejado sin competencias tras confirmación&#39;); COMMIT;&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1436&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="74" y="-40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-677" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;" value="9. Confirma eliminación de registros en competencia_tecnico">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1237.49" y="1109.16" as="sourcePoint" />
+            <mxPoint x="426.00000000000006" y="1108.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-678" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="428.0000000000001" y="1154.52" as="sourcePoint" />
+            <mxPoint x="1412.73" y="1156.35" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-679" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-678" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;10. recalibrateSkillsMatrix({ updatedTechnicianId: 34, removedAllSkills: true })&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1436&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="61" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-680" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-668" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" value="11. Confirma exclusión del técnico de las colas de asignación automática">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1395.27" y="1188" as="sourcePoint" />
+            <mxPoint x="425" y="1185" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-681" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.238;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.133;entryY=0.917;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-648" value="12. 200 OK { success: true, message: &quot;Competencias actualizadas.&lt;div&gt;&amp;nbsp;Técnico excluido de asignaciones automáticas.&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="412.88000000000034" y="1206.9099999999999" as="sourcePoint" />
+            <mxPoint x="-10.999999999999758" y="1206.004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-683" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="49" width="9" x="3605" y="935" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-684" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.065;entryY=0.134;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-683" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2846" y="939.52" as="sourcePoint" />
+            <mxPoint x="3830.73" y="941.3499999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-685" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-684" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;5. recalibrateSkillsMatrix({ updatedTechnicianId: 34 })&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1436&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="65" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-686" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-683" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" value="6. Error: ETIMEDOUT / EngineBusy (Falla la recalibración; motor mantiene matriz anterior)">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3813.27" y="973" as="sourcePoint" />
+            <mxPoint x="2843" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-687" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="60" width="9" x="3432" y="1121" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-688" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_MatrizCompetencias" vertex="1">
+          <mxGeometry height="40" width="152" x="2284" y="-35" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-689" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2360" y="4" as="sourcePoint" />
+            <mxPoint x="2360" y="561.8599999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-690" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_CompetenciaController" vertex="1">
+          <mxGeometry height="40" width="171" x="2753" y="-39" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-691" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2838" y="1" as="sourcePoint" />
+            <mxPoint x="2835.7799999999997" y="564.27" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-692" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="486" width="10" x="2355" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-693" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="444" width="10" x="2831" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-694" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-692" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.15;entryY=0.043;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.044;exitY=0.109;exitDx=0;exitDy=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-693" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2523.34" y="90.91499999999996" as="sourcePoint" />
+            <mxPoint x="2791.8300000000004" y="89.00199999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-695" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-694" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. PUT /api/technicians/34/competencies { skills: [{ categoryId: 1, level: &#39;BASICO&#39; }] }" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="34" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-696" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.098;entryY=0.354;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2839" y="200.72000000000008" as="sourcePoint" />
+            <mxPoint x="3555.2180000000008" y="199.37599999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-697" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-696" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;4. START TRANSACTION; DELETE FROM competencia_tecnico WHERE tecnico_id = 34; INSERT INTO&lt;/p&gt;&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&amp;nbsp;competencia_tecnico (tecnico_id, categoria_id, nivel) VALUES (34, 1, &#39;BASICO&#39;); SELECT id, name FROM categoria WHERE is_active = 1 AND&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;id NOT IN (SELECT DISTINCT categoria_id FROM competencia_tecnico);&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1436&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="67" y="-39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-698" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="1741" y="-52" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-699" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1756" y="37" as="sourcePoint" />
+            <mxPoint x="1756" y="569.3699999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-700" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-707" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.063;exitY=0.043;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.052;entryY=0.069;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-692" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1908.27" y="77.82400000000007" as="sourcePoint" />
+            <mxPoint x="2171.13" y="75.83500000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-701" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-700" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Desmarca la especialidad &quot;Soporte Pabellón&quot; del técnico y presiona &quot;Guardar y Recalibrar&quot;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-702" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="167" x="3479" y="-39" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-703" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3563" y="1" as="sourcePoint" />
+            <mxPoint x="3562.41" y="570.6700000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-704" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.11;exitY=0.51;exitDx=0;exitDy=0;exitPerimeter=0;" value="5. Retorna { uncoveredCategories: [{ id: 4, name: &#39;Soporte Pabellón&#39; }] } (Categoría sin técnicos)">
+          <mxGeometry relative="1" x="0.002" y="-1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3555.1100000000006" y="237.44000000000005" as="sourcePoint" />
+            <mxPoint x="2838" y="239.4800000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-706" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-692" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.032;exitY=0.985;exitDx=0;exitDy=0;entryX=1.058;entryY=0.973;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-707" value="12. Despliega aviso en interfaz: &quot;Alerta de cobertura: La categoría &#39;Soporte Pabellón&#39;&amp;nbsp;&lt;div&gt;no cuenta con técnicos competentes asignados. Los tickets de esta área no podrán derivarse automáticamente.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0012" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2173.81" y="522.9999999999991" as="sourcePoint" />
+            <mxPoint x="1763" y="523.5080000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-707" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="478" width="10" x="1751" y="59" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-708" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;3. Valida especialidades del técnico: skills.length &amp;gt;= 1 (Cumple mínimo individual)&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1435&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2893" y="116" />
+              <mxPoint x="2893" y="138" />
+            </Array>
+            <mxPoint x="2843" y="116" as="sourcePoint" />
+            <mxPoint x="2843" y="138" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-709" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="11. Alpine.js detiene loading y resalta en rojo la categoría &quot;Soporte Pabellón&quot; en la vista">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2417" y="480" />
+              <mxPoint x="2417" y="502" />
+            </Array>
+            <mxPoint x="2367" y="480" as="sourcePoint" />
+            <mxPoint x="2367" y="502" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-710" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_AssignmentEngine" vertex="1">
+          <mxGeometry height="40" width="167" x="3651" y="-39" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-711" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3735" y="1" as="sourcePoint" />
+            <mxPoint x="3734.41" y="573.8699999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-715" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-693" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.014;exitY=0.84;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.974;entryY=0.807;entryDx=0;entryDy=0;entryPerimeter=0;" value="10. 200 OK { success: true, hasCoverageGap: true, gapCategories:&lt;div&gt;&amp;nbsp;[&#39;Soporte Pabellón&#39;], message: &quot;Matriz actualizada con alertas de cobertura&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2788.88" y="452.90999999999985" as="sourcePoint" />
+            <mxPoint x="2365.0000000000005" y="452.0039999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-716" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="167" width="9" x="3557.1" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-717" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-693" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1.324;exitY=0.532;exitDx=0;exitDy=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-716" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2844.24" y="311.05" as="sourcePoint" />
+            <mxPoint x="3427.5150000000003" y="315.99600000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-718" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-717" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;6. INSERT INTO bitacora (action, details) VALUES (&#39;COVERAGE_GAP_WARNING&#39;, &#39;La categoría ID 4&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;(Soporte Pabellón) quedó sin técnicos asignados&#39;); COMMIT;&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1436&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="59" y="-25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-719" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-716" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.116;exitY=0.962;exitDx=0;exitDy=0;exitPerimeter=0;" value="7. Confirma transacción con registro de auditoría de brecha">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3427.1000000000004" y="344.7499999999993" as="sourcePoint" />
+            <mxPoint x="2844.24" y="347.73" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-721" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="HpmW7bD-sTM_mo-HBthS-723" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="2842" y="385.7200000000001" as="sourcePoint" />
+            <mxPoint x="3721.95" y="385.72" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-722" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-721" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;8. recalibrateSkillsMatrix({ updatedTechnicianId: 34 })&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1436&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="67" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-723" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="62" width="9" x="3730" y="373" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-724" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-723" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" value="9. Confirma recalibración de matriz en memoria">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="3726.55" y="419.27" as="sourcePoint" />
+            <mxPoint x="2842" y="416" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

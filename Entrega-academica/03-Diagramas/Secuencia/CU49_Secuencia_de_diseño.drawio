@@ -1,0 +1,794 @@
+<mxfile host="Electron">
+  <diagram id="seq" name="Página-1">
+    <mxGraphModel dx="2011" dy="1233" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1700" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d0_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&#xa;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:115%;&#xa;font-family:&amp;quot;Times New Roman&amp;quot;,serif;mso-fareast-font-family:Aptos;mso-font-kerning:&#xa;0pt;mso-ligatures:none;mso-ansi-language:ES-CL;mso-fareast-language:ES-CL;&#xa;mso-bidi-language:AR-SA&quot;&gt;CU-49 – Flujo principal&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;&#xa;&#xa;" vertex="1">
+          <mxGeometry height="30" width="723" x="5" y="-158" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_v" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_TaskScheduler" vertex="1">
+          <mxGeometry height="40" width="142" x="-92" y="-48" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_v" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-21" y="-8" as="sourcePoint" />
+            <mxPoint x="-21" y="551.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_MaintenanceController" vertex="1">
+          <mxGeometry height="40" width="171" x="343" y="-51" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_s" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="428" y="-11" as="sourcePoint" />
+            <mxPoint x="427.76" y="523.1" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_db" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_FileSystemStorage" vertex="1">
+          <mxGeometry height="40" width="168" x="928" y="-53" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_v" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="497" width="10" x="-26" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="441" width="10" x="423" y="67" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_db" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="1006" y="203" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_m1" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-15.559999999999945" y="78.89000000000001" as="sourcePoint" />
+            <mxPoint x="422.8300000000004" y="77.00199999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-115" connectable="0" parent="d0_m1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. executeRoutine(&quot;MantenimientoTablas&quot;)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="35" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-49 – Excepción 3: Espacio insuficiente&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="50" y="1872" as="geometry" />
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-134" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&#xa;&#xa;&#xa;&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom:12.0pt;text-align:center;&#xa;line-height:150%&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&#xa;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-49 – Excepción 1: Tabla bloqueada&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;" vertex="1">
+          <mxGeometry height="30" width="723" x="2" y="614" as="geometry" />
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-135" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-49 – Excepción 2: Registro huérfano no corregible&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="452" x="104" y="1286" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-9" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.051;exitY=0.917;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="15. Finaliza rutina con éxito: { status: &quot;COMPLETED&quot;, reportId: 89 }">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="422.5999999999999" y="496.99700000000007" as="sourcePoint" />
+            <mxPoint x="-14.999999999999886" y="497.38200000000006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-96" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1106" y="-52" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-97" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="-12" as="sourcePoint" />
+            <mxPoint x="1190" y="507.64" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-98" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="406" width="10" x="1185" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-103" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.067;entryY=0.873;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="433" y="213.19499999999994" as="sourcePoint" />
+            <mxPoint x="1006.3299999999999" y="212.00400000000013" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-104" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-103" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7. verifyPhysicalExistence(filePathsArray)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="69" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-106" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.013;exitY=0.728;exitDx=0;exitDy=0;exitPerimeter=0;" value="8. Reporta punteros con archivos físicos inexistentes">
+          <mxGeometry relative="1" x="0.0037" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1005.1300000000001" y="245.54399999999998" as="sourcePoint" />
+            <mxPoint x="433.52" y="245.54000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-107" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="433.0000000000001" y="92.92000000000013" as="sourcePoint" />
+            <mxPoint x="1184" y="93.72899999999993" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-108" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-107" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. Escanea integridad referencial: SELECT checks on foreign keys &amp;amp; orphaned references across main tables" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-186" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Sistema" vertex="1">
+          <mxGeometry height="60" width="30" x="-316" y="-64" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-187" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-301" y="25" as="sourcePoint" />
+            <mxPoint x="-301" y="558.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-188" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="509" width="10" x="-306" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-189" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-188" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.044;entryY=0.06;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.993;exitY=0.041;exitDx=0;exitDy=0;exitPerimeter=0;" target="d0_bar_v" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-250.99999999999994" y="63.370000000000005" as="sourcePoint" />
+            <mxPoint x="-28.67" y="61.889999999999986" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-190" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-189" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Dispara evento de ejecución programada&amp;nbsp;&lt;div&gt;(Domingo 03:00 AM: cron expression &#39;0 3 * * 0&#39;)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-191" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.026;exitY=0.122;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna resultados de validación: Integridad referencial consistente (0 errores)">
+          <mxGeometry relative="1" x="0.0029" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1184.2599999999998" y="121.72199999999998" as="sourcePoint" />
+            <mxPoint x="431" y="121.00000000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-201" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="433.0000000000001" y="288.0000000000001" as="sourcePoint" />
+            <mxPoint x="1184" y="289.08000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-202" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-201" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="9. UPDATE attachment SET status = &#39;ORPHAN_POINTER_RESOLVED&#39; WHERE id IN (...);" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-203" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.026;exitY=0.122;exitDx=0;exitDy=0;exitPerimeter=0;" value="10. Confirma actualización de punteros de adjuntos">
+          <mxGeometry relative="1" x="0.0032" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1185" y="324" as="sourcePoint" />
+            <mxPoint x="432" y="323" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-204" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.133;entryY=0.839;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="435.0000000000001" y="360.0000000000001" as="sourcePoint" />
+            <mxPoint x="1184.6699999999996" y="363.4390000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-205" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-204" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="11. OPTIMIZE TABLE ticket, user, bitacora, variable_entorno, attachment;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-206" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.026;exitY=0.122;exitDx=0;exitDy=0;exitPerimeter=0;" value="12. Retorna estado de optimización: { status: &#39;OK&#39;, Op: &#39;optimize&#39; } para cada tabla">
+          <mxGeometry relative="1" x="0.0032" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1184" y="401" as="sourcePoint" />
+            <mxPoint x="431" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-209" edge="1" parent="1" source="d0_bar_v" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.014;exitY=0.994;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.987;entryY=0.955;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-188" value="16. Cierra ciclo de trabajo y programa&amp;nbsp;&lt;div&gt;próxima ejecución para el siguiente domingo&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.003" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-27.439999999999998" y="528" as="sourcePoint" />
+            <mxPoint x="-251" y="528.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-1" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="435.0000000000001" y="153.0000000000001" as="sourcePoint" />
+            <mxPoint x="1186" y="153.8089999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-2" connectable="0" parent="aarEst-Vuq1WabTW8i9M-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="5. SELECT id, file_path FROM attachment WHERE is_deleted = 0;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-3" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.026;exitY=0.122;exitDx=0;exitDy=0;exitPerimeter=0;" value="6. Retorna listado de punteros de archivos activos">
+          <mxGeometry relative="1" x="0.0029" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1184.2599999999998" y="182.72199999999998" as="sourcePoint" />
+            <mxPoint x="431" y="182" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-4" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.027;entryY=0.922;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="433.56" y="453.89" as="sourcePoint" />
+            <mxPoint x="1183.73" y="454.722" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-5" connectable="0" parent="aarEst-Vuq1WabTW8i9M-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="13. INSERT INTO reporte_mantenimiento (status, tables_checked, indexes_rebuilt, execution_time, details, created_at)&lt;div&gt;&amp;nbsp;VALUES (&#39;SUCCESS&#39;, 18, 42, &#39;14.2s&#39;, &#39;Integridad verificada, punteros corregidos y tablas optimizadas&#39;, NOW());&amp;nbsp;&lt;/div&gt;&lt;div&gt;INSERT INTO bitacora (...) VALUES (...);&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="39" y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_ll_db" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1012" y="-13" as="sourcePoint" />
+            <mxPoint x="1012" y="507.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-6" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.026;exitY=0.122;exitDx=0;exitDy=0;exitPerimeter=0;" value="14. Confirma guardado del reporte técnico y registro en bitácora">
+          <mxGeometry relative="1" x="0.0034" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1185" y="488" as="sourcePoint" />
+            <mxPoint x="432" y="487" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_TaskScheduler" vertex="1">
+          <mxGeometry height="40" width="142" x="-89" y="689" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-8" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-18" y="729" as="sourcePoint" />
+            <mxPoint x="-18" y="1288.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_MaintenanceController" vertex="1">
+          <mxGeometry height="40" width="171" x="241" y="686" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-10" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="326" y="726" as="sourcePoint" />
+            <mxPoint x="325.76" y="1260.1" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_FileSystemStorage" vertex="1">
+          <mxGeometry height="40" width="168" x="582" y="684" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="497" width="10" x="-23" y="771" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="441" width="10" x="321" y="804" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="660" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-15" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.074;entryY=0.022;entryDx=0;entryDy=0;entryPerimeter=0;" target="aarEst-Vuq1WabTW8i9M-13" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-12.559999999999945" y="815.89" as="sourcePoint" />
+            <mxPoint x="425.8300000000004" y="814.002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-16" connectable="0" parent="aarEst-Vuq1WabTW8i9M-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. executeRoutine(&quot;MantenimientoTablas&quot;)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="35" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-17" edge="1" parent="1" source="aarEst-Vuq1WabTW8i9M-13" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.043;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="15. Finaliza rutina: { completed: true, retriedSuccessfully: [&#39;ticket&#39;] }">
+          <mxGeometry relative="1" x="-0.001" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="425.5999999999999" y="1233.997" as="sourcePoint" />
+            <mxPoint x="-11.999999999999886" y="1234.382" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="765" y="684" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-19" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="849" y="724" as="sourcePoint" />
+            <mxPoint x="849" y="1243.6399999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="406" width="10" x="844" y="821" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-21" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.034;entryY=0.213;entryDx=0;entryDy=0;entryPerimeter=0;" target="aarEst-Vuq1WabTW8i9M-14" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="331" y="950.1949999999999" as="sourcePoint" />
+            <mxPoint x="904.3299999999999" y="949.0040000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-22" connectable="0" parent="aarEst-Vuq1WabTW8i9M-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="6. verifyPhysicalExistence(adjuntosPaths)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="37" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-23" edge="1" parent="1" source="aarEst-Vuq1WabTW8i9M-14" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.031;exitY=0.852;exitDx=0;exitDy=0;exitPerimeter=0;" value="7. Retorna estado de coherencia de archivos físicos">
+          <mxGeometry relative="1" x="0.0038" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="903.1300000000001" y="982.5439999999999" as="sourcePoint" />
+            <mxPoint x="331.52" y="982.54" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-24" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.016;entryY=0.022;entryDx=0;entryDy=0;entryPerimeter=0;" target="aarEst-Vuq1WabTW8i9M-20" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="331.0000000000001" y="829.9200000000001" as="sourcePoint" />
+            <mxPoint x="1082" y="830.7289999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-25" connectable="0" parent="aarEst-Vuq1WabTW8i9M-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. OPTIMIZE TABLE ticket;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-26" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Sistema" vertex="1">
+          <mxGeometry height="60" width="30" x="-313" y="673" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-27" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-298" y="762" as="sourcePoint" />
+            <mxPoint x="-298" y="1295.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="10" x="-303" y="789" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-29" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.044;entryY=0.06;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.993;exitY=0.041;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-292.07000000000016" y="800.9840000000002" as="sourcePoint" />
+            <mxPoint x="-22.440000000000055" y="800.8199999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-30" connectable="0" parent="aarEst-Vuq1WabTW8i9M-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Dispara evento de mantenimiento (03:00 AM)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-31" edge="1" parent="1" source="aarEst-Vuq1WabTW8i9M-20" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.038;exitY=0.09;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Error 1205: Lock wait timeout exceeded (Tabla bloqueada por proceso activo)">
+          <mxGeometry relative="1" x="0.0029" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1082.2599999999998" y="858.722" as="sourcePoint" />
+            <mxPoint x="329" y="858" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-32" edge="1" parent="1" source="aarEst-Vuq1WabTW8i9M-13" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=0.016;entryY=0.503;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="aarEst-Vuq1WabTW8i9M-20" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="331.61" y="1023.17" as="sourcePoint" />
+            <mxPoint x="1082" y="1026.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-33" connectable="0" parent="aarEst-Vuq1WabTW8i9M-32" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. OPTIMIZE TABLE user, bitacora, attachment;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-34" edge="1" parent="1" source="aarEst-Vuq1WabTW8i9M-20" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.034;exitY=0.589;exitDx=0;exitDy=0;exitPerimeter=0;" value="9. Retorna { status: &#39;OK&#39; } para tablas no bloqueadas">
+          <mxGeometry relative="1" x="0.0032" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1083" y="1061" as="sourcePoint" />
+            <mxPoint x="330" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-42" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.029;entryY=0.926;entryDx=0;entryDy=0;entryPerimeter=0;" target="aarEst-Vuq1WabTW8i9M-20" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="331.6" y="1197.96" as="sourcePoint" />
+            <mxPoint x="1083.17" y="1200.8319999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-43" connectable="0" parent="aarEst-Vuq1WabTW8i9M-42" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="13. INSERT INTO reporte_mantenimiento (status, retry_tables, details, created_at) VALUES&amp;nbsp;&lt;div&gt;(&#39;SUCCESS_WITH_RETRY&#39;, &#39;ticket&#39;, &#39;Tabla ticket reintentada y optimizada al final del ciclo&#39;, NOW());&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="39" y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-44" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="666" y="724" as="sourcePoint" />
+            <mxPoint x="666" y="1244.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-45" edge="1" parent="1" source="aarEst-Vuq1WabTW8i9M-20" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.092;exitY=0.835;exitDx=0;exitDy=0;exitPerimeter=0;" value="12. Retorna { status: &#39;OK&#39;, Op: &#39;optimize&#39; } (Bloqueo liberado, optimización completada)">
+          <mxGeometry relative="1" x="0.0034" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1083" y="1162" as="sourcePoint" />
+            <mxPoint x="330" y="1161" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-47" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="10. Fin del ciclo inicial: procesa retryQueue y prepara segundo intento para &#39;ticket&#39;">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="383" y="1085" />
+              <mxPoint x="383" y="1107" />
+            </Array>
+            <mxPoint x="333" y="1085" as="sourcePoint" />
+            <mxPoint x="333" y="1107" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-48" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Omite tabla &#39;ticket&#39; y la agrega a cola retryQueue: [&#39;ticket&#39;]">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="382" y="894" />
+              <mxPoint x="382" y="916" />
+            </Array>
+            <mxPoint x="332" y="894" as="sourcePoint" />
+            <mxPoint x="332" y="916" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-49" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.052;entryY=0.756;entryDx=0;entryDy=0;entryPerimeter=0;" target="aarEst-Vuq1WabTW8i9M-20" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="331.0000000000001" y="1128" as="sourcePoint" />
+            <mxPoint x="1082" y="1129.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-50" connectable="0" parent="aarEst-Vuq1WabTW8i9M-49" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="11. OPTIMIZE TABLE ticket; (Reintento al final del ciclo)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-51" edge="1" parent="1" source="aarEst-Vuq1WabTW8i9M-20" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.016;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;" value="14. Confirma registro de reporte">
+          <mxGeometry relative="1" x="0.003" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1082" y="1227" as="sourcePoint" />
+            <mxPoint x="329" y="1226" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_TaskScheduler" vertex="1">
+          <mxGeometry height="40" width="142" x="-141" y="1358" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-53" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-70" y="1398" as="sourcePoint" />
+            <mxPoint x="-70" y="1811.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_MaintenanceController" vertex="1">
+          <mxGeometry height="40" width="171" x="251" y="1355" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-55" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="336" y="1395" as="sourcePoint" />
+            <mxPoint x="335.76" y="1810.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_FileSystemStorage" vertex="1">
+          <mxGeometry height="40" width="168" x="718" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-57" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="339" width="10" x="-75" y="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-58" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="298" width="10" x="331" y="1473" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-59" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="45" width="10" x="796" y="1703" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-60" edge="1" parent="1" source="aarEst-Vuq1WabTW8i9M-57" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.129;exitY=0.132;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-2.5599999999999454" y="1484.8899999999999" as="sourcePoint" />
+            <mxPoint x="329.28" y="1482.7" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-61" connectable="0" parent="aarEst-Vuq1WabTW8i9M-60" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. executeRoutine(&quot;MantenimientoTablas&quot;)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="35" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-62" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.043;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.811;entryY=0.947;entryDx=0;entryDy=0;entryPerimeter=0;" target="aarEst-Vuq1WabTW8i9M-57" value="10. Finaliza ciclo con advertencia:&lt;div&gt;&amp;nbsp;{ status: &quot;COMPLETED_WITH_WARNINGS&quot;, manualReviewRequired: true }&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="329.5699999999997" y="1760.0359999999996" as="sourcePoint" />
+            <mxPoint x="-2.9999999999998863" y="1760.002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-63" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="985" y="1393" as="sourcePoint" />
+            <mxPoint x="985" y="1795.78" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-64" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="194" width="10" x="980" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-65" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="aarEst-Vuq1WabTW8i9M-59" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="341" y="1713.195" as="sourcePoint" />
+            <mxPoint x="793.73" y="1713.65" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-66" connectable="0" parent="aarEst-Vuq1WabTW8i9M-65" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. sendMaintenanceAlert({ to: &#39;supervisor_ti@clinica.cl&#39;, subject: &#39;ALERTA TÉCNICA:&amp;nbsp;&lt;div&gt;Registros huérfanos no corregibles automáticamente&#39;, reportId: 90 })&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="39" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-68" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.024;entryY=0.047;entryDx=0;entryDy=0;entryPerimeter=0;" target="aarEst-Vuq1WabTW8i9M-64" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="340.0000000000001" y="1498.92" as="sourcePoint" />
+            <mxPoint x="979.1599999999999" y="1498.9319999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-69" connectable="0" parent="aarEst-Vuq1WabTW8i9M-68" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. Escanea integridad referencial compleja entre tablas transaccionales e históricas" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-70" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Sistema" vertex="1">
+          <mxGeometry height="60" width="30" x="-365" y="1342" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-71" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-350" y="1431" as="sourcePoint" />
+            <mxPoint x="-350" y="1811.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-72" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="10" x="-355" y="1458" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-73" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.044;entryY=0.06;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.993;exitY=0.041;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-344.07000000000016" y="1469.9840000000002" as="sourcePoint" />
+            <mxPoint x="-74.44000000000005" y="1469.82" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-74" connectable="0" parent="aarEst-Vuq1WabTW8i9M-73" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Dispara evento programado de&amp;nbsp;&lt;div&gt;mantenimiento semanal (03:00 AM)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-75" edge="1" parent="1" source="aarEst-Vuq1WabTW8i9M-64" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.081;exitY=0.247;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.967;entryY=0.158;entryDx=0;entryDy=0;entryPerimeter=0;" value="4. Retorna inconsistencias encontradas: { table: &#39;ticket_comment&#39;, orphanId: 8812,&amp;nbsp;&lt;div&gt;missingParent: &#39;ticket_id=4021&#39;, resolvable: false }&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0024" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="978.1999999999998" y="1537.9080000000004" as="sourcePoint" />
+            <mxPoint x="339.6700000000001" y="1536.7379999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-76" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.051;entryY=0.799;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="aarEst-Vuq1WabTW8i9M-64" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="340" y="1644" as="sourcePoint" />
+            <mxPoint x="978.2200000000003" y="1645.0919999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-77" connectable="0" parent="aarEst-Vuq1WabTW8i9M-76" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="6. INSERT INTO reporte_mantenimiento (status, unresolvable_orphans, details, created_at) VALUES&amp;nbsp;&lt;div&gt;(&#39;WARNING_MANUAL_REVIEW&#39;, 1, &#39;Registro huérfano en ticket_comment&amp;nbsp;&lt;/div&gt;&lt;div&gt;(ID: 8812) requiere resolución manual&#39;, NOW());&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="44" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-78" edge="1" parent="1" source="aarEst-Vuq1WabTW8i9M-64" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.024;exitY=0.942;exitDx=0;exitDy=0;exitPerimeter=0;" value="7. Confirma registro de informe técnico en base de datos">
+          <mxGeometry relative="1" x="0.0021" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="979.1099999999997" y="1672.6999999999998" as="sourcePoint" />
+            <mxPoint x="342" y="1673" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-81" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="802" y="1393" as="sourcePoint" />
+            <mxPoint x="802" y="1795.78" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-84" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Identifica registro huérfano protegido:&amp;nbsp;&lt;div&gt;bloquea depuración automática para salvaguardar trazabilidad legal&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.9344" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="391" y="1580" />
+              <mxPoint x="391" y="1602" />
+            </Array>
+            <mxPoint x="341" y="1580" as="sourcePoint" />
+            <mxPoint x="341" y="1602" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-88" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="901" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-89" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Supervisor" vertex="1">
+          <mxGeometry height="60" width="30" x="1145" y="1333" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-90" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1160" y="1422" as="sourcePoint" />
+            <mxPoint x="1160" y="1799.78" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-91" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="10" x="1155" y="1727" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-93" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="807" y="1736.0049999999999" as="sourcePoint" />
+            <mxPoint x="1155" y="1736.81" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-94" connectable="0" parent="aarEst-Vuq1WabTW8i9M-93" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="9. Entrega reporte con detalles de tablas, identificadores&amp;nbsp;&lt;div&gt;huérfanos y recomendaciones de remediación técnica&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="18" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-96" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_TaskScheduler" vertex="1">
+          <mxGeometry height="40" width="142" x="-152" y="2007" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-97" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-81" y="2047" as="sourcePoint" />
+            <mxPoint x="-81" y="2460.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-98" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_MaintenanceController" vertex="1">
+          <mxGeometry height="40" width="171" x="240" y="2004" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-99" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="2044" as="sourcePoint" />
+            <mxPoint x="324.76" y="2459.16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-100" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_FileSystemStorage" vertex="1">
+          <mxGeometry height="40" width="168" x="707" y="1999" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-101" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="339" width="10" x="-86" y="2089" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-102" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="298" width="10" x="320" y="2122" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-103" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="45" width="10" x="785" y="2352" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-104" edge="1" parent="1" source="aarEst-Vuq1WabTW8i9M-101" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.129;exitY=0.132;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-13.559999999999945" y="2133.89" as="sourcePoint" />
+            <mxPoint x="318.28" y="2131.7" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-105" connectable="0" parent="aarEst-Vuq1WabTW8i9M-104" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. executeRoutine(&quot;MantenimientoTablas&quot;)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="35" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-106" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.043;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.811;entryY=0.947;entryDx=0;entryDy=0;entryPerimeter=0;" target="aarEst-Vuq1WabTW8i9M-101" value="10. Notifica aborto del proceso:&amp;nbsp;&lt;div&gt;{ status: &quot;FAILED_PRECHECK_STORAGE&quot;, aborted: true }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0007" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="318.5699999999997" y="2409.0359999999996" as="sourcePoint" />
+            <mxPoint x="-13.999999999999886" y="2409.002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-107" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="974" y="2042" as="sourcePoint" />
+            <mxPoint x="974" y="2444.7799999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-108" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="194" width="10" x="969" y="2139" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-109" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="aarEst-Vuq1WabTW8i9M-103" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="330" y="2362.1949999999997" as="sourcePoint" />
+            <mxPoint x="782.73" y="2362.65" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-110" connectable="0" parent="aarEst-Vuq1WabTW8i9M-109" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. sendCriticalAlertEmail({ to: &#39;admin@clinica.cl&#39;, subject: &#39;URGENTE:&amp;nbsp;&lt;div&gt;Mantenimiento abortado por falta de espacio en disco&#39;, availableSpace: &#39;2.1GB&#39; })&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="39" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-111" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.024;entryY=0.047;entryDx=0;entryDy=0;entryPerimeter=0;" target="aarEst-Vuq1WabTW8i9M-108" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="329.0000000000001" y="2147.92" as="sourcePoint" />
+            <mxPoint x="968.1599999999999" y="2147.932" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-112" connectable="0" parent="aarEst-Vuq1WabTW8i9M-111" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. SELECT table_schema, (data_length + index_length) AS size FROM&amp;nbsp;&lt;div&gt;i&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;nformation_schema.tables WHERE table_schema = &#39;clinica_db&#39;;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-113" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Sistema" vertex="1">
+          <mxGeometry height="60" width="30" x="-376" y="1991" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-114" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-361" y="2080" as="sourcePoint" />
+            <mxPoint x="-361" y="2460.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-115" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="10" x="-366" y="2107" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-116" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.044;entryY=0.06;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.993;exitY=0.041;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-355.07000000000016" y="2118.9840000000004" as="sourcePoint" />
+            <mxPoint x="-85.44000000000005" y="2118.8199999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-117" connectable="0" parent="aarEst-Vuq1WabTW8i9M-116" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Dispara evento programado&amp;nbsp;&lt;div&gt;de mantenimiento (03:00 AM)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-118" edge="1" parent="1" source="aarEst-Vuq1WabTW8i9M-108" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.081;exitY=0.247;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.967;entryY=0.158;entryDx=0;entryDy=0;entryPerimeter=0;" value="4. Retorna métricas de volumen y cuota libre: { requiredTempSpace: &#39;14.5GB&#39;, availableDiskSpace: &#39;2.1GB&#39; }">
+          <mxGeometry relative="1" x="0.0029" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="967.1999999999998" y="2186.9080000000004" as="sourcePoint" />
+            <mxPoint x="328.6700000000001" y="2185.738" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-119" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.051;entryY=0.799;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="aarEst-Vuq1WabTW8i9M-108" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="329" y="2293" as="sourcePoint" />
+            <mxPoint x="967.2200000000003" y="2294.0919999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-120" connectable="0" parent="aarEst-Vuq1WabTW8i9M-119" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="6. INSERT INTO reporte_mantenimiento (status, error_code, details, created_at)&amp;nbsp;&lt;div&gt;VALUES (&#39;ABORTED&#39;, &#39;INSUFFICIENT_STORAGE&#39;,&lt;div&gt;&amp;nbsp;&#39;Espacio insuficiente en disco para reconstrucción de índices. Tarea abortada preventivamente&#39;, NOW());&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="54" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-121" edge="1" parent="1" source="aarEst-Vuq1WabTW8i9M-108" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.024;exitY=0.942;exitDx=0;exitDy=0;exitPerimeter=0;" value="7. Confirma registro de suspensión técnica">
+          <mxGeometry relative="1" x="0.0028" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="968.1099999999997" y="2321.7" as="sourcePoint" />
+            <mxPoint x="331" y="2322" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-122" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="791" y="2042" as="sourcePoint" />
+            <mxPoint x="791" y="2444.7799999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-123" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Evalúa margen de almacenamiento: availableDiskSpace &amp;lt; requiredTempSpace -&amp;gt; Aborta optimización preventiva">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="380" y="2229" />
+              <mxPoint x="380" y="2251" />
+            </Array>
+            <mxPoint x="330" y="2229" as="sourcePoint" />
+            <mxPoint x="330" y="2251" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-124" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="890" y="1999" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-125" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Supervisor" vertex="1">
+          <mxGeometry height="60" width="30" x="1134" y="1982" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-126" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1149" y="2071" as="sourcePoint" />
+            <mxPoint x="1149" y="2448.7799999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-127" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="10" x="1144" y="2376" as="geometry" />
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-128" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="796" y="2385.005" as="sourcePoint" />
+            <mxPoint x="1144" y="2385.81" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-129" connectable="0" parent="aarEst-Vuq1WabTW8i9M-128" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="9. Entrega correo de advertencia solicitando ampliación&amp;nbsp;&lt;div&gt;de almacenamiento o depuración física inmediata&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="18" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

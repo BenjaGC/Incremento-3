@@ -1,0 +1,834 @@
+<mxfile host="Electron">
+  <diagram id="seq" name="Página-1">
+    <mxGraphModel dx="2682" dy="1580" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1700" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d0_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Times New Roman&amp;quot;,serif;mso-fareast-font-family:Aptos;mso-font-kerning:&lt;br/&gt;0pt;mso-ligatures:none;mso-ansi-language:ES-CL;mso-fareast-language:ES-CL;&lt;br/&gt;mso-bidi-language:AR-SA&quot;&gt;CU-56 – Flujo principal&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="5" y="-158" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_v" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_TaskScheduler" vertex="1">
+          <mxGeometry height="40" width="142" x="79" y="-48" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_v" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="-8" as="sourcePoint" />
+            <mxPoint x="150" y="441.59" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_IdentitySyncController" vertex="1">
+          <mxGeometry height="40" width="171" x="343" y="-51" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_s" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="428" y="-11" as="sourcePoint" />
+            <mxPoint x="427.76" y="435.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_bar_v" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="65" width="10" x="145" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="332" width="10" x="423" y="67" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_m1" edge="1" parent="1" source="d0_bar_v" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.934;exitY=0.691;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-15.559999999999945" y="78.89000000000001" as="sourcePoint" />
+            <mxPoint x="422.8300000000004" y="77.00199999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-115" connectable="0" parent="d0_m1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. executeRoutine(&quot;SincronizacionLDAP&quot;)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="23" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-135" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Times New Roman&amp;quot;,serif;mso-fareast-font-family:Aptos;mso-font-kerning:&lt;br/&gt;0pt;mso-ligatures:none;mso-ansi-language:ES-CL;mso-fareast-language:ES-CL;&lt;br/&gt;mso-bidi-language:AR-SA&quot;&gt;CU-56 – Excepción 2: Baja con tickets activos&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="452" x="425" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-96" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="167" x="1089" y="-52" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-97" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1173" y="-12" as="sourcePoint" />
+            <mxPoint x="1173" y="427.15" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-107" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.028;entryY=0.027;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-4" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="431.0000000000001" y="92.92000000000013" as="sourcePoint" />
+            <mxPoint x="1182.81" y="90.77199999999993" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-108" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-107" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. SELECT last_sync_at FROM log_sincronizacion_ldap WHERE status = &#39;SUCCESS&#39; ORDER BY id DESC LIMIT 1;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="59" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-186" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Sistema" vertex="1">
+          <mxGeometry height="60" width="30" x="-139" y="-64" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-187" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-124" y="25" as="sourcePoint" />
+            <mxPoint x="-124.85" y="439" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-188" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="39" width="10" x="-129" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-189" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-188" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.044;entryY=0.06;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.026;exitY=0.458;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-189.75" y="64.18899999999996" as="sourcePoint" />
+            <mxPoint x="144.55999999999995" y="63.82000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-190" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-189" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Dispara evento programado de sincronización&amp;nbsp;&lt;div&gt;(Diaria, 01:00 AM: cron &#39;0 1 * * *&#39;)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aarEst-Vuq1WabTW8i9M-141" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="20" width="10" x="145" y="384" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_LdapActiveDirectory" vertex="1">
+          <mxGeometry height="40" width="167" x="914" y="-51" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-3" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="998" y="-11" as="sourcePoint" />
+            <mxPoint x="997.41" y="430.11" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="302" width="9" x="1167" y="83" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-21" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-4" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.002;exitY=0.131;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna { last_sync_at: &#39;2026-10-02 01:00:00&#39; }">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1182.8900000000003" y="121.86000000000001" as="sourcePoint" />
+            <mxPoint x="431.67" y="125.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-22" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.127;exitY=0.202;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="HpmW7bD-sTM_mo-HBthS-218" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="434.27" y="162.70000000000005" as="sourcePoint" />
+            <mxPoint x="1010" y="162" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-23" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="5. ldapSearch({ filter: &#39;(&amp;amp;(objectClass=user)(whenChanged&amp;gt;=20261002010000.0Z))&#39;,&amp;nbsp;&lt;div&gt;attributes: [&#39;rut&#39;, &#39;mail&#39;, &#39;title&#39;, &#39;department&#39;, &#39;userAccountControl&#39;] })&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="61" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-24" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-218" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.017;exitY=0.842;exitDx=0;exitDy=0;exitPerimeter=0;" value="6. Retorna conjunto de cambios: 4 nuevos usuarios, 12 modificaciones de cargo/área, 2 cuentas deshabilitadas">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1360.9" y="192.01599999999996" as="sourcePoint" />
+            <mxPoint x="433" y="191" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-25" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.028;entryY=0.595;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-4" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="433.0000000000001" y="261.0000000000001" as="sourcePoint" />
+            <mxPoint x="1182.7200000000003" y="262.2919999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-26" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7. START TRANSACTION; INSERT INTO user (rut, name, email, role_id, department_id, is_active) VALUES (...);&amp;nbsp;&lt;div&gt;UPDATE user SET title = ..., department_id = ... WHERE rut = ...; UPDATE user SET is_active = 0 WHERE rut IN (...); COMMIT;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="63" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-27" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-4" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.032;exitY=0.69;exitDx=0;exitDy=0;exitPerimeter=0;" value="8. Confirma transacción masiva exitosa (operaciones aplicadas: 18)">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1182.98" y="291.2360000000001" as="sourcePoint" />
+            <mxPoint x="432" y="293" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-28" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.017;entryY=0.862;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-4" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="433.0000000000001" y="342.0000000000001" as="sourcePoint" />
+            <mxPoint x="1180.8900000000003" y="342.96000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-29" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="9. INSERT INTO log_sincronizacion_ldap (status, created_users, updated_users, disabled_users, execution_time, created_at)&lt;div&gt;&amp;nbsp;VALUES (&#39;SUCCESS&#39;, 4, 12, 2, &#39;3.8s&#39;, NOW()); INSERT INTO bitacora (...) VALUES (...);&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="95" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-30" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-4" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.032;exitY=0.967;exitDx=0;exitDy=0;exitPerimeter=0;" value="10. Confirma almacenamiento del resumen y bitácora">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1177.2" y="374.93" as="sourcePoint" />
+            <mxPoint x="431" y="374" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-44" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.238;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.342;entryDx=0;entryDy=0;entryPerimeter=0;" target="aarEst-Vuq1WabTW8i9M-141" value="11. Finaliza tarea con éxito: { status: &#39;COMPLETED&#39;,&amp;nbsp;&lt;div&gt;summary: { created: 4, updated: 12, disabled: 2 } }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="420.62000000000035" y="391.5999999999999" as="sourcePoint" />
+            <mxPoint x="-16" y="387" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-104" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-56 – Excepción 1: Error de conexión con LDAP/AD&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="452" x="461" y="595" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-105" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_TaskScheduler" vertex="1">
+          <mxGeometry height="40" width="142" x="97" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-106" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="168" y="1370" as="sourcePoint" />
+            <mxPoint x="168" y="1858.22" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-107" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_EmailIngestionController" vertex="1">
+          <mxGeometry height="40" width="171" x="346" y="1327" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-108" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="431" y="1367" as="sourcePoint" />
+            <mxPoint x="430.76" y="1857.11" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-109" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_EmailSMTP" vertex="1">
+          <mxGeometry height="40" width="168" x="1286" y="1326" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-110" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="65" width="10" x="163" y="1412" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-111" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="399" width="10" x="426" y="1445" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-112" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="47" width="10" x="1365" y="1532" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-113" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-110" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.934;exitY=0.691;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-12.559999999999945" y="1456.8899999999999" as="sourcePoint" />
+            <mxPoint x="425.8300000000004" y="1455.002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-114" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-113" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. executeRoutine(&quot;SincronizacionLDAP&quot;)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="23" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-115" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1109" y="1326" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-116" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1193" y="1366" as="sourcePoint" />
+            <mxPoint x="1193" y="1837.29" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-117" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.004;entryY=0.159;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-129" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="436.0000000000001" y="1470.92" as="sourcePoint" />
+            <mxPoint x="1187" y="1471.7289999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-118" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-117" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. ldapSearch({ filter: &#39;(&amp;amp;(objectClass=user)(userAccountControl:1.2.840.113556.1.4.803:=2))&#39; })" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="59" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-119" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Sistema" vertex="1">
+          <mxGeometry height="60" width="30" x="-49" y="1312" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-120" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-34" y="1401" as="sourcePoint" />
+            <mxPoint x="-34" y="1854.89" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-121" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="39" width="10" x="-39" y="1424" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-122" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-121" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.068;entryY=0.473;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.151;exitY=0.487;exitDx=0;exitDy=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-110" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-171.75" y="1442.1889999999999" as="sourcePoint" />
+            <mxPoint x="162.55999999999995" y="1441.8200000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-123" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-122" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Dispara evento de sincronización&amp;nbsp;&lt;div&gt;programada (Diaria, 01:00 AM)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="16" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-124" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1370" y="1366" as="sourcePoint" />
+            <mxPoint x="1370" y="1834.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-127" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_LdapActiveDirectory" vertex="1">
+          <mxGeometry height="40" width="168" x="934" y="1327" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-128" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1018" y="1367" as="sourcePoint" />
+            <mxPoint x="1018" y="1839.83" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-129" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="49" width="10" x="1013" y="1464" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-134" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Jefatura" vertex="1">
+          <mxGeometry height="60" width="30" x="1700" y="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-135" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1715" y="1372" as="sourcePoint" />
+            <mxPoint x="1715" y="1817.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-136" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.187;exitY=0.166;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna usuarios inactivos: { rut: &#39;15.420.111-2&#39;, email: &#39;ftecnico@clinica.cl&#39;, status: &#39;DISABLED&#39; }">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1010.1300000000001" y="1505.5" as="sourcePoint" />
+            <mxPoint x="436.67" y="1503.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-137" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.074;entryY=0.174;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="434.0000000000001" y="1547" as="sourcePoint" />
+            <mxPoint x="1363.2600000000002" y="1548.3519999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-138" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-137" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="5. SELECT u.id, d.manager_id, COUNT(t.id) as active_tickets FROM user u JOIN department d ON u.department_id = d.id&amp;nbsp;&lt;div&gt;LEFT JOIN ticket t ON t.assigned_user_id = u.id AND t.status IN (&#39;OPEN&#39;, &#39;IN_PROGRESS&#39;) WHERE u.rut = &#39;15.420.111-2&#39; GROUP BY u.id, d.manager_id;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="58" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-139" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.01;exitY=0.792;exitDx=0;exitDy=0;exitPerimeter=0;" value="&lt;span&gt;6. Retorna { userId: 45, managerId: 12, activeTickets: 3 } (Usuario dado de baja posee 3 tickets activos)`&lt;/span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1363.9" y="1570.016" as="sourcePoint" />
+            <mxPoint x="436" y="1569" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-142" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.11;exitY=0.871;exitDx=0;exitDy=0;exitPerimeter=0;" value="8. Confirma transacción: cuenta deshabilitada y 3 tickets reasignados a jefatura">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1184.8999999999996" y="1662.6789999999996" as="sourcePoint" />
+            <mxPoint x="436" y="1664.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-143" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.017;entryY=0.636;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="438.0000000000001" y="1711.04" as="sourcePoint" />
+            <mxPoint x="1188.17" y="1710.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-144" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-143" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="9. INSERT INTO log_sincronizacion_ldap (status, disabled_users, reassigned_tickets, details, created_at) VALUES&lt;div&gt;&amp;nbsp;(&#39;SUCCESS_WITH_REASSIGNMENT&#39;, 1, 3, &#39;Tickets traspasados por baja contractual&#39;, NOW());&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="40" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-145" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-275" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.017;exitY=0.91;exitDx=0;exitDy=0;exitPerimeter=0;" value="10. Confirma almacenamiento de log de auditoría">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1180.83" y="1734.93" as="sourcePoint" />
+            <mxPoint x="437.87" y="1735.91" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-152" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="HpmW7bD-sTM_mo-HBthS-154" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="441.44" y="1768" as="sourcePoint" />
+            <mxPoint x="1711" y="1771" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-153" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-152" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="11. sendNotificationEmail({ to: &#39;jefatura_soporte@clinica.cl&#39;, subject: &#39;AVISO: Reasignación de tickets por desvinculación&#39;, tickets: [1021, 1025, 1030] })" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="145" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-154" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="48" width="10" x="1365" y="1756" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-161" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.111;exitY=0.98;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.068;entryY=0.589;entryDx=0;entryDy=0;entryPerimeter=0;" value="13. Concluye rutina: { status: &#39;COMPLETED&#39;,&amp;nbsp;&lt;div&gt;deactivated: 1, reassignedTickets: 3 }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="426.20999999999987" y="1794.17" as="sourcePoint" />
+            <mxPoint x="174.99999999999983" y="1793.998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-162" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="32" width="10" x="163" y="1781" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-163" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-56 – Excepción 3: RUT duplicado con distinto correo&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="452" x="446" y="1904" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-218" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="49" width="9" x="993" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-219" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.238;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.035;entryY=0.437;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-220" value="12. Cierra ciclo y programa próxima ejecución&amp;nbsp;&lt;div&gt;para el día siguiente a las 01:00 AM&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="143.62000000000035" y="398.5999999999999" as="sourcePoint" />
+            <mxPoint x="-117.47" y="397.58" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-220" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="20" width="10" x="-129" y="389" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-221" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_TaskScheduler" vertex="1">
+          <mxGeometry height="40" width="142" x="-93" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-222" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-22" y="720" as="sourcePoint" />
+            <mxPoint x="-22" y="1169.59" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-223" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_IdentitySyncController" vertex="1">
+          <mxGeometry height="40" width="171" x="339" y="677" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-224" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="424" y="717" as="sourcePoint" />
+            <mxPoint x="423.76" y="1163.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-225" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="65" width="10" x="-27" y="762" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-226" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="332" width="10" x="419" y="795" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-227" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-225" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.934;exitY=0.691;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-19.559999999999945" y="806.89" as="sourcePoint" />
+            <mxPoint x="418.8300000000004" y="805.002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-228" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-227" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. executeRoutine(&quot;SincronizacionLDAP&quot;)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="23" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-229" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="167" x="1168" y="676" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-230" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1252" y="716" as="sourcePoint" />
+            <mxPoint x="1252" y="1155.15" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-231" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.036;entryY=0.046;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-241" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="426.0000000000001" y="820.9200000000001" as="sourcePoint" />
+            <mxPoint x="988.252" y="817.154" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-232" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-231" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. ldapBind({ url: &#39;ldaps://ad.clinica.cl:636&#39;, bindDN: &#39;CN=SyncService,...&#39; })" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="59" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-233" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Sistema" vertex="1">
+          <mxGeometry height="60" width="30" x="-311" y="664" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-234" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-296" y="753" as="sourcePoint" />
+            <mxPoint x="-296.85" y="1167" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-235" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="39" width="10" x="-301" y="776" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-236" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-235" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.044;entryY=0.06;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.026;exitY=0.458;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-361.75" y="792.189" as="sourcePoint" />
+            <mxPoint x="-27.440000000000055" y="791.82" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-237" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-236" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Dispara evento de sincronización&amp;nbsp;&lt;div&gt;diaria (01:00 AM)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-238" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="20" width="10" x="-27" y="1112" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-239" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_LdapActiveDirectory" vertex="1">
+          <mxGeometry height="40" width="167" x="993" y="677" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-240" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1077" y="717" as="sourcePoint" />
+            <mxPoint x="1076.4099999999999" y="1158.1100000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-241" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="171" width="9" x="1072" y="809" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-242" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-241" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" value="4. Error: ETIMEDOUT / LDAP_SERVER_DOWN (Fallo de enlace con directorio activo)">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="987.98" y="848.56" as="sourcePoint" />
+            <mxPoint x="426.67" y="853.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-246" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.895;exitY=0.45;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.111;entryY=0.817;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-241" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="428.00000000000006" y="950.3100000000001" as="sourcePoint" />
+            <mxPoint x="987.1360000000002" y="949.1280000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-247" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-246" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="6. INSERT INTO log_sincronizacion_ldap (status, error_code, details, created_at) VALUES (&#39;FAILED&#39;, &#39;LDAP_UNREACHABLE&#39;,&amp;nbsp;&lt;div&gt;&#39;Timeout al conectar con ldaps://ad.clinica.cl:636. Datos locales conservados.&#39;, NOW());&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="62" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-248" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-241" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.185;exitY=0.949;exitDx=0;exitDy=0;exitPerimeter=0;" value="7. Confirma registro de auditoría y log de fallo">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="986.1010000000001" y="972.684" as="sourcePoint" />
+            <mxPoint x="429.05" y="972.53" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-249" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.051;entryY=0.16;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-268" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="428.0000000000001" y="1070" as="sourcePoint" />
+            <mxPoint x="1331.82" y="1070.48" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-250" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-249" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. sendSecurityAlert({ to: &#39;admin@clinica.cl&#39;, subject: &#39;ALERTA: Falla de&lt;div&gt;enlace con Directorio Activo/LDAP&#39;, error: &#39;LDAP_SERVER_DOWN&#39; })&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="58" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-251" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-274" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="10. Notifica conclusión con error: { status: &#39;FAILED_CONNECTION&#39;, localDataPreserved: true }">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="987.712" y="1101.034" as="sourcePoint" />
+            <mxPoint x="426" y="1102" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-252" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.238;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.342;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-238" value="11. Cierra ejecución y agenda próximo intento para el siguiente ciclo diario (01:00 AM)">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="416.62000000000035" y="1119.6" as="sourcePoint" />
+            <mxPoint x="-20" y="1115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-256" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_EmailSMTP" vertex="1">
+          <mxGeometry height="40" width="168" x="1340" y="676" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-257" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1424" y="716" as="sourcePoint" />
+            <mxPoint x="1424" y="1180.3" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-258" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Usuario" vertex="1">
+          <mxGeometry height="60" width="30" x="1674" y="648" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-259" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1689" y="730" as="sourcePoint" />
+            <mxPoint x="1689" y="1175.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-264" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Aborta sincronización: mantiene intactos los usuarios y permisos locales en DB_MySQL">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="480" y="887" />
+              <mxPoint x="480" y="909" />
+            </Array>
+            <mxPoint x="430" y="887" as="sourcePoint" />
+            <mxPoint x="430" y="909" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-268" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="70" width="9" x="1419" y="1059" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-271" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-268" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.024;entryY=0.229;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.259;exitY=0.414;exitDx=0;exitDy=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-273" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1344" y="1088.91" as="sourcePoint" />
+            <mxPoint x="1464.81" y="1088.91" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-272" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-271" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="9. Entrega correo reportando caída de enlace y&amp;nbsp;&lt;div&gt;confirmando que la base local no fue alterada&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="28" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-273" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="70" width="9" x="1685" y="1072" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-274" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="42" width="9" x="1072" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-275" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="125" width="10" x="1187" y="1620" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-276" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="437.0000000000001" y="1631" as="sourcePoint" />
+            <mxPoint x="1187" y="1633.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-277" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-276" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7. START TRANSACTION; UPDATE user SET is_active = 0 WHERE id = 45; UPDATE ticket SET assigned_user_id = 12 WHERE&amp;nbsp;&lt;div&gt;assigned_user_id = 45 AND status IN (&#39;OPEN&#39;, &#39;IN_PROGRESS&#39;); INSERT INTO&amp;nbsp;&lt;div&gt;bitacora (action, details) VALUES (&#39;USER_DEACTIVATED_REASSIGN&#39;, &#39;Cuenta ID 45&amp;nbsp;&lt;/div&gt;&lt;div&gt;deshabilitada por LDAP. 3 tickets reasignados a jefatura ID 12&#39;); COMMIT;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="69" y="-27" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-280" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-154" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.977;exitY=0.4;exitDx=0;exitDy=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-282" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1377" y="1768" as="sourcePoint" />
+            <mxPoint x="2300.56" y="1768" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-281" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-280" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="12. Entrega notificación alertando la desactivación&amp;nbsp;&lt;div&gt;del técnico y el traspaso formal de sus tickets activos&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="44" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-282" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="48" width="10" x="1710" y="1763" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-283" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_TaskScheduler" vertex="1">
+          <mxGeometry height="40" width="142" x="24" y="2017" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-284" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="2057" as="sourcePoint" />
+            <mxPoint x="95" y="2545.2200000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-285" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_EmailIngestionController" vertex="1">
+          <mxGeometry height="40" width="171" x="341" y="2014" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-286" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="2054" as="sourcePoint" />
+            <mxPoint x="425.76" y="2544.1099999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-287" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_EmailSMTP" vertex="1">
+          <mxGeometry height="40" width="168" x="1281" y="2013" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-288" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="65" width="10" x="90" y="2099" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-289" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="399" width="10" x="421" y="2132" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-290" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="47" width="10" x="1183" y="2218" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-291" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-288" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.934;exitY=0.691;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-17.559999999999945" y="2143.89" as="sourcePoint" />
+            <mxPoint x="420.8300000000004" y="2142.002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-292" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-291" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. executeRoutine(&quot;SincronizacionLDAP&quot;)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="23" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-293" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1104" y="2013" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-294" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1188" y="2053" as="sourcePoint" />
+            <mxPoint x="1188" y="2524.29" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-295" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.004;entryY=0.159;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-305" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="431.0000000000001" y="2157.92" as="sourcePoint" />
+            <mxPoint x="1182" y="2158.729" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-296" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-295" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. fetchChangedObjects()" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="59" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-297" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Sistema" vertex="1">
+          <mxGeometry height="60" width="30" x="-122" y="1999" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-298" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-107" y="2088" as="sourcePoint" />
+            <mxPoint x="-107" y="2541.8900000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-299" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="39" width="10" x="-112" y="2111" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-300" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-299" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.068;entryY=0.473;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.151;exitY=0.487;exitDx=0;exitDy=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-288" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-244.75" y="2129.189" as="sourcePoint" />
+            <mxPoint x="89.55999999999995" y="2128.82" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-301" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-300" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Dispara rutina de sincronización&lt;div&gt;&amp;nbsp;diaria (01:00 AM)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="16" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-302" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1365" y="2053" as="sourcePoint" />
+            <mxPoint x="1365" y="2521.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-303" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_LdapActiveDirectory" vertex="1">
+          <mxGeometry height="40" width="168" x="929" y="2014" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-304" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1013" y="2054" as="sourcePoint" />
+            <mxPoint x="1013" y="2526.83" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-305" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="49" width="10" x="1008" y="2151" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-306" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Jefatura" vertex="1">
+          <mxGeometry height="60" width="30" x="1695" y="1977" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-307" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1710" y="2059" as="sourcePoint" />
+            <mxPoint x="1710" y="2504.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-308" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.187;exitY=0.166;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna objeto { rut: &#39;16.789.012-3&#39;, mail: &#39;nuevo.correo@clinica.cl&#39;, name: &#39;Andrés Vera&#39; }">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1005.1300000000001" y="2192.5" as="sourcePoint" />
+            <mxPoint x="431.67" y="2190.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-309" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-289" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.017;entryY=0.337;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-290" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="429.0000000000001" y="2234" as="sourcePoint" />
+            <mxPoint x="1358.2600000000002" y="2235.352" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-310" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-309" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="5. SELECT id, email, rut FROM user WHERE rut = &#39;16.789.012-3&#39;;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="58" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-311" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-290" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.043;exitY=0.81;exitDx=0;exitDy=0;exitPerimeter=0;" value="6. Retorna { id: 114, rut: &#39;16.789.012-3&#39;, email: &#39;antiguo.correo@clinica.cl&#39; } (RUT duplicado con correo divergente)">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1358.9" y="2257.016" as="sourcePoint" />
+            <mxPoint x="431" y="2256" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-313" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.017;entryY=0.636;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="433.0000000000001" y="2398.04" as="sourcePoint" />
+            <mxPoint x="1183.17" y="2397.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-314" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-313" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. INSERT INTO log_sincronizacion_ldap (status, conflict_count, details, created_at) VALUES&lt;div&gt;&amp;nbsp;(&#39;WARNING_CONFLICTS&#39;, 1, &#39;Conflicto: RUT 16.789.012-3 posee correos divergentes (nuevo.correo@clinica.cl vs antiguo.correo@clinica.cl).&amp;nbsp;&lt;/div&gt;&lt;div&gt;Omitido.&#39;, NOW()); INSERT INTO bitacora (...) VALUES (...);&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="57" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-315" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-321" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.017;exitY=0.91;exitDx=0;exitDy=0;exitPerimeter=0;" value="9. Confirma guardado del log de conflicto y auditoría">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1175.83" y="2421.9300000000003" as="sourcePoint" />
+            <mxPoint x="432.87" y="2422.91" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-316" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="436.44" y="2461" as="sourcePoint" />
+            <mxPoint x="1360" y="2461" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-317" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-316" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="10. sendConflictAlert({ to: &#39;admin@clinica.cl&#39;, subject: &#39;ADVERTENCIA:&amp;nbsp;&lt;div&gt;Conflicto de identidad detectado en sincronización LDAP&#39;, rut: &#39;16.789.012-3&#39;, localEmail: &#39;antiguo.correo@clinica.cl&#39;, ldapEmail: &#39;nuevo.correo@clinica.cl&#39; })&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="95" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-318" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="48" width="10" x="1360" y="2443" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-319" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.111;exitY=0.98;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="HpmW7bD-sTM_mo-HBthS-320" value="12. Finaliza tarea con advertencias:&lt;div&gt;&amp;nbsp;{ status: &#39;COMPLETED_WITH_CONFLICTS&#39;, omittedCount: 1 }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="421.20999999999987" y="2481.17" as="sourcePoint" />
+            <mxPoint x="169.99999999999983" y="2480.998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-320" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="32" width="10" x="90" y="2468" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-321" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="42" width="10" x="1182" y="2385" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-324" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-318" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.977;exitY=0.4;exitDx=0;exitDy=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-326" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1372" y="2455" as="sourcePoint" />
+            <mxPoint x="2295.56" y="2455" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-325" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-324" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="11. Entrega informe técnico alertando registro omitido&amp;nbsp;&lt;div&gt;por discrepancia de correos asociados al mismo RUT&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="44" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-326" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="48" width="10" x="1705" y="2450" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-327" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="7. Detecta discrepancia crítica: omite actualización del usuario 114 para evitar colisión de identidad">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="483" y="2296" />
+              <mxPoint x="483" y="2318" />
+            </Array>
+            <mxPoint x="433" y="2296" as="sourcePoint" />
+            <mxPoint x="433" y="2318" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

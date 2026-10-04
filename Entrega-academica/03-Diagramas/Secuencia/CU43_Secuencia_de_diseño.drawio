@@ -1,0 +1,662 @@
+<mxfile host="Electron">
+  <diagram id="seq" name="Página-1">
+    <mxGraphModel dx="2011" dy="1233" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1700" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d0_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-43 – Flujo principal&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="38" y="3" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_v" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_ClienteApp" vertex="1">
+          <mxGeometry height="40" width="142" x="-47" y="81" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_v" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="24" y="121" as="sourcePoint" />
+            <mxPoint x="24" y="574.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="M_GlobalErrorHandler" vertex="1">
+          <mxGeometry height="40" width="171" x="388" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_s" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="473" y="118" as="sourcePoint" />
+            <mxPoint x="472.76" y="559.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_db" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="973" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_v" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="383" width="10" x="19" y="163" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="258" width="10" x="468" y="211" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_db" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="187" width="10" x="1052" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_m1" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" target="d0_bar_s" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="29.440000000000055" y="220.37" as="sourcePoint" />
+            <mxPoint x="609.24" y="218.743" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-115" connectable="0" parent="d0_m1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Invoca endpoint y ocurre excepción no&amp;nbsp;&lt;div&gt;controlada en controlador: throw new Error(&quot;Null pointer...&quot;)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="35" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-48 – Excepción 3: Tormenta de errores repetidos&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="297" y="1928" as="geometry" />
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-134" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-43 – Excepción 1: Base de datos fuera de línea&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="249" y="667" as="geometry" />
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-135" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-43 – Excepción 2: Falla el envió de la notificación&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="452" x="438" y="1272" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-5" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.04;entryY=0.868;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="476" y="289.69499999999994" as="sourcePoint" />
+            <mxPoint x="1050.4" y="286.996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-6" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. SELECT id FROM log_fallo_aplicacion WHERE error_hash = &#39;e4d909c290&#39; AND created_at &amp;gt;= NOW() - INTERVAL 5 MINUTE;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="46" y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-8" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.047;exitY=0.939;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna Empty set (sin recurrencias previas en 5 min)">
+          <mxGeometry relative="1" x="0.0023" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1051.5299999999997" y="318.0030000000001" as="sourcePoint" />
+            <mxPoint x="478" y="319.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-9" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.051;exitY=0.917;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="9. 500 Internal Server Error { success: false, message: &quot;Ha ocurrido un error inesperado.&amp;nbsp;&lt;div&gt;Por favor contacte a soporte.&quot;, trackingCode: &quot;ERR-88492&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0024" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="466.5999999999999" y="462.99700000000007" as="sourcePoint" />
+            <mxPoint x="29.000000000000114" y="463.38200000000006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-59" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="2. Intercepta excepción y compila metadatos:&amp;nbsp;&lt;div&gt;stack trace, endpoint, method, user_id, severity = &#39;CRITICAL&#39; y hash de huella&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.9157" y="3" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="528" y="235" />
+              <mxPoint x="528" y="257" />
+            </Array>
+            <mxPoint x="478" y="235" as="sourcePoint" />
+            <mxPoint x="478" y="257" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-63" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="10. Alpine.js captura respuesta 500 y despliega&amp;nbsp;&lt;div&gt;modal genérico informando el código de seguimiento al usuario&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.9367" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="79" y="503" />
+              <mxPoint x="79" y="525" />
+            </Array>
+            <mxPoint x="29" y="503" as="sourcePoint" />
+            <mxPoint x="29" y="525" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-96" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_EmailSMTP" vertex="1">
+          <mxGeometry height="40" width="168" x="1151" y="77" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-97" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1235" y="117" as="sourcePoint" />
+            <mxPoint x="1235" y="553.73" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-98" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="1229" y="421" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-103" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.067;entryY=0.873;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="479" y="366.19499999999994" as="sourcePoint" />
+            <mxPoint x="1052.33" y="365.00400000000013" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-104" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-103" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="5. INSERT INTO log_fallo_aplicacion (stack_trace, endpoint, method, user_id, severity,&lt;div&gt;&amp;nbsp;error_hash, tracking_code, created_at) VALUES&amp;nbsp;&lt;/div&gt;&lt;div&gt;(&#39;...&#39;, &#39;/api/tickets&#39;, &#39;POST&#39;, 12, &#39;CRITICAL&#39;, &#39;e4d909c290&#39;, &#39;ERR-88492&#39;, NOW());&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="68" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-106" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.013;exitY=0.728;exitDx=0;exitDy=0;exitPerimeter=0;" value="6. Confirma inserción exitosa { insertId: 541 }">
+          <mxGeometry relative="1" x="0.0033" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1051.13" y="398.544" as="sourcePoint" />
+            <mxPoint x="479.52" y="398.54" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-107" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.032;entryY=0.28;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="481.8600000000001" y="433.1200000000001" as="sourcePoint" />
+            <mxPoint x="1229.6799999999998" y="432.20000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-108" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-107" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7. sendCriticalAlertEmail({ to: &#39;admin@clinica.cl&#39;, subject: &#39;ALERTA: Excepción crítica capturada [ERR-88492]&#39;, trackingCode: &#39;ERR-88492&#39; })" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_ll_db" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1057" y="116" as="sourcePoint" />
+            <mxPoint x="1057" y="555.87" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-71" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="1668" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-72" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1683" y="151" as="sourcePoint" />
+            <mxPoint x="1683" y="556.93" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="60" width="10" x="1677" y="409" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-77" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1239" y="438" as="sourcePoint" />
+            <mxPoint x="1677.56" y="438.63" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-78" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-77" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. Entrega correo de notificación de fallo crítico con&amp;nbsp;&lt;div&gt;detalles de diagnóstico y código de seguimiento&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="19" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-80" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_ClienteApp" vertex="1">
+          <mxGeometry height="40" width="142" x="-55" y="761" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-81" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="16" y="801" as="sourcePoint" />
+            <mxPoint x="16" y="1254.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-82" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="M_GlobalErrorHandler" vertex="1">
+          <mxGeometry height="40" width="171" x="380" y="758" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-83" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="465" y="798" as="sourcePoint" />
+            <mxPoint x="464.76" y="1239.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-84" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="965" y="756" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-85" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="383" width="10" x="11" y="843" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-86" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="258" width="10" x="460" y="891" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-87" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="1044" y="956" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-88" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-86" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="21.440000000000055" y="900.37" as="sourcePoint" />
+            <mxPoint x="601.24" y="898.7429999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-89" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-88" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Invoca endpoint y ocurre excepción no controlada en el servicio" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="35" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-90" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.04;entryY=0.868;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="468" y="969.6949999999999" as="sourcePoint" />
+            <mxPoint x="1042.4" y="966.9960000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-91" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-90" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. INSERT INTO log_fallo_aplicacion (stack_trace, endpoint, tracking_code, severity) VALUES (...);" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="46" y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-92" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.047;exitY=0.939;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Error: ECONNREFUSED / Connection Timeout (Base de datos fuera de línea)">
+          <mxGeometry relative="1" x="0.0023" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1043.5299999999997" y="998.0030000000002" as="sourcePoint" />
+            <mxPoint x="470" y="999.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-93" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.051;exitY=0.917;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="9. 500 Internal Server Error { success: false, message:&amp;nbsp;&lt;div&gt;&quot;Error interno del sistema&quot;, trackingCode: &quot;ERR-99104&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0018" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="458.5999999999999" y="1142.997" as="sourcePoint" />
+            <mxPoint x="21.000000000000114" y="1143.382" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-94" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="2. Intercepta excepción, compila metadatos&amp;nbsp;&lt;div&gt;(stack trace, endpoint, trackingCode: &quot;ERR-99104&quot;) y clasifica como CRITICAL&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.9157" y="3" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="520" y="915" />
+              <mxPoint x="520" y="937" />
+            </Array>
+            <mxPoint x="470" y="915" as="sourcePoint" />
+            <mxPoint x="470" y="937" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-95" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="10. Alpine.js captura error 500 y presenta&amp;nbsp;&lt;div&gt;modal con código de seguimiento &quot;ERR-99104&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.9344" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="71" y="1183" />
+              <mxPoint x="71" y="1205" />
+            </Array>
+            <mxPoint x="21" y="1183" as="sourcePoint" />
+            <mxPoint x="21" y="1205" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-96" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_EmailSMTP" vertex="1">
+          <mxGeometry height="40" width="168" x="1307" y="756" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-97" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1391" y="796" as="sourcePoint" />
+            <mxPoint x="1391" y="1232.73" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-98" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="1385" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-99" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-86" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.133;exitY=0.578;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="JGqaM0a-ywUJLE3DP8s4-112" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="471" y="1046.195" as="sourcePoint" />
+            <mxPoint x="1044.33" y="1045.0040000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-100" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-99" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="5. appendToFile(&#39;fallos.log&#39;, JSON.stringify({ trackingCode: &quot;ERR-99104&quot;, stackTrace: &quot;...&quot;, timestamp: NOW() }))" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="68" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-101" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-112" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.133;exitY=0.89;exitDx=0;exitDy=0;exitPerimeter=0;" value="6. Confirma escritura en disco en archivo de respaldo &#39;fallos.log&#39;">
+          <mxGeometry relative="1" x="0.0035" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1041.6100000000001" y="1066.004" as="sourcePoint" />
+            <mxPoint x="470" y="1066" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-102" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.028;entryY=0.28;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-98" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="473.8600000000001" y="1113.1200000000001" as="sourcePoint" />
+            <mxPoint x="1220.53" y="1112.2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-103" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-102" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7. sendCriticalAlertEmail({ to: &#39;admin@clinica.cl&#39;, subject: &#39;CRÍTICO: DB Offline - Fallo registrado en fallos.log&#39;, trackingCode: &#39;ERR-99104&#39; })" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-104" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1049" y="796" as="sourcePoint" />
+            <mxPoint x="1049" y="1235.87" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-105" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="1660" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-106" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1675" y="829" as="sourcePoint" />
+            <mxPoint x="1675" y="1234.9299999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-107" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="60" width="10" x="1669" y="1087" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-108" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-98" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.029;exitY=0.443;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1231" y="1116" as="sourcePoint" />
+            <mxPoint x="1669.56" y="1116.63" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-109" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-108" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. Entrega correo advirtiendo caída de la base de datos&lt;div&gt;&amp;nbsp;y derivación de logs a almacenamiento local&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-110" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_FileSystemLog" vertex="1">
+          <mxGeometry height="40" width="168" x="1136" y="756" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-111" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1220" y="796" as="sourcePoint" />
+            <mxPoint x="1220" y="1232.73" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-112" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="1214" y="1028" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-113" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_ClienteApp" vertex="1">
+          <mxGeometry height="40" width="142" x="-29" y="1390" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-114" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="42" y="1430" as="sourcePoint" />
+            <mxPoint x="42" y="1883.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-115" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="M_GlobalErrorHandler" vertex="1">
+          <mxGeometry height="40" width="171" x="406" y="1387" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-116" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="491" y="1427" as="sourcePoint" />
+            <mxPoint x="490.76" y="1868.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-117" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="991" y="1385" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-118" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="383" width="10" x="37" y="1472" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-119" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="258" width="10" x="486" y="1520" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-120" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="54" width="10" x="1070" y="1552" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-121" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-119" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="47.440000000000055" y="1529.37" as="sourcePoint" />
+            <mxPoint x="627.24" y="1527.743" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-122" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-121" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Ejecuta solicitud y se genera excepción crítica en el backend" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="35" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-123" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.063;entryY=0.089;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="496" y="1562.995" as="sourcePoint" />
+            <mxPoint x="1069.3700000000001" y="1563.6659999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-124" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-123" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. INSERT INTO log_fallo_aplicacion (stack_trace, endpoint, tracking_code, severity)&lt;div&gt;&amp;nbsp;VALUES (&#39;...&#39;, &#39;/api/orders&#39;, &#39;ERR-11029&#39;, &#39;CRITICAL&#39;);&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="45" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-125" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-120" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.137;exitY=0.809;exitDx=0;exitDy=0;exitPerimeter=0;" value="3. Confirma inserción exitosa { insertId: 620 }">
+          <mxGeometry relative="1" x="0.003" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1070.5299999999997" y="1593.0030000000002" as="sourcePoint" />
+            <mxPoint x="497" y="1594.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-126" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.051;exitY=0.917;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="9. 500 Internal Server Error { success: false, message:&lt;div&gt;&amp;nbsp;&quot;Error interno del sistema&quot;, trackingCode: &quot;ERR-11029&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.001" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="484.5999999999999" y="1771.997" as="sourcePoint" />
+            <mxPoint x="47.000000000000114" y="1772.382" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-128" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="10. Alpine.js renderiza mensaje de error&amp;nbsp;&lt;div&gt;genérico informando el código de seguimiento &quot;ERR-11029&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.9375" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="97" y="1812" />
+              <mxPoint x="97" y="1834" />
+            </Array>
+            <mxPoint x="47" y="1812" as="sourcePoint" />
+            <mxPoint x="47" y="1834" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-132" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-119" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.04;exitY=0.459;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="JGqaM0a-ywUJLE3DP8s4-145" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="497" y="1675.195" as="sourcePoint" />
+            <mxPoint x="1070.33" y="1674.0040000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-133" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-132" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="4. sendCriticalAlertEmail({ to: &#39;admin@clinica.cl&#39;, trackingCode: &#39;ERR-11029&#39; })" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="68" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-134" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-145" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.133;exitY=0.89;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.987;entryY=0.561;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-119" value="5. Error: ETIMEDOUT / SMTP_CONNECTION_FAILED (Falla en el envío de notificación)">
+          <mxGeometry relative="1" x="0.0005" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1067.6100000000001" y="1695.004" as="sourcePoint" />
+            <mxPoint x="496" y="1695" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-135" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.068;entryY=0.245;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-148" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="499.8600000000001" y="1742.1200000000001" as="sourcePoint" />
+            <mxPoint x="1064.84" y="1742.12" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-136" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-135" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7. INSERT INTO notification_retry_queue (recipient, subject, tracking_code, attempts, max_attempts, status, next_retry_at) VALUES&lt;div&gt;&amp;nbsp;(&#39;admin@clinica.cl&#39;, &#39;ALERTA: Excepción crítica [ERR-11029]&#39;, &#39;ERR-11029&#39;, 0, 5, &#39;PENDING&#39;, NOW() + INTERVAL 2 MINUTE);&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-137" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1075" y="1425" as="sourcePoint" />
+            <mxPoint x="1075" y="1864.87" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-143" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_EmailSMTP" vertex="1">
+          <mxGeometry height="40" width="168" x="1162" y="1385" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-144" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1246" y="1425" as="sourcePoint" />
+            <mxPoint x="1246" y="1861.73" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-145" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="1241" y="1627" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-147" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="6. Activa mecanismo de contingencia: prepara payload de notificación para encolar">
+          <mxGeometry relative="1" x="-0.9344" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="547" y="1691" />
+              <mxPoint x="547" y="1713" />
+            </Array>
+            <mxPoint x="497" y="1691" as="sourcePoint" />
+            <mxPoint x="497" y="1713" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-148" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="54" width="10" x="1070" y="1729" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-149" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.137;exitY=0.809;exitDx=0;exitDy=0;exitPerimeter=0;" value="8. Confirma alerta encolada en base de datos">
+          <mxGeometry relative="1" x="0.003" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1068" y="1768.05" as="sourcePoint" />
+            <mxPoint x="496" y="1767" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-153" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="1382" y="1378" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-154" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1397" y="1467" as="sourcePoint" />
+            <mxPoint x="1397" y="1872.9299999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-156" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_ClienteApp" vertex="1">
+          <mxGeometry height="40" width="142" x="-5" y="2009" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-157" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="66" y="2049" as="sourcePoint" />
+            <mxPoint x="66" y="2502.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-158" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="M_GlobalErrorHandler" vertex="1">
+          <mxGeometry height="40" width="171" x="430" y="2006" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-159" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="2046" as="sourcePoint" />
+            <mxPoint x="514.76" y="2487.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-160" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1015" y="2004" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-161" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="383" width="10" x="61" y="2091" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-162" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="258" width="10" x="510" y="2139" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-163" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="184" width="10" x="1094" y="2171" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-164" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-162" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="71.44000000000005" y="2148.37" as="sourcePoint" />
+            <mxPoint x="651.24" y="2146.743" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-165" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-164" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Llega petición concurrente que dispara la misma excepción no controlada" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="35" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-166" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.033;entryY=0.147;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-163" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="519" y="2196.995" as="sourcePoint" />
+            <mxPoint x="1092.3700000000001" y="2197.6659999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-167" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-166" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. SELECT id, tracking_code, occurrence_count FROM log_fallo_aplicacion WHERE&amp;nbsp;&lt;div&gt;error_hash = &#39;e4d909c290&#39; AND last_seen_at &amp;gt;= NOW() - INTERVAL 5 MINUTE LIMIT 1;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="45" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-168" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-163" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.059;exitY=0.286;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna registro coincidente { id: 541, tracking_code: &#39;ERR-88492&#39;, occurrence_count: 14 }">
+          <mxGeometry relative="1" x="0.0036" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1092.63" y="2223.7360000000003" as="sourcePoint" />
+            <mxPoint x="521" y="2223" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-169" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.051;exitY=0.917;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="8. 500 Internal Server Error { success: false, message:&amp;nbsp;&lt;div&gt;&quot;Error interno del sistema&quot;, trackingCode: &quot;ERR-88492&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.001" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="508.5999999999999" y="2390.9970000000003" as="sourcePoint" />
+            <mxPoint x="71.00000000000011" y="2391.382" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-170" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="9. Alpine.js captura el error 500 y presenta modal de soporte con el código &quot;ERR-88492&quot;">
+          <mxGeometry relative="1" x="-0.9344" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="121" y="2431" />
+              <mxPoint x="121" y="2453" />
+            </Array>
+            <mxPoint x="71" y="2431" as="sourcePoint" />
+            <mxPoint x="71" y="2453" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-174" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.018;entryY=0.761;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-163" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="524.0000000000001" y="2310" as="sourcePoint" />
+            <mxPoint x="1093.4600000000003" y="2310.11" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-175" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-174" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="6. UPDATE log_fallo_aplicacion SET occurrence_count = occurrence_count + 1, last_seen_at = NOW() WHERE id = 541;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-176" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1099" y="2044" as="sourcePoint" />
+            <mxPoint x="1099" y="2483.87" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-177" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_EmailSMTP" vertex="1">
+          <mxGeometry height="40" width="168" x="1186" y="2004" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-178" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1270" y="2044" as="sourcePoint" />
+            <mxPoint x="1270" y="2480.73" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-180" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="2. Intercepta excepción, calcula huella criptográfica (error_hash: &#39;e4d909c290&#39;) y extrae metadatos">
+          <mxGeometry relative="1" x="-0.9344" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="570" y="2155" />
+              <mxPoint x="570" y="2177" />
+            </Array>
+            <mxPoint x="520" y="2155" as="sourcePoint" />
+            <mxPoint x="520" y="2177" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-182" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-163" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.044;exitY=0.935;exitDx=0;exitDy=0;exitPerimeter=0;" value="7. Confirma incremento de ocurrencias (affectedRows: 1)">
+          <mxGeometry relative="1" x="0.003" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1091" y="2343.05" as="sourcePoint" />
+            <mxPoint x="519" y="2342" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-183" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="1406" y="1997" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-184" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1421" y="2086" as="sourcePoint" />
+            <mxPoint x="1421" y="2491.93" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-185" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Detecta ráfaga/tormenta de fallos: omite nueva inserción y silencia envío de alerta SMTP">
+          <mxGeometry relative="1" x="-0.9344" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="570" y="2251" />
+              <mxPoint x="570" y="2273" />
+            </Array>
+            <mxPoint x="520" y="2251" as="sourcePoint" />
+            <mxPoint x="520" y="2273" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

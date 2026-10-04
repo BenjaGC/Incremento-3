@@ -14,11 +14,19 @@ Repositorio privado del equipo, administrado por Benjamín (BenjaGC). El código
 - [Presentación](Entrega-academica/06-Presentacion/)
 - [Manuales](Entrega-academica/07-Manuales/)
 
-Los documentos finales y los enlaces de video están pendientes de recibir. [Índice de la entrega académica](Entrega-academica/README.md).
+Material del Grupo 11 incorporado el 4 de octubre de 2026: informe, diagramas, planillas, presentación y capturas. [Índice de la entrega académica](Entrega-academica/README.md).
+
+## Videos del Incremento III
+
+- [Video de presentación](https://github.com/BenjaGC/Ticketera-Clinica-Aconcagua/releases/download/incremento-iii-20261004/Video-presentacion-Incremento-III.mp4)
+- [Video de instalación local](https://github.com/BenjaGC/Ticketera-Clinica-Aconcagua/releases/download/incremento-iii-20261004/Guia-instalacion-local.mov)
+- [Ver la entrega y descargar los videos](https://github.com/BenjaGC/Ticketera-Clinica-Aconcagua/releases/tag/incremento-iii-20261004)
+
+Las descargas requieren acceso al repositorio privado. Las evidencias Q-01 a Q-08 están identificadas como datos de ejemplo y no certifican mediciones reales. Consultar el [control de recepción](Entrega-academica/CONTROL-DE-RECEPCION.md).
 
 ## Estado de la entrega
 
-Código preparado para revisión e instalación en un entorno de prueba. No incluye usuarios, contraseñas, tickets, adjuntos ni credenciales de la instalación local. La publicación de este repositorio no constituye un despliegue en la clínica.
+Código preparado para revisión e instalación en un entorno de prueba. La distribución de la aplicación no incluye registros de la base local ni sus credenciales. Los documentos académicos contienen las capturas de prueba recibidas. La publicación de este repositorio no constituye un despliegue en la clínica.
 
 Entrega revisada el 3 de octubre de 2026. Instalación, seguridad, regresión e interfaz verificadas en bases aisladas; consultar [registro de verificación](docs/VERIFICACION-ENTREGA.md). Los servicios institucionales y el servidor de destino aún deben configurarse y comprobarse con TI.
 
@@ -82,6 +90,6 @@ No subir `.env`, respaldos con usuarios, archivos privados ni contraseñas. Las 
 
 ## Documentación académica y videos
 
-`Entrega-academica/` ya contiene las carpetas para organizar informe, diagramas, presentación y evidencias, siguiendo la guía de organización. Agregar aquí los enlaces definitivos a los videos cuando estén disponibles; no hay enlaces de video verificados incluidos en esta entrega.
+`Entrega-academica/` ya contiene las carpetas para organizar informe, diagramas, presentación y evidencias, siguiendo la guía de organización. Los documentos recibidos y los enlaces de descarga están en el índice académico y en la portada.
 
 Para comprobar también la instalación inicial y el respaldo con archivos: `npm run test:install`. Requiere Python y mysqldump. Para el recorrido de PDF, instalar PyMuPDF con `python -m pip install pymupdf`.

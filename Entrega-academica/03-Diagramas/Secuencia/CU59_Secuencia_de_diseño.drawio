@@ -1,0 +1,600 @@
+<mxfile host="Electron">
+  <diagram id="seq" name="Página-1">
+    <mxGraphModel dx="2756" dy="1411" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1700" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d0_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Times New Roman&amp;quot;,serif;mso-fareast-font-family:Aptos;mso-font-kerning:&lt;br/&gt;0pt;mso-ligatures:none;mso-ansi-language:ES-CL;mso-fareast-language:ES-CL;&lt;br/&gt;mso-bidi-language:AR-SA&quot;&gt;CU-59 – Flujo principal&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="-8" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-135" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Times New Roman&amp;quot;,serif;mso-fareast-font-family:Aptos;mso-font-kerning:&lt;br/&gt;0pt;mso-ligatures:none;mso-ansi-language:ES-CL;mso-fareast-language:ES-CL;&lt;br/&gt;mso-bidi-language:AR-SA&quot;&gt;CU-59 – Excepción 2: Cantidad de preguntas fuera de&lt;br/&gt;rango&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="452" x="-8" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-104" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&#xa;&#xa;&#xa;&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom:12.0pt;text-align:center;&#xa;line-height:150%&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&#xa;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-59 – Excepción 1: Caracteres inválidos&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;" vertex="1">
+          <mxGeometry height="30" width="452" x="334" y="609" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-163" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-59 – Excepción 3: Error al archivar la versión&lt;br/&gt;anterior&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="452" x="-4" y="1758" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-442" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_EncuestaSatisfaccion" vertex="1">
+          <mxGeometry height="40" width="152" x="-267" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-443" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-191" y="1399" as="sourcePoint" />
+            <mxPoint x="-191" y="1703.57" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-444" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_EncuestaController" vertex="1">
+          <mxGeometry height="40" width="171" x="314" y="1356" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-445" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="399" y="1396" as="sourcePoint" />
+            <mxPoint x="398.76" y="1702.05" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-446" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="219" width="10" x="-196" y="1441" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-447" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="127" width="10" x="394" y="1474" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-448" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-446" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.045;entryY=0.079;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.064;exitY=0.197;exitDx=0;exitDy=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-447" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-28" y="1484.03" as="sourcePoint" />
+            <mxPoint x="392.06" y="1484" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-449" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-448" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. POST /api/satisfaction-surveys { questions: [q1, q2, ..., q11] }" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="23" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-450" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="-628" y="1343" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-451" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-613" y="1432" as="sourcePoint" />
+            <mxPoint x="-613.85" y="1696.71" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-452" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-458" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.156;exitY=0.082;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-460.73" y="1472.824" as="sourcePoint" />
+            <mxPoint x="-199.32999999999998" y="1471.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-453" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-452" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Agrega 11 preguntas a la encuesta y presiona &quot;Publicar Encuesta&quot;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-454" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="167" x="827" y="1356" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-455" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="911" y="1396" as="sourcePoint" />
+            <mxPoint x="910.41" y="1692.9" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-456" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-447" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.057;exitY=0.795;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.1;entryY=0.606;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-446" value="4. 422 Unprocessable Entity { success: false, error: &quot;QUESTION_COUNT_OUT_OF_RANGE&quot;,&lt;div&gt;&amp;nbsp;totalQuestions: 11, min: 1, max: 10, message: &quot;La cantidad de preguntas debe estar comprendida entre 1 y 10&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="391.81999999999994" y="1574.9650000000001" as="sourcePoint" />
+            <mxPoint x="-32" y="1574.48" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-457" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1.084;entryY=0.956;entryDx=0;entryDy=0;entryPerimeter=0;" value="6. Despliega aviso en pantalla: &quot;Publicación bloqueada:&amp;nbsp;&lt;div&gt;La encuesta no puede contener 0 ni más de 10 preguntas.&lt;/div&gt;&lt;div&gt;&amp;nbsp;Ajuste la cantidad antes de publicar.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-196.35" y="1648.9999999999989" as="sourcePoint" />
+            <mxPoint x="-607.1600000000001" y="1649.508" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-458" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="205" width="10" x="-618" y="1454" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-459" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="3. Evalúa regla de negocio: questions.length = 11 (Rango permitido: 1 a 10) -&amp;gt; Condición no cumplida">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="453" y="1515" />
+              <mxPoint x="453" y="1537" />
+            </Array>
+            <mxPoint x="403" y="1515" as="sourcePoint" />
+            <mxPoint x="403" y="1537" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-460" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Alpine.js detiene el spinner de guardado, destaca el contador de preguntas en rojo y preserva los datos en edición">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-136" y="1593" />
+              <mxPoint x="-136" y="1615" />
+            </Array>
+            <mxPoint x="-186" y="1593" as="sourcePoint" />
+            <mxPoint x="-186" y="1615" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-461" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_EncuestaSatisfaccion" vertex="1">
+          <mxGeometry height="40" width="152" x="-112" y="-6" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-462" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-36" y="33" as="sourcePoint" />
+            <mxPoint x="-36" y="547.760465116279" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-463" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_EncuestaController" vertex="1">
+          <mxGeometry height="40" width="171" x="315" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-464" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="30" as="sourcePoint" />
+            <mxPoint x="399.76" y="476.6700000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-465" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="442" width="10" x="-41" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-466" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="332" width="10" x="395" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-467" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-465" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.978;exitY=0.096;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="127.34000000000015" y="119.91499999999996" as="sourcePoint" />
+            <mxPoint x="395.8300000000004" y="118.00199999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-468" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-467" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. GET /api/satisfaction-surveys/current" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="23" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-469" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.028;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-485" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="403.0000000000001" y="133.92000000000007" as="sourcePoint" />
+            <mxPoint x="959.3699999999999" y="132.96000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-470" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-469" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. SELECT v.id, v.version_num, p.enunciado, p.scale_type, p.order_num FROM encuesta_version v&amp;nbsp;&lt;div&gt;JOIN encuesta_pregunta p ON v.id = p.encuesta_version_id WHERE v.status = &#39;ACTIVE&#39;;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="54" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-471" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="-473" y="-23" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-472" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-458" y="66" as="sourcePoint" />
+            <mxPoint x="-458.85" y="542.1800000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-473" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-487" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.063;exitY=0.043;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.052;entryY=0.069;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-465" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-305.73" y="106.82400000000007" as="sourcePoint" />
+            <mxPoint x="-42.87000000000012" y="104.83500000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-474" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-473" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Accede a&amp;nbsp;&lt;div&gt;&quot;Configuración &amp;gt; Encuesta de satisfacción&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-475" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="167" x="983" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-476" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1067" y="30" as="sourcePoint" />
+            <mxPoint x="1066.4099999999999" y="471.1100000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-477" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-485" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.087;exitY=0.153;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna versión activa y preguntas vigentes">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="957.8899999999999" y="164.80999999999995" as="sourcePoint" />
+            <mxPoint x="403.6700000000001" y="166.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-478" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.127;exitY=0.202;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.032;entryY=0.279;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-485" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="405.27" y="203.70000000000005" as="sourcePoint" />
+            <mxPoint x="964" y="203.24999999999977" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-479" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-478" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="5. ldapSearch({ filter: &#39;(&amp;amp;(objectClass=user)(whenChanged&amp;gt;=20261002010000.0Z))&#39;,&amp;nbsp;&lt;div&gt;attributes: [&#39;rut&#39;, &#39;mail&#39;, &#39;title&#39;, &#39;department&#39;, &#39;userAccountControl&#39;] })&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="61" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-480" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-485" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.012;exitY=0.37;exitDx=0;exitDy=0;exitPerimeter=0;" value="6. Retorna conjunto de cambios: 4 nuevos usuarios, 12 modificaciones de cargo/área, 2 cuentas deshabilitadas">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="963.8470000000002" y="232.25799999999992" as="sourcePoint" />
+            <mxPoint x="404" y="232" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-481" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.067;entryY=0.861;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-485" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="405.0000000000001" y="383" as="sourcePoint" />
+            <mxPoint x="961.96" y="383" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-482" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-481" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="10. START TRANSACTION; UPDATE encuesta_version SET status = &#39;ARCHIVED&#39;, archived_at =&amp;nbsp;&lt;div&gt;NOW() WHERE status = &#39;ACTIVE&#39;; INSERT INTO encuesta_version (version_num, status) VALUES (2, &#39;ACTIVE&#39;); INSERT INTO&lt;/div&gt;&lt;div&gt;encuesta_pregunta (...) VALUES (...); INSERT INTO bitacora (...) VALUES (...); COMMIT;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="49" y="-23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-483" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-485" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.107;exitY=0.968;exitDx=0;exitDy=0;exitPerimeter=0;" value="11. Confirma transacción: versión anterior archivada y nueva versión 2 activada">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="959.74" y="416.03" as="sourcePoint" />
+            <mxPoint x="403" y="415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-484" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.238;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.974;entryY=0.807;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-465" value="12. 201 Created { success: true, version: 2, message:&amp;nbsp;&lt;div&gt;&quot;Nueva versión de encuesta publicada correctamente&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="392.62000000000035" y="432.5999999999999" as="sourcePoint" />
+            <mxPoint x="127" y="431.8399999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-485" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="308" width="9" x="1062" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-486" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1.084;entryY=0.956;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-487" value="14. Muestra notificación en pantalla: &quot;Encuesta de satisfacción actualizada.&lt;div&gt;La nueva versión se aplicará a todos los tickets resueltos desde este momento.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-41.35000000000002" y="510.99999999999886" as="sourcePoint" />
+            <mxPoint x="-306.0000000000001" y="511.26700000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-487" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="443" width="10" x="-463" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-488" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.238;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.045;entryY=0.268;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-465" value="5. 200 OK { version: 1, questions: [...] }">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="393.62000000000035" y="193.5999999999999" as="sourcePoint" />
+            <mxPoint x="128" y="193" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-489" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.238;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.933;entryY=0.285;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-487" value="6. Despliega interfaz con listado de preguntas editables">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-42.379999999999654" y="214.5999999999999" as="sourcePoint" />
+            <mxPoint x="-297.08" y="213.84000000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-490" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-487" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.119;exitY=0.379;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-281.59000000000003" y="257.78" as="sourcePoint" />
+            <mxPoint x="-41.44" y="255.44000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-491" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-490" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7. Modifica enunciados, define escalas (&#39;1_TO_5&#39;, &#39;YES_NO&#39;),&lt;div&gt;&amp;nbsp;reordena 4 preguntas y pulsa &quot;Publicar Encuesta&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-492" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-465" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.063;exitY=0.452;exitDx=0;exitDy=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-466" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="126" y="275" as="sourcePoint" />
+            <mxPoint x="394.8300000000004" y="273.00199999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-493" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-492" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. POST /api/satisfaction-surveys { questions:&amp;nbsp;&lt;div&gt;[{ text: &#39;¿Cómo evalúa la atención recibida?&#39;, scale: &#39;1_TO_5&#39;, order: 1 }, ...] }&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="21" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-494" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="9. Valida sintaxis/caracteres válidos y cuenta total de preguntas: (4 preguntas está dentro del rango [1, 10])">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="456" y="288" />
+              <mxPoint x="456" y="310" />
+            </Array>
+            <mxPoint x="406" y="288" as="sourcePoint" />
+            <mxPoint x="406" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-495" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="13. Alpine.js actualiza badge a &#39;Versión 2 Activa&#39; y limpia formularios">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="20" y="462" />
+              <mxPoint x="20" y="484" />
+            </Array>
+            <mxPoint x="-30" y="462" as="sourcePoint" />
+            <mxPoint x="-30" y="484" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-496" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_EncuestaSatisfaccion" vertex="1">
+          <mxGeometry height="40" width="152" x="-38" y="707" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-497" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="38" y="746" as="sourcePoint" />
+            <mxPoint x="38" y="1050.57" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-498" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_EncuestaController" vertex="1">
+          <mxGeometry height="40" width="171" x="505" y="703" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-499" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="743" as="sourcePoint" />
+            <mxPoint x="589.76" y="1049.05" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-500" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="219" width="10" x="33" y="788" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-501" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="127" width="10" x="585" y="821" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-502" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-500" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.045;entryY=0.079;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.064;exitY=0.197;exitDx=0;exitDy=0;exitPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-501" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="47" y="831.03" as="sourcePoint" />
+            <mxPoint x="467.05999999999995" y="831" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-503" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-502" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. POST /api/satisfaction-surveys&amp;nbsp;&lt;div&gt;{ questions: [{ text: &quot;   &quot;, scale: &quot;1_TO_5&quot;, order: 1 }] }&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="24" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-504" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="-399" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-505" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-384" y="779" as="sourcePoint" />
+            <mxPoint x="-384.85" y="1043.71" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-506" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-512" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.156;exitY=0.082;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-231.73000000000002" y="819.8240000000001" as="sourcePoint" />
+            <mxPoint x="29.67" y="818.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-507" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-506" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Deja un enunciado en blanco (&quot;   &quot;) o ingresa caracteres&lt;div&gt;&amp;nbsp;inválidos y presiona &quot;Publicar Encuesta&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-508" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="167" x="1018" y="703" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-509" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1102" y="743" as="sourcePoint" />
+            <mxPoint x="1101.4099999999999" y="1039.9" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-510" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-501" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.057;exitY=0.795;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. 422 Unprocessable Entity { success: false, error: &quot;INVALID_QUESTION_TEXT&quot;,&amp;nbsp;&lt;div&gt;questionIndex: 0, message: &quot;El enunciado no puede estar vacío ni contener caracteres inválidos&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="466.81999999999994" y="921.9650000000001" as="sourcePoint" />
+            <mxPoint x="43" y="921.48" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-511" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1.084;entryY=0.956;entryDx=0;entryDy=0;entryPerimeter=0;" value="6. Despliega notificación: &quot;Guardado bloqueado:&lt;div&gt;&amp;nbsp;Uno o más enunciados se encuentran vacíos o contienen caracteres no válidos.&amp;nbsp;&lt;/div&gt;&lt;div&gt;Corrija los campos indicados.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="32.650000000000006" y="995.9999999999989" as="sourcePoint" />
+            <mxPoint x="-378.1600000000001" y="996.508" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-512" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="205" width="10" x="-389" y="801" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-513" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="3. Valida enunciados: text.trim().length === 0 || hasInvalidChars(text) -&amp;gt; Falla de validación sintáctica">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="644" y="862" />
+              <mxPoint x="644" y="884" />
+            </Array>
+            <mxPoint x="594" y="862" as="sourcePoint" />
+            <mxPoint x="594" y="884" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-514" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Alpine.js detiene el loading, resalta el campo de la pregunta observada y mantiene los datos del formulario">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="93" y="940" />
+              <mxPoint x="93" y="962" />
+            </Array>
+            <mxPoint x="43" y="940" as="sourcePoint" />
+            <mxPoint x="43" y="962" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-515" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_EncuestaSatisfaccion" vertex="1">
+          <mxGeometry height="40" width="152" x="-163" y="1851" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-516" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-87" y="1890" as="sourcePoint" />
+            <mxPoint x="-87" y="2404.760465116279" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-517" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_EncuestaController" vertex="1">
+          <mxGeometry height="40" width="171" x="264" y="1847" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-518" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="349" y="1887" as="sourcePoint" />
+            <mxPoint x="347.48" y="2398.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-519" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="442" width="10" x="-92" y="1932" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-520" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="286" width="10" x="344" y="1965" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-521" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-519" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.978;exitY=0.096;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="76.34000000000015" y="1976.915" as="sourcePoint" />
+            <mxPoint x="344.8300000000004" y="1975.002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-522" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-521" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. POST /api/satisfaction-surveys { questions: [...] }" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="23" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-523" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.028;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="352.0000000000001" y="2046.92" as="sourcePoint" />
+            <mxPoint x="1010.748" y="2046.3999999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-524" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-523" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;4. START TRANSACTION; UPDATE encuesta_version SET status =&amp;nbsp;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&#39;ARCHIVED&#39;, archived_at = NOW() WHERE status = &#39;ACTIVE&#39;;&lt;/span&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1436&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="61" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-525" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="-524" y="1834" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-526" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-509" y="1923" as="sourcePoint" />
+            <mxPoint x="-509.85" y="2399.1800000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-527" edge="1" parent="1" source="HpmW7bD-sTM_mo-HBthS-541" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.063;exitY=0.043;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.052;entryY=0.069;entryDx=0;entryDy=0;entryPerimeter=0;" target="HpmW7bD-sTM_mo-HBthS-519" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-356.73" y="1963.824" as="sourcePoint" />
+            <mxPoint x="-93.87000000000012" y="1961.835" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-528" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-527" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Modifica la encuesta y presiona &quot;Publicar Encuesta&quot;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="22" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-529" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="167" x="932" y="1847" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-530" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1016" y="1887" as="sourcePoint" />
+            <mxPoint x="1015.41" y="2401.71" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-531" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.087;exitY=0.153;exitDx=0;exitDy=0;exitPerimeter=0;" value="5. Error: ER_LOCK_WAIT_TIMEOUT / DB_ERROR (Fallo al archivar versión anterior)">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1010.2170000000001" y="2078.124" as="sourcePoint" />
+            <mxPoint x="352.6700000000001" y="2079.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-532" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.127;exitY=0.202;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.032;entryY=0.279;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="354.27" y="2116.7" as="sourcePoint" />
+            <mxPoint x="1011.288" y="2116.9319999999993" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-533" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-532" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="6. ROLLBACK; (Revierte la operación completa y preserva estado previo)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="61" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-534" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.012;exitY=0.37;exitDx=0;exitDy=0;exitPerimeter=0;" value="7. Confirma reversión: versión actual permanece en estado ACTIVE">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1011.1080000000002" y="2144.96" as="sourcePoint" />
+            <mxPoint x="353" y="2145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-535" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.067;entryY=0.861;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="354.0000000000001" y="2192" as="sourcePoint" />
+            <mxPoint x="1010.3969999999999" y="2192.1879999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-536" connectable="0" parent="HpmW7bD-sTM_mo-HBthS-535" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. INSERT INTO bitacora (action, details, created_at) VALUES (&#39;SURVEY_ARCHIVE_FAILED&#39;,&lt;div&gt;&amp;nbsp;&#39;Rollback ejecutado por timeout en actualización de versión&#39;, NOW());&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="49" y="-23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-537" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.107;exitY=0.968;exitDx=0;exitDy=0;exitPerimeter=0;" value="9. Confirma registro de auditoría del fallo">
+          <mxGeometry relative="1" x="-0.0031" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1010.0369999999998" y="2225.1440000000002" as="sourcePoint" />
+            <mxPoint x="352" y="2224" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-538" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.238;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.974;entryY=0.807;entryDx=0;entryDy=0;entryPerimeter=0;" value="10. 500 Internal Server Error { success: false, error: &quot;ARCHIVE_FAILED&quot;,&amp;nbsp;&lt;div&gt;message: &quot;Error al archivar la versión anterior. Operación revertida.&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="341.62000000000035" y="2239.6" as="sourcePoint" />
+            <mxPoint x="-82.25999999999976" y="2238.694" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-539" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="264" width="9" x="1011" y="1975" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-540" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1.084;entryY=0.956;entryDx=0;entryDy=0;entryPerimeter=0;" value="12. Despliega aviso en interfaz: &quot;Error al archivar la versión anterior. La operación&lt;div&gt;&amp;nbsp;fue revertida y la encuesta vigente se mantiene activa sin cambios.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0012" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-92.35000000000002" y="2317.999999999999" as="sourcePoint" />
+            <mxPoint x="-503.1600000000001" y="2318.5080000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-541" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="443" width="10" x="-514" y="1945" as="geometry" />
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-548" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;3. Valida enunciados y comprueba rango permitido (1 a 10 preguntas)&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_ee2d2fe9ba67ba85-1435&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="404" y="1990" />
+              <mxPoint x="404" y="2012" />
+            </Array>
+            <mxPoint x="354" y="1990" as="sourcePoint" />
+            <mxPoint x="354" y="2012" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HpmW7bD-sTM_mo-HBthS-549" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="11. Alpine.js detiene loading y preserva el formulario&amp;nbsp;&lt;div&gt;en pantalla para evitar pérdida de datos&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-33" y="2279" />
+              <mxPoint x="-33" y="2301" />
+            </Array>
+            <mxPoint x="-83" y="2279" as="sourcePoint" />
+            <mxPoint x="-83" y="2301" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

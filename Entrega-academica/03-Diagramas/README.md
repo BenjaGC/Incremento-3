@@ -1,5 +1,25 @@
 # Diagramas
 
-Diagramas de clases y herencia, secuencia, componentes, despliegue, navegación y modelos de datos según el informe definitivo. Conservar editables y versiones PDF o PNG.
+Archivos editables recibidos: 17 secuencias y 4 diagramas de modelos y arquitectura.
 
-Estado: pendiente de recibir los documentos finales de Benjamín. Esta carpeta no certifica que el material académico ya esté entregado.
+- [(sin colores)Modelo Fisico_3.drawio](Modelos-y-Arquitectura/%28sin%20colores%29Modelo%20Fisico_3.drawio)
+- [ClasesUML.drawio](Modelos-y-Arquitectura/ClasesUML.drawio)
+- [Diagrama de Componentes.drawio](Modelos-y-Arquitectura/Diagrama%20de%20Componentes.drawio)
+- [Diagrama de Despliegue.drawio](Modelos-y-Arquitectura/Diagrama%20de%20Despliegue.drawio)
+- [CU04_Secuencia_de_diseño.drawio](Secuencia/CU04_Secuencia_de_dise%C3%B1o.drawio)
+- [CU07_Secuencia_de_diseño.drawio](Secuencia/CU07_Secuencia_de_dise%C3%B1o.drawio)
+- [CU30_Secuencia_de_diseño.drawio](Secuencia/CU30_Secuencia_de_dise%C3%B1o.drawio)
+- [CU31_Secuencia_de_diseño.drawio](Secuencia/CU31_Secuencia_de_dise%C3%B1o.drawio)
+- [CU37_Secuencia_de_diseño1.drawio](Secuencia/CU37_Secuencia_de_dise%C3%B1o1.drawio)
+- [CU40_Secuencia_de_diseño.drawio](Secuencia/CU40_Secuencia_de_dise%C3%B1o.drawio)
+- [CU41_Secuencia_de_diseño.drawio](Secuencia/CU41_Secuencia_de_dise%C3%B1o.drawio)
+- [CU43_Secuencia_de_diseño.drawio](Secuencia/CU43_Secuencia_de_dise%C3%B1o.drawio)
+- [CU46_Secuencia_de_diseño.drawio](Secuencia/CU46_Secuencia_de_dise%C3%B1o.drawio)
+- [CU49_Secuencia_de_diseño.drawio](Secuencia/CU49_Secuencia_de_dise%C3%B1o.drawio)
+- [CU50_Secuencia_de_diseño.drawio](Secuencia/CU50_Secuencia_de_dise%C3%B1o.drawio)
+- [CU54_Secuencia_de_diseño.drawio](Secuencia/CU54_Secuencia_de_dise%C3%B1o.drawio)
+- [CU56_Secuencia_de_diseño.drawio](Secuencia/CU56_Secuencia_de_dise%C3%B1o.drawio)
+- [CU59_Secuencia_de_diseño.drawio](Secuencia/CU59_Secuencia_de_dise%C3%B1o.drawio)
+- [CU62_Secuencia_de_diseño.drawio](Secuencia/CU62_Secuencia_de_dise%C3%B1o.drawio)
+- [CU63_Secuencia_de_diseño.drawio](Secuencia/CU63_Secuencia_de_dise%C3%B1o.drawio)
+- [CU65_Secuencia_de_diseño.drawio](Secuencia/CU65_Secuencia_de_dise%C3%B1o.drawio)

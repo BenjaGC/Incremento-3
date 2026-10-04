@@ -1,0 +1,776 @@
+<mxfile host="Electron">
+  <diagram id="seq" name="Página-1">
+    <mxGraphModel dx="2756" dy="1411" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1700" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d0_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-46 – Flujo principal&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="46" y="-26" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_v" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_PapeleraEvidencias" vertex="1">
+          <mxGeometry height="40" width="142" x="-47" y="81" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_v" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="24" y="121" as="sourcePoint" />
+            <mxPoint x="24" y="680.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_EvidenciaController" vertex="1">
+          <mxGeometry height="40" width="171" x="388" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_s" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="473" y="118" as="sourcePoint" />
+            <mxPoint x="472.76" y="637.93" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_db" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_FileSystemStorage" vertex="1">
+          <mxGeometry height="40" width="168" x="973" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_v" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="497" width="10" x="19" y="163" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="424" width="10" x="468" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_db" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="1052" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_m1" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="29.440000000000055" y="207.89000000000001" as="sourcePoint" />
+            <mxPoint x="467.8300000000004" y="206.00199999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-115" connectable="0" parent="d0_m1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. GET /api/evidences/trash" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="35" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Times New Roman&amp;quot;,serif;mso-fareast-font-family:Aptos;mso-font-kerning:&lt;br/&gt;0pt;mso-ligatures:none;mso-ansi-language:ES-CL;mso-fareast-language:ES-CL;&lt;br/&gt;mso-bidi-language:AR-SA&quot;&gt;CU-46 – Excepción 3: Archivo corrupto&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="171" y="1932" as="geometry" />
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-134" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Times New Roman&amp;quot;,serif;mso-fareast-font-family:Aptos;mso-font-kerning:&lt;br/&gt;0pt;mso-ligatures:none;mso-ansi-language:ES-CL;mso-fareast-language:ES-CL;&lt;br/&gt;mso-bidi-language:AR-SA&quot;&gt;CU-46 – Excepción 1: Archivo purgado físicamente&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="102" y="684" as="geometry" />
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-135" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Times New Roman&amp;quot;,serif;mso-fareast-font-family:Aptos;mso-font-kerning:&lt;br/&gt;0pt;mso-ligatures:none;mso-ansi-language:ES-CL;mso-fareast-language:ES-CL;&lt;br/&gt;mso-bidi-language:AR-SA&quot;&gt;CU-46 – Excepción 2: Ticket original archivado&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="452" x="180" y="1295" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-9" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.051;exitY=0.917;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="16. 200 OK { success: true, message: &quot;Evidencia restaurada y vinculada al ticket correctamente&quot; }">
+          <mxGeometry relative="1" x="-0.0018" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="468.5999999999999" y="599.9970000000001" as="sourcePoint" />
+            <mxPoint x="31.000000000000114" y="600.3820000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-63" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="17. Alpine.js elimina la fila de la vista y actualiza contadores reactivos">
+          <mxGeometry relative="1" x="-0.9367" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="81" y="623" />
+              <mxPoint x="81" y="645" />
+            </Array>
+            <mxPoint x="31" y="623" as="sourcePoint" />
+            <mxPoint x="31" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-96" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1151" y="77" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-97" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1235" y="117" as="sourcePoint" />
+            <mxPoint x="1235" y="636.64" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-98" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="401" width="10" x="1230" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-103" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.067;entryY=0.873;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="479" y="366.19499999999994" as="sourcePoint" />
+            <mxPoint x="1052.33" y="365.00400000000013" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-104" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-103" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="9. checkFileExists(&#39;/storage/evidence/450_evidencia_falla.png&#39;)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="68" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-106" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.013;exitY=0.728;exitDx=0;exitDy=0;exitPerimeter=0;" value="10. Retorna exists: true (Archivo físico encontrado)">
+          <mxGeometry relative="1" x="0.003" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1051.13" y="398.544" as="sourcePoint" />
+            <mxPoint x="479.52" y="398.54" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-107" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="478.0000000000001" y="221.92000000000013" as="sourcePoint" />
+            <mxPoint x="1229" y="222.72899999999993" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-108" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-107" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. SELECT id, filename, file_path, file_hash, deleted_at, (48 - TIMESTAMPDIFF(HOUR, deleted_at, NOW()))&amp;nbsp;&lt;div&gt;AS remaining_hours FROM attachment WHERE is_deleted = 1 AND deleted_at &amp;gt;= NOW() - INTERVAL 48 HOUR;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_ll_db" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1057" y="116" as="sourcePoint" />
+            <mxPoint x="1057" y="636.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-186" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="-399" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-187" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-384" y="154" as="sourcePoint" />
+            <mxPoint x="-384" y="687.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-188" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="509" width="10" x="-389" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-189" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-188" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.044;entryY=0.06;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.993;exitY=0.041;exitDx=0;exitDy=0;exitPerimeter=0;" target="d0_bar_v" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-205.99999999999994" y="192.37" as="sourcePoint" />
+            <mxPoint x="16.33" y="190.89" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-190" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-189" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Accede a &quot;Papelera de evidencias&quot;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="20" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-191" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.026;exitY=0.122;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna listado de adjuntos [{ id: 450, filename: &#39;evidencia_falla.png&#39;, remaining_hours: 18, ticket_id: 1042 }, ...]">
+          <mxGeometry relative="1" x="0.0033" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1229.2599999999998" y="250.72199999999998" as="sourcePoint" />
+            <mxPoint x="476" y="250.00000000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-192" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.051;exitY=0.917;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="5. 200 OK { success: true, evidences: [...] }">
+          <mxGeometry relative="1" x="-0.0024" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="468.5999999999999" y="277.99700000000007" as="sourcePoint" />
+            <mxPoint x="31.000000000000114" y="278.38200000000006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-193" edge="1" parent="1" source="d0_bar_v" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.153;exitY=0.288;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.987;entryY=0.265;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-188" value="6. Despliega catálogo de adjuntos eliminados con contador de horas restantes">
+          <mxGeometry relative="1" x="-0.0024" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="18.12" y="306.38" as="sourcePoint" />
+            <mxPoint x="-206.56" y="306.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-194" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-188" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.039;entryY=0.355;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.984;exitY=0.329;exitDx=0;exitDy=0;exitPerimeter=0;" target="d0_bar_v" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-206.99999999999994" y="337" as="sourcePoint" />
+            <mxPoint x="19" y="337.63" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-195" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-194" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7. Selecciona &quot;Restaurar&quot; sobre la evidencia &quot;evidencia_falla.png&quot; (ID: 450)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="47" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-196" edge="1" parent="1" source="d0_bar_v" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.029;entryY=0.361;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.125;exitY=0.376;exitDx=0;exitDy=0;exitPerimeter=0;" target="d0_bar_s" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="28.999999999999755" y="356.299" as="sourcePoint" />
+            <mxPoint x="465.8699999999999" y="352.004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-197" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-196" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. POST /api/evidences/450/restore" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="35" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-198" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="11. Calcula crypto.createHash(&#39;sha256&#39;) sobre el archivo físico: hash coincide con DB">
+          <mxGeometry relative="1" x="-0.9344" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="530" y="432" />
+              <mxPoint x="530" y="454" />
+            </Array>
+            <mxPoint x="480" y="432" as="sourcePoint" />
+            <mxPoint x="480" y="454" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-201" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="478.0000000000001" y="476.0000000000001" as="sourcePoint" />
+            <mxPoint x="1229" y="477.08000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-202" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-201" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="12. SELECT is_archived FROM ticket WHERE id = 1042;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-203" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.026;exitY=0.122;exitDx=0;exitDy=0;exitPerimeter=0;" value="13. Retorna { is_archived: 0 } (Ticket no archivado)">
+          <mxGeometry relative="1" x="0.0033" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1230" y="511" as="sourcePoint" />
+            <mxPoint x="477" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-204" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.133;entryY=0.839;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-98" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="479.0000000000001" y="547.0000000000001" as="sourcePoint" />
+            <mxPoint x="1230" y="548.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-205" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-204" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="14. START TRANSACTION; UPDATE attachment SET is_deleted = 0, deleted_at = NULL WHERE id = 450; INSERT INTO bitacora&amp;nbsp;&lt;div&gt;(user_id, action, target_table, record_id, created_at) VALUES (1, &#39;RESTORE_EVIDENCE&#39;, &#39;attachment&#39;, 450, NOW()); COMMIT;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-206" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.026;exitY=0.122;exitDx=0;exitDy=0;exitPerimeter=0;" value="15. Confirma transacción exitosa (affectedRows: 1)">
+          <mxGeometry relative="1" x="0.0033" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1230" y="586" as="sourcePoint" />
+            <mxPoint x="477" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-209" edge="1" parent="1" source="d0_bar_v" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.014;exitY=0.994;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.987;entryY=0.955;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-188" value="18. Despliega notificación: &quot;Evidencia restaurada exitosamente.&amp;nbsp;&lt;div&gt;El archivo vuelve a estar disponible para el equipo técnico.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0024" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="17.560000000000002" y="657" as="sourcePoint" />
+            <mxPoint x="-206" y="657.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-210" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_PapeleraEvidencias" vertex="1">
+          <mxGeometry height="40" width="142" x="-51" y="763" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-211" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="803" as="sourcePoint" />
+            <mxPoint x="20" y="1207.86" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-212" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_EvidenciaController" vertex="1">
+          <mxGeometry height="40" width="171" x="384" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-213" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="469" y="800" as="sourcePoint" />
+            <mxPoint x="470.82" y="1199.59" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-214" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_FileSystemStorage" vertex="1">
+          <mxGeometry height="40" width="168" x="969" y="758" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-215" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="333" width="10" x="15" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-216" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="240" width="10" x="464" y="878" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-217" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="1047" y="966" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-218" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="25.440000000000055" y="889.89" as="sourcePoint" />
+            <mxPoint x="463.8300000000004" y="888.002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-219" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-218" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. POST /api/evidences/450/restore" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="35" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-220" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.051;exitY=0.917;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="9. 410 Gone { success: false, error: &quot;FILE_PHYSICALLY_PURGED&quot;, message:&lt;div&gt;&amp;nbsp;&quot;El archivo físico ha sido purgado del almacenamiento y no puede recuperarse.&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0018" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="461.5999999999999" y="1102.997" as="sourcePoint" />
+            <mxPoint x="24.000000000000114" y="1103.382" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-221" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="10. Alpine.js detiene loading y marca el registro como no recuperable en la tabla">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="76" y="1128" />
+              <mxPoint x="76" y="1150" />
+            </Array>
+            <mxPoint x="26" y="1128" as="sourcePoint" />
+            <mxPoint x="26" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-222" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1147" y="759" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-223" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1231" y="799" as="sourcePoint" />
+            <mxPoint x="1231" y="1197.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-224" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="212" width="10" x="1226" y="896" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-225" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.067;entryY=0.873;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="476.13" y="975" as="sourcePoint" />
+            <mxPoint x="1047.33" y="975.0040000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-226" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-225" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="5. checkFileExists(&#39;/storage/evidence/450_doc.pdf&#39;)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="68" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-227" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.013;exitY=0.728;exitDx=0;exitDy=0;exitPerimeter=0;" value="6. Retorna exists: false (Archivo no encontrado en sistema de archivos)">
+          <mxGeometry relative="1" x="0.003" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1046.13" y="1008.5439999999999" as="sourcePoint" />
+            <mxPoint x="474.52" y="1008.54" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-228" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="474.0000000000001" y="903.9200000000001" as="sourcePoint" />
+            <mxPoint x="1225" y="904.7289999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-229" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-228" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. SELECT file_path, file_hash, ticket_id FROM attachment WHERE id = 450 AND is_deleted = 1;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-230" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1053" y="798" as="sourcePoint" />
+            <mxPoint x="1053" y="1188.55" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-231" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="-403" y="747" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-232" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-388" y="830.44" as="sourcePoint" />
+            <mxPoint x="-388" y="1211.54" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-233" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="335" width="10" x="-393" y="854" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-234" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-233" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.211;entryY=0.09;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.232;exitY=0.071;exitDx=0;exitDy=0;exitPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-215" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-209.99999999999994" y="874.37" as="sourcePoint" />
+            <mxPoint x="12.329999999999998" y="872.89" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-235" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-234" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Presiona &quot;Restaurar&quot; sobre evidencia listada (ID: 450)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="20" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-236" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.026;exitY=0.122;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna { file_path: &#39;/storage/evidence/450_doc.pdf&#39;, file_hash: &#39;a1b2...&#39;, ticket_id: 1042 }">
+          <mxGeometry relative="1" x="0.0029" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1225.2599999999998" y="932.722" as="sourcePoint" />
+            <mxPoint x="472" y="932" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-246" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-224" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.16;exitY=0.929;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.957;entryY=0.88;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-216" value="8. Confirma actualización de auditoría y estado purgado">
+          <mxGeometry relative="1" x="0.0033" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1225.5299999999997" y="1087.6779999999999" as="sourcePoint" />
+            <mxPoint x="471" y="1085" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-250" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.014;exitY=0.994;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.987;entryY=0.955;entryDx=0;entryDy=0;entryPerimeter=0;" value="11. Despliega aviso en interfaz: &quot;Imposibilidad de recuperación:&amp;nbsp;&lt;div&gt;El archivo físico fue purgado del servidor y ya no se encuentra disponible.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0019" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="13.990000000000128" y="1168.998" as="sourcePoint" />
+            <mxPoint x="-384.0000000000001" y="1170.0750000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-251" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.947;exitY=0.417;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.078;entryY=0.768;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-224" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="472.4699999999998" y="1054.808" as="sourcePoint" />
+            <mxPoint x="1225.5299999999997" y="1055.9989999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-252" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-251" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7. UPDATE attachment SET status = &#39;PURGED&#39; WHERE id = 450; INSERT INTO bitacora (user_id, action, details, created_at)&lt;div&gt;&amp;nbsp;VALUES (1, &#39;RESTORE_FAILED_PURGED&#39;, &#39;Archivo físico inexistente en disco&#39;, NOW());&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-253" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_PapeleraEvidencias" vertex="1">
+          <mxGeometry height="40" width="142" x="-58" y="1367" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-254" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="13" y="1407" as="sourcePoint" />
+            <mxPoint x="13" y="1887.11" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-255" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_EvidenciaController" vertex="1">
+          <mxGeometry height="40" width="171" x="377" y="1364" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-256" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="462" y="1404" as="sourcePoint" />
+            <mxPoint x="462" y="1856" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-257" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_FileSystemStorage" vertex="1">
+          <mxGeometry height="40" width="168" x="962" y="1362" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-258" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="411" width="10" x="8" y="1449" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-259" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="336" width="10" x="457" y="1482" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-260" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="1040.48" y="1498" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-261" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="18.440000000000055" y="1493.8899999999999" as="sourcePoint" />
+            <mxPoint x="456.8300000000004" y="1492.002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-262" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-261" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. POST /api/evidences/450/restore" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="35" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-263" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.051;exitY=0.917;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="10. 200 OK { success: true, mode: &quot;HISTORICAL_READ_ONLY&quot;,&amp;nbsp;&lt;div&gt;message: &quot;Archivo restaurado en repositorio histórico en modo de solo lectura.&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0018" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="456.5999999999999" y="1766.997" as="sourcePoint" />
+            <mxPoint x="19.000000000000114" y="1767.382" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-264" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="11. Alpine.js retira el adjunto de la tabla reactiva de papelera de reciclaje">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="69" y="1793" />
+              <mxPoint x="69" y="1815" />
+            </Array>
+            <mxPoint x="19" y="1793" as="sourcePoint" />
+            <mxPoint x="19" y="1815" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-265" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1224" y="1363" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-266" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1308" y="1403" as="sourcePoint" />
+            <mxPoint x="1308" y="1854.89" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-267" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="135" width="10" x="1303" y="1623" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-268" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.067;entryY=0.873;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="467.61" y="1507" as="sourcePoint" />
+            <mxPoint x="1038.81" y="1507.0040000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-269" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-268" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. checkFileExists(&#39;/storage/evidence/450_log_red.pcap&#39;)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="68" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-270" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.013;exitY=0.728;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna exists: true (Archivo físico encontrado)">
+          <mxGeometry relative="1" x="0.0037" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1037.6100000000001" y="1540.5439999999999" as="sourcePoint" />
+            <mxPoint x="466" y="1540.54" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-273" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1046" y="1402" as="sourcePoint" />
+            <mxPoint x="1046" y="1850.44" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-274" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="-447" y="1351" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-275" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-432" y="1443.87" as="sourcePoint" />
+            <mxPoint x="-432.87" y="1876.93" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-276" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="406" width="10" x="-437" y="1458" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-277" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-276" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.073;entryY=0.088;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.07;exitY=0.068;exitDx=0;exitDy=0;exitPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-258" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-216.99999999999994" y="1478.37" as="sourcePoint" />
+            <mxPoint x="5.329999999999998" y="1476.8899999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-278" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-277" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Presiona &quot;Restaurar&quot; sobre la evidencia &quot;informe_pericial.pdf&quot; (ID: 450)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="20" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-280" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-267" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.026;exitY=0.322;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.243;entryY=0.734;entryDx=0;entryDy=0;entryPerimeter=0;" value="7. Retorna { is_archived: 1 } (Ticket original se encuentra en estado archivado)">
+          <mxGeometry relative="1" x="0.0034" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1217.8600000000001" y="1666.4099999999999" as="sourcePoint" />
+            <mxPoint x="470.42999999999984" y="1666.234" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-281" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.014;exitY=0.994;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.981;entryY=0.944;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-276" value="12. Despliega notificación: &quot;El ticket original está archivado. El archivo fue restaurado&lt;div&gt;&amp;nbsp;en el repositorio histórico en modo de solo lectura, sin permitir su edición.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0019" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="5.990000000000128" y="1839.998" as="sourcePoint" />
+            <mxPoint x="-390.04" y="1841.46" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-282" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.938;exitY=0.607;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.026;entryY=0.076;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-267" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="467.3800000000001" y="1634.357" as="sourcePoint" />
+            <mxPoint x="1220.1399999999999" y="1633.6440000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-283" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-282" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="6. SELECT is_archived FROM ticket WHERE id = 1042;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-284" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Verifica integridad SHA-256 del archivo físico con el hash registrado (Integridad OK)">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="517" y="1571" />
+              <mxPoint x="517" y="1593" />
+            </Array>
+            <mxPoint x="467" y="1571" as="sourcePoint" />
+            <mxPoint x="467" y="1593" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-285" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.938;exitY=0.607;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="JGqaM0a-ywUJLE3DP8s4-267" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="468.0000000000001" y="1723.7169999999999" as="sourcePoint" />
+            <mxPoint x="1220.7599999999998" y="1723.0040000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-286" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-285" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. START TRANSACTION; UPDATE attachment SET is_deleted = 0, is_read_only = 1, storage_scope = &#39;HISTORICAL&#39;, deleted_at = NULL WHERE id = 450;&amp;nbsp;&lt;div&gt;INSERT INTO bitacora (user_id, action, target_table, record_id, details, created_at) VALUES (1, &#39;RESTORE_EVIDENCE_HISTORICAL&#39;, &#39;attachment&#39;, 450,&amp;nbsp;&lt;/div&gt;&lt;div&gt;&#39;Restaurado en modo solo lectura en repositorio histórico&#39;, NOW()); COMMIT;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="48" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-287" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-267" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.037;exitY=0.982;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.878;entryY=0.812;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-259" value="9. Confirma transacción exitosa en base de datos">
+          <mxGeometry relative="1" x="0.0034" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1214.43" y="1753.1799999999998" as="sourcePoint" />
+            <mxPoint x="466.99999999999983" y="1753.004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-320" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_PapeleraEvidencias" vertex="1">
+          <mxGeometry height="40" width="142" x="-96" y="2010" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-321" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-25" y="2050" as="sourcePoint" />
+            <mxPoint x="-25" y="2526.17" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-322" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_EvidenciaController" vertex="1">
+          <mxGeometry height="40" width="171" x="339" y="2007" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-323" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="424" y="2047" as="sourcePoint" />
+            <mxPoint x="425.82" y="2446.59" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-324" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_FileSystemStorage" vertex="1">
+          <mxGeometry height="40" width="168" x="924" y="2005" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-325" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="383" width="10" x="-30" y="2092" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-326" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="292" width="10" x="420" y="2125" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-327" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="1002" y="2213" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-328" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-19.559999999999945" y="2136.89" as="sourcePoint" />
+            <mxPoint x="418.8300000000004" y="2135.002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-329" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-328" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. POST /api/evidences/450/restore" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="35" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-330" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-326" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.036;exitY=0.942;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="10. 409 Conflict { success: false, error: &quot;FILE_CORRUPTED&quot;,&amp;nbsp;&lt;div&gt;message: &quot;Discrepancia de integridad SHA-256. El archivo está corrupto.&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0018" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="417.5999999999999" y="2399.9970000000003" as="sourcePoint" />
+            <mxPoint x="-19.999999999999886" y="2400.382" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-331" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="11. Alpine.js detiene spinner, marca la fila en rojo&amp;nbsp;&lt;div&gt;con icono de advertencia y deshabilita el botón de restauración&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.9344" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="30" y="2436" />
+              <mxPoint x="30" y="2458" />
+            </Array>
+            <mxPoint x="-20" y="2436" as="sourcePoint" />
+            <mxPoint x="-20" y="2458" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-332" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1102" y="2006" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-333" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1186" y="2046" as="sourcePoint" />
+            <mxPoint x="1186" y="2444.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-334" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="248" width="10" x="1181" y="2143" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-335" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.067;entryY=0.873;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="431.13" y="2222" as="sourcePoint" />
+            <mxPoint x="1002.3299999999999" y="2222.004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-336" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-335" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="5. readFileBuffer(&#39;/storage/evidence/450_informe.pdf&#39;)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="68" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-337" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.013;exitY=0.728;exitDx=0;exitDy=0;exitPerimeter=0;" value="6. Retorna binaryBuffer">
+          <mxGeometry relative="1" x="0.0035" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1001.1300000000001" y="2255.544" as="sourcePoint" />
+            <mxPoint x="429.52" y="2255.54" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-338" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.286;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="429.0000000000001" y="2150.92" as="sourcePoint" />
+            <mxPoint x="1180" y="2151.729" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-339" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-338" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. SELECT file_path, file_hash FROM attachment WHERE id = 450 AND is_deleted = 1;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-340" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1008" y="2045" as="sourcePoint" />
+            <mxPoint x="1008" y="2435.55" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-341" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="-459" y="1994" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-342" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-444" y="2077.44" as="sourcePoint" />
+            <mxPoint x="-444" y="2515.87" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-343" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="404" width="10" x="-449" y="2101" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-344" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-343" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.026;entryY=0.098;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.232;exitY=0.071;exitDx=0;exitDy=0;exitPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-325" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-254.99999999999994" y="2121.37" as="sourcePoint" />
+            <mxPoint x="-32.67" y="2119.89" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-345" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-344" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Presiona &quot;Restaurar&quot; sobre la evidencia &quot;informe_pericial.pdf&quot; (ID: 450)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="20" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-346" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.026;exitY=0.122;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna { file_path: &#39;/storage/evidence/450_informe.pdf&#39;, file_hash: &#39;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&#39; }">
+          <mxGeometry relative="1" x="0.0026" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1180.2599999999998" y="2184.7219999999998" as="sourcePoint" />
+            <mxPoint x="427" y="2184" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-347" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-334" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.053;exitY=0.99;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.152;entryY=0.909;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-326" value="9. Confirma registro de incidente e invalidación del adjunto">
+          <mxGeometry relative="1" x="0.003" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1181.03" y="2386.5879999999997" as="sourcePoint" />
+            <mxPoint x="432.79" y="2386.59" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-348" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.014;exitY=0.994;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.026;entryY=0.919;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-343" value="12. Despliega alerta en interfaz: &quot;Restauración bloqueada: Archivo corrupto&amp;nbsp;&lt;div&gt;(el hash SHA-256 físico no coincide con el registro original). Se alertó al sistema.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.001" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-30.00999999999987" y="2469.998" as="sourcePoint" />
+            <mxPoint x="-428.0000000000001" y="2471.0750000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-349" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-326" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.053;entryY=0.872;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.089;exitY=0.804;exitDx=0;exitDy=0;exitPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-334" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="428.68" y="2354.9999999999995" as="sourcePoint" />
+            <mxPoint x="1180.4300000000005" y="2356.908" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-350" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-349" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. UPDATE attachment SET status = &#39;CORRUPTED&#39; WHERE id = 450; INSERT INTO bitacora (user_id, action, details, created_at)&amp;nbsp;&lt;div&gt;VALUES (1, &#39;INTEGRITY_MISMATCH_CORRUPT&#39;, &#39;Fallo de integridad: hash SHA-256 no coincide&#39;, NOW());&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="69" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-352" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="7. Calcula sha256(binaryBuffer):&amp;nbsp;&lt;div&gt;&#39;7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069&#39; != originalHash -&amp;gt; Detección de corrupción&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.9322" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="481" y="2297" />
+              <mxPoint x="481" y="2319" />
+            </Array>
+            <mxPoint x="431" y="2297" as="sourcePoint" />
+            <mxPoint x="431" y="2319" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
