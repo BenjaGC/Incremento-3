@@ -2,6 +2,10 @@
 
 Origen: ZIP `Incremento 3-20261004T072432Z-1-001.zip`, recibido el 4 de octubre de 2026.
 
+## Actualización del informe
+
+El 5 de octubre de 2026 se recibió `Incremento 3 - Grupo 11 - Ingenieria Software (1).docx` como reemplazo del informe anterior. La copia publicada en `01-Informe-Incremento-III/Incremento 3 - Grupo 11 - Ingenieria Software.docx` coincide byte por byte con el nuevo archivo: 9679021 bytes; SHA-256 `f6abd684d986da7667ae6eeff22d9204143d2689299186efc441c5f929d25a6d`. Se comprobaron la lectura del paquete DOCX y la coincidencia de las huellas, sin editar su contenido. El inventario registra esta nueva procedencia. Los PNG extraídos anteriormente de P-65 a P-69 conservan su procedencia del informe recibido el 4 de octubre.
+
 ## Archivos incorporados
 
 Se copiaron 131 archivos originales de documentos, diagramas, planillas y capturas. Se añadieron cinco PNG originales extraídos del informe (P-65 a P-69), para un total de 136 archivos de material académico. Dos videos se distribuyen como archivos adjuntos de la entrega de GitHub. Se omitieron 18 respaldos temporales .bkp.

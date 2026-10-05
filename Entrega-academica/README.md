@@ -2,6 +2,8 @@
 
 Material del Grupo 11 recibido el 4 de octubre de 2026. El código de la aplicación se mantiene en la raíz del repositorio.
 
+El informe del Incremento III fue reemplazado por la versión actualizada recibida el 5 de octubre de 2026.
+
 - [Informe del Incremento III y antecedente corregido del II](01-Informe-Incremento-III/)
 - [Casos de uso — 17 diagramas y un diagrama general](02-Casos-de-uso/)
 - [Diagramas — 17 secuencias y 4 modelos de arquitectura y datos](03-Diagramas/)

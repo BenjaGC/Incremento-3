@@ -22,6 +22,8 @@ Repositorio público del equipo, administrado por Benjamín (BenjaGC). El códig
 
 Material del Grupo 11 incorporado el 4 de octubre de 2026: informe, diagramas, planillas, presentación y capturas. [Índice de la entrega académica](Entrega-academica/README.md).
 
+Informe del Incremento III actualizado el 5 de octubre de 2026 con la versión final recibida del equipo.
+
 ## Videos del Incremento III
 
 - [Video de presentación](https://github.com/BenjaGC/Incremento-3/releases/download/incremento-iii-20261004/Video-presentacion-Incremento-III.mp4)
