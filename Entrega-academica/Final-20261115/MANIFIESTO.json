@@ -1,0 +1,835 @@
+{
+  "fecha": "2026-11-15",
+  "archivos": [
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama general de casos de uso del Incremento III.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama general de casos de uso del Incremento III.drawio",
+      "sha256": "55364e9e24c29dd59e86d6abfb18a73f571f87484b856345b4b7bb2ecbd9b17d",
+      "bytes": 32079
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-30.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-30.drawio",
+      "sha256": "ea2701f7696022a7b1af1c532775c22d58a896f65d4ecec8d9cd4d0d118246b1",
+      "bytes": 8364
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-31.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-31.drawio",
+      "sha256": "4aa3385f57d1a3ba2e420bfc51352484ae4384276e866f6e3afa60e495aebff1",
+      "bytes": 10257
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-56.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-56.drawio",
+      "sha256": "10f17166ea241588b4d46544f47bbd2670e1a5ba3e8b8463bdc8557f1aa106fa",
+      "bytes": 8672
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-54.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-54.drawio",
+      "sha256": "b1e5751ceb7d078dffdc253e7fcee9093d5d05c9e0b7334d199e24d104f948cb",
+      "bytes": 10342
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-41.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-41.drawio",
+      "sha256": "5921c97ac7f80c241b1898a11d9a43786aa01f1a64e8df4b4e67cbdb9f5f147a",
+      "bytes": 8655
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/Q-04-usabilidad.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/Q-04-usabilidad.png",
+      "sha256": "ad8c1e553834851eddd60d42ac77234bef4c40f9a238a04c912d7239f99e0111",
+      "bytes": 43267
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-62.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-62.drawio",
+      "sha256": "a7978f7aea4bb6c39f1e6f60d4c8f6041c06373b9196da62688bd0be471916a9",
+      "bytes": 408
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-63.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-63.drawio",
+      "sha256": "c489a039751e8e80a6dff383eecd119dacc7af09ac3ae5bda6620edb51b00204",
+      "bytes": 10439
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/Q-08-portabilidad.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/Q-08-portabilidad.png",
+      "sha256": "189084be772cb92a66b89b2d4cc14fb59b925d4bcc46f237392655f15d28ab55",
+      "bytes": 40568
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-50.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-50.drawio",
+      "sha256": "0fa83eb1713287959539942719a3d64648367646ced3c3963cc03a73606224a6",
+      "bytes": 8737
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU56_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU56_Secuencia_de_diseño.drawio",
+      "sha256": "bcfaae69b2f000337b188c3cce50dbe485c758c529c1546db70c0a04365ec6ea",
+      "bytes": 74309
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU43_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU43_Secuencia_de_diseño.drawio",
+      "sha256": "f3d63fed303aecbec15d260354be65d6f48a6d5c0902da07948260fc70fd7bc1",
+      "bytes": 56076
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU59_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU59_Secuencia_de_diseño.drawio",
+      "sha256": "0d63c844ea90eb96dadb92b353e86c31a460114c531c9ba13db413fd1de52738",
+      "bytes": 55499
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU63_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU63_Secuencia_de_diseño.drawio",
+      "sha256": "953534b8f84e514df17761d4debfa7c9603bf02df2682846f09cf9d8ceed1bcd",
+      "bytes": 67010
+    },
+    {
+      "origen": "Incremento 3/Graficos Excel - Incremento III/Distribución de Casos de Uso por Incremento Figura 2.1.xlsx",
+      "archivo": "Graficos Excel - Incremento III/Distribución de Casos de Uso por Incremento Figura 2.1.xlsx",
+      "sha256": "847a13216e24e4830c3d427be690556dc4160c29e9a7e71c7e177154947bd501",
+      "bytes": 6902
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-40.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-40.drawio",
+      "sha256": "fb86ba6b55d21329dae00452961a0f17cb805251395975a19d3cc442781b85f0",
+      "bytes": 8516
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU46_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU46_Secuencia_de_diseño.drawio",
+      "sha256": "a343f02a555089283c19038c3d0c3b031f233c013af82f36a51e3cb07691fce6",
+      "bytes": 67821
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/I-02-competencias.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/I-02-competencias.png",
+      "sha256": "3d32d6c6640d28e36979d52de2a74980c66671e61b979e6d644ae5762650e9fa",
+      "bytes": 22515
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-51.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-51.png",
+      "sha256": "38de758e9ae817f2f80a1442a73bb0a024be444e67e4716d3d35470cd60ca814",
+      "bytes": 11902
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/I-01-correo-y-ticket.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/I-01-correo-y-ticket.png",
+      "sha256": "71df3ac8fa1c4f69e1a2e5c496f49dee5143cd45d4be5b9b79451ec2714bc90d",
+      "bytes": 11963
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-56.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-56.png",
+      "sha256": "a082e187674008c5c580fae3247b7cab568a937fb872f90841dc73c8d59556d9",
+      "bytes": 2212
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-48.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-48.png",
+      "sha256": "26be72c85c95a7df83ddaa942e94a445a007441728df72d0f51a4bfaf5743671",
+      "bytes": 21825
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-30.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-30.png",
+      "sha256": "13fd43b0c0daba670c1ab8fff66e0e1dcc7b236801f3b6b659b97c3d756c8ef9",
+      "bytes": 22959
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU37_Secuencia_de_diseño1.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU37_Secuencia_de_diseño1.drawio",
+      "sha256": "8c7c360a03a6a0fb02ef6b4e9ea19ea2f4e7a5d262989ac172d5af925694e2d7",
+      "bytes": 52837
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-59.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-59.drawio",
+      "sha256": "3c6c28e760dbfc7fd9f655a6be18e0bc0a3c137e608740c115006d4dd2fb8520",
+      "bytes": 8771
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-37.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-37.png",
+      "sha256": "6f128ad3a159e3d5355d9c52b7a89db5ea7e487963547a5620d966939808d099",
+      "bytes": 33947
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/I-05-encuesta-vigente.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/I-05-encuesta-vigente.png",
+      "sha256": "c1d17e2eb9ecaa02275b10a25c3d0b90f6b1cb4f4dfadb1cef27ee8c7e9b9b98",
+      "bytes": 14838
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-37.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-37.drawio",
+      "sha256": "8ee90b5548dacb8d2c9dbd8b90d9b883385ece2b09790991dea7a5bc317a1d2c",
+      "bytes": 10375
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-46.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-46.png",
+      "sha256": "e5d42873f03d368447fd72a736a6ff02644ca3a698340ff0aa0206677aab57ce",
+      "bytes": 23537
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/I-01-asignacion.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/I-01-asignacion.png",
+      "sha256": "a35606cdff5a7d067f46271315a9516c9e69b98cff42828ae7ca194ec35c2d23",
+      "bytes": 38597
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-53.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-53.png",
+      "sha256": "c1460898fbd25bf23d441cb1f90e2ede856e1b37ddcf1a7dbef364e7e1bb4122",
+      "bytes": 13411
+    },
+    {
+      "origen": "Incremento 3/Graficos Excel - Incremento III/Burndown acumulado del proyecto (casos de uso) Final Figura 11.4.xlsx",
+      "archivo": "Graficos Excel - Incremento III/Burndown acumulado del proyecto (casos de uso) Final Figura 11.4.xlsx",
+      "sha256": "0c5713191c23ea8ba4fc3386df4cecdd6ee80075058a5b3ca299137381e7fa8f",
+      "bytes": 16789
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-29.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-29.png",
+      "sha256": "ae609b86d1318c6cde5269e4ab360cbddf1e9d0bbf7d617dcaf1c15fcb68f0c4",
+      "bytes": 10012
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-61.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-61.png",
+      "sha256": "9711f3570d5a878273b822899f7f237ef6a1ebb5c365c06b062ca209dac6632e",
+      "bytes": 7065
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-14.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-14.png",
+      "sha256": "0f2ee98c88e51c5df6b80e6732cf7e81a02102f795f27fc1918571c33bdaf98d",
+      "bytes": 15435
+    },
+    {
+      "origen": "Incremento 3/Graficos Excel - Incremento III/Matriz de Responsables y Verificadores.xlsx",
+      "archivo": "Graficos Excel - Incremento III/Matriz de Responsables y Verificadores.xlsx",
+      "sha256": "781d37fcbe7ec68e54b2fb2190ffd195d75cbc7fce3fa9f5c4871fe16a56fb5e",
+      "bytes": 6109
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-62.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-62.png",
+      "sha256": "d871c9a971cce48c13f8464808041941b04a15fe27f878d83b84c41ad32f49e8",
+      "bytes": 30528
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-12.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-12.png",
+      "sha256": "af93cc51af8d19f82a18680bfbdd231738369348bd43f7236944ccf2329cbe51",
+      "bytes": 17371
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-16.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-16.png",
+      "sha256": "89515b2f42b1e0cd66d28ac32e8fe54bda14905a9660bdda27ce5c7c7381a5c2",
+      "bytes": 16131
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-25.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-25.png",
+      "sha256": "f31381e01230b0a3b65486e30e1b847d4719788e14c91497a0fd14a308525c9f",
+      "bytes": 40943
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-04.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-04.drawio",
+      "sha256": "418fb889e712ebca4e5e8de8eae4523b9a91e797c8224c42529d11add41b8260",
+      "bytes": 8693
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-34.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-34.png",
+      "sha256": "ab25e083914192de0777d5344dd885bbc98750913abad03f2cd83f3dc448c323",
+      "bytes": 12632
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-26.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-26.png",
+      "sha256": "84fc5aff9f2ee04647f2a269259c8100a73e32e7f6860baa38f9a16e82a89c00",
+      "bytes": 7272
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-42.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-42.png",
+      "sha256": "fe460beaf776953f80309f3c8fc63a0705adce48f277a8613875604359064a23",
+      "bytes": 37487
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU30_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU30_Secuencia_de_diseño.drawio",
+      "sha256": "3801cfdacc23d63c4ae5809a1484dc542fce11b7b392aee78f8f515c9c746129",
+      "bytes": 62114
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU49_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU49_Secuencia_de_diseño.drawio",
+      "sha256": "1a3a49b99fcecfc0f83574fef3c3fff54200992a3b7f22727caf711b494b0ccc",
+      "bytes": 69077
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-17.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-17.png",
+      "sha256": "b5018f7717e7a06a23226feca4144de13606bfe5f1503a1658d25cf500ab5bc0",
+      "bytes": 31515
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-13.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-13.png",
+      "sha256": "a495a247b834fae9f09e556d90d50225ee62d8809f1d8f8204df3edb3f037767",
+      "bytes": 19751
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-10.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-10.png",
+      "sha256": "c553bc2f9b839df046e70aff49a3ce96d6b21e8ab8196a370d4aae77b180dfea",
+      "bytes": 28705
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-04.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-04.png",
+      "sha256": "0d6e43f75b5f920b0d0f7879b164b533881602d45f82d5e50cef4d3fe8207922",
+      "bytes": 6582
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/Q-03-seguridad.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/Q-03-seguridad.png",
+      "sha256": "14a4b4fc04f5e60501c8fc6a083bcd9d613706c350cc7891bcfa83842ad820fc",
+      "bytes": 39653
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-47.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-47.png",
+      "sha256": "82d8e865d4a3722f6629592652e0dc8c5b6205bafc0d9ff733b328c630fda652",
+      "bytes": 23761
+    },
+    {
+      "origen": "Incremento 3/Graficos Excel - Incremento III/Incremento III_ HH estimadas vs. HH efectivas Figura 11.1.xlsx",
+      "archivo": "Graficos Excel - Incremento III/Incremento III_ HH estimadas vs. HH efectivas Figura 11.1.xlsx",
+      "sha256": "41d1860dc36d0b91091a8088bce072a42aeaf7343a1cde58e13398e953cf7604",
+      "bytes": 7152
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-08.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-08.png",
+      "sha256": "58195e70d2c2dfd33cd1e45ec1d3229e9a830ef7abecadaff170a1d4398a292c",
+      "bytes": 13846
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/Q-02-concurrencia.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/Q-02-concurrencia.png",
+      "sha256": "bac739415d70ae8faaf208d9dde23f5b6e6405f3635db6bb95f0427467ec5408",
+      "bytes": 38638
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-23.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-23.png",
+      "sha256": "7eaff03d4d1c1215811589c27671370ccc9b0c5271f272df67eb0bbb0bee2e0c",
+      "bytes": 9633
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-03.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-03.png",
+      "sha256": "d448811f52ce78450e8fba9a0b16986d30781b101a71b46422eb66cc89b2e4f0",
+      "bytes": 32762
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-32.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-32.png",
+      "sha256": "43c2b381a993d1e3104d22afc1b4601c1423ac44c7cc31af61ef7fb49fb651aa",
+      "bytes": 6938
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-18.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-18.png",
+      "sha256": "844aea20c3f025d04e0a6701dfb0dd0ffc19a898a41bb367792b42dffaef7057",
+      "bytes": 10605
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-24.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-24.png",
+      "sha256": "4c0e5aa9d20eb985a6edacb7f6ac59c8485f3dd592e46ab57bc3391705795904",
+      "bytes": 17960
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-21.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-21.png",
+      "sha256": "669c90b3ceaaadc9124a1e1ba811ce462c05973b22c6048694234a8ca72d68f6",
+      "bytes": 8992
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-06.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-06.png",
+      "sha256": "779e7b417329157a289e2a9567622068772d446ff7852abf56cf4e4633a456db",
+      "bytes": 9671
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-31.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-31.png",
+      "sha256": "fb7a506fb2f8fbc119a49798f10f65010dbd2644ada243e16cf533b94d14955e",
+      "bytes": 2088
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-27.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-27.png",
+      "sha256": "e00ffc0eedc849e6e00f2e182d25f56a2bcc5a1dd6c900997e290d1d208bcb2f",
+      "bytes": 6776
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-22.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-22.png",
+      "sha256": "c119c1fe368d07acbd0c4305719c0e93265eed5a8173e56b49743d8b4bd792f7",
+      "bytes": 9665
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-49.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-49.png",
+      "sha256": "ec2bcbbe119d386d5cd567ed642b2984a1d1b223ddf9453a5d95a6657091a796",
+      "bytes": 21854
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-65.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-65.drawio",
+      "sha256": "2b35923092fe592149f297c6c975742973013c0a497fb3a37176467c471c9b83",
+      "bytes": 8578
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/I-06-desempeno.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/I-06-desempeno.png",
+      "sha256": "f18b27a0acadbc150c64a0d4cc7d3ed8d8a09de5b33a60d5701936d874b846ea",
+      "bytes": 19420
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU62_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU62_Secuencia_de_diseño.drawio",
+      "sha256": "353e606fb062c68ec228b8eacf6ec9bdc04fdd178260817ae627166d91938313",
+      "bytes": 86574
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU65_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU65_Secuencia_de_diseño.drawio",
+      "sha256": "bd1703051e385f433134cbe3d525b5cb72923208d644370959a7c446c9e70183",
+      "bytes": 52887
+    },
+    {
+      "origen": "Incremento 3/Graficos Excel - Incremento III/Avance acumulado del proyecto vs. meta figura 2.2.xlsx",
+      "archivo": "Graficos Excel - Incremento III/Avance acumulado del proyecto vs. meta figura 2.2.xlsx",
+      "sha256": "fcf41de8d0a037d205b8167fc8c26ba32c72fab8d04066afa8c2940ba8611637",
+      "bytes": 7211
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-35.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-35.png",
+      "sha256": "7aeb70ef9121d8546dd549af7665b3069118ba222d495ea833b9059fc53743b3",
+      "bytes": 4492
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-59.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-59.png",
+      "sha256": "08bfd73d8ab04ba550445955b47aaeed3ed04e30111b9ecd2c4c7fa2f37e95aa",
+      "bytes": 6972
+    },
+    {
+      "origen": "Incremento 3/Diagramas BD/Diagrama de Componentes.drawio",
+      "archivo": "Diagramas BD/Diagrama de Componentes.drawio",
+      "sha256": "4410d88fc9d4aab6fe7fff3e39e1e0a5e079706f5a1cf363493cee4c1bfcde60",
+      "bytes": 26711
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-50.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-50.png",
+      "sha256": "bc72a69384ce5e5f514b94ac0787d7a519bb50dbd0f33c2728ea0f2c0cb5a2a6",
+      "bytes": 16527
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU41_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU41_Secuencia_de_diseño.drawio",
+      "sha256": "d5dd664533af73c4bced564d5b6a4378b68b9a5e1d6a753e17874e5ef7226fc5",
+      "bytes": 58158
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU07_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU07_Secuencia_de_diseño.drawio",
+      "sha256": "d042f68b6dcf3b88e3f3e138f948786ad830af6c37eb79d5c24d451c49dae831",
+      "bytes": 57427
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/Q-07-mantenibilidad.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/Q-07-mantenibilidad.png",
+      "sha256": "b9c192d304b5fd3cd0a3f9cf2d0b431a0b0104fea91c7b02455d20cadc9006ce",
+      "bytes": 38979
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-33.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-33.png",
+      "sha256": "4651fcfea9d4ae6ab37d659275e9bff92807aacbbb2eb930a03509e0916c7500",
+      "bytes": 7731
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/I-03-cuenta-deshabilitada.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/I-03-cuenta-deshabilitada.png",
+      "sha256": "7badcf431a9b0b82fd3907fed43394056b6b089e809a1aca59d933cbf4d74a6c",
+      "bytes": 8410
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-28.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-28.png",
+      "sha256": "851bba031b2a79c7fef85cc977aecd93e92b5c1e7eabf67e44bbc7e44a33d5bd",
+      "bytes": 8558
+    },
+    {
+      "origen": "Incremento 3/Diagramas BD/ClasesUML.drawio",
+      "archivo": "Diagramas BD/ClasesUML.drawio",
+      "sha256": "a9bbd08914010a4e8a4db3ca7f6d56c48a2ee2c36f14cc79e83f73f3f77d4cec",
+      "bytes": 155909
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-63.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-63.png",
+      "sha256": "228ab81c1f38d950c27628192162f4d3159eb4507fc5273c4b9941e86cc14c8e",
+      "bytes": 2353
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-64.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-64.png",
+      "sha256": "73b3103081275ef1e0d61780b252c4ef4b0a1900d58e6dc86ce07253eff7809a",
+      "bytes": 24218
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-43.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-43.drawio",
+      "sha256": "7ac581482ff89517680b4aef412b30f2d8fc49f485ae3a1c3acd323ed6cc82aa",
+      "bytes": 8567
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-01.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-01.png",
+      "sha256": "e05013a21976c95d876c2ae1da31e457496ee6648727b3aaed8a747339b44d36",
+      "bytes": 9614
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU40_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU40_Secuencia_de_diseño.drawio",
+      "sha256": "46c666bc253014c0ccc6af3413c461f5ef184ff5a4e2ae21c055f3229002294d",
+      "bytes": 59918
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-07.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-07.drawio",
+      "sha256": "70622c616b2643d0bdd05074e0f0e9a953c0caa2ea5a3a4757bbc774423026b7",
+      "bytes": 12119
+    },
+    {
+      "origen": "Incremento 3/Presentacion Incremento 3 - Grupo 11 + Guía Instalación/Video Presentación Incremento 3 - Grupo 11.mp4",
+      "release": "I3-Presentacion-Incremento-3---Grupo-11-Guia-Instalacion-Video-Presentacion-Incremento-3---Grupo-11.mp4",
+      "sha256": "9a1387921593ac0fd23175160e26ec5704edf4d04b7b464def70b60ccb18b94d",
+      "bytes": 913994977
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-49.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-49.drawio",
+      "sha256": "b164f07285e5e0600001457d4d9e49504cddb634c03277f77371df867c561441",
+      "bytes": 8479
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU54_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU54_Secuencia_de_diseño.drawio",
+      "sha256": "45e350c144c1f31f5954d5c1e601b8503d37a86bee727d6122f1dee1c14817ab",
+      "bytes": 84632
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-05.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-05.png",
+      "sha256": "4bd9c7da9f37c466ef3ab6f3576feaf9de925b2667113c223550cf3a2029c592",
+      "bytes": 9245
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-07.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-07.png",
+      "sha256": "c4e5c9158028aff79c3bd5a7dffb17dcb984e1790d1a25692351c3b578829b17",
+      "bytes": 13496
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-02.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-02.png",
+      "sha256": "c918a656a6cb2958e90735edd562a027c46780c86e7d0d9156818f71051b5530",
+      "bytes": 9677
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/I-03-bitacora.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/I-03-bitacora.png",
+      "sha256": "863170689d34f3930c0c4d6be3a3ba4504316c8c016b3207c2a11d9d0c5a4cc3",
+      "bytes": 5907
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/I-04-archivo-historico.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/I-04-archivo-historico.png",
+      "sha256": "ce42321cafec588b726cdf02998912bf6afc758d8044dd7c7d367c7a1830ade3",
+      "bytes": 34084
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU31_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU31_Secuencia_de_diseño.drawio",
+      "sha256": "2d0465389309a1117290aef8043ed1103563094dfd0f97ee36e5e582179d7953",
+      "bytes": 49244
+    },
+    {
+      "origen": "Incremento 3/Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-46.drawio",
+      "archivo": "Diagrama de Casos de Uso Incremento III/Diagrama de caso de uso CU-46.drawio",
+      "sha256": "94eae4e162b2f60c28bab187cff01ff100c7ea68dd87141b0f81bafc63cd0ea8",
+      "bytes": 8555
+    },
+    {
+      "origen": "Incremento 3/Diagramas BD/Arbol de Navegación.drawio",
+      "archivo": "Diagramas BD/Arbol de Navegación.drawio",
+      "sha256": "111e04cdb76543341cbe04ed2114632e5cbce9e05aec45cf6ec242722ec541bb",
+      "bytes": 57993
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-19.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-19.png",
+      "sha256": "9f6faa893b5da74befd3b9408835950a45f4dbd70a9d7b03e53bef74d26725e6",
+      "bytes": 17977
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-11.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-11.png",
+      "sha256": "e2ccc7c882ef358a517407bac71996d7d784ea04e3db0608e17e8f94e92c24ef",
+      "bytes": 13494
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU04_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU04_Secuencia_de_diseño.drawio",
+      "sha256": "9d7328ca31b137f7c06cb343d281b4e821425347386fd69db5b5fa4b80a8440c",
+      "bytes": 65432
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-52.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-52.png",
+      "sha256": "4c94a46349ba3879edbbe5aa54cf7d978cf6db368153ad577eabecfcb9ae11e9",
+      "bytes": 15138
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-57.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-57.png",
+      "sha256": "43afc3ed34cfe3784d959d113fc392430991833f28751cc5f3f0dfdcb3006963",
+      "bytes": 2567
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/Q-05-compatibilidad.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/Q-05-compatibilidad.png",
+      "sha256": "f4fe1bc5bacbe0825c2879b844af0f5c0a0d1c19e321c8404dc9a867ec38460f",
+      "bytes": 41189
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-44.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-44.png",
+      "sha256": "4f82a857d9b5e6926a75671243033463c0f4257b2cf4e071e4b98e82f1df0c0d",
+      "bytes": 24821
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-20.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-20.png",
+      "sha256": "dbfe13d8a4ddb61419d83c4d32155cdb419cd9c26f9035dc646c850f026da94a",
+      "bytes": 121605
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/Q-06-fiabilidad.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/Q-06-fiabilidad.png",
+      "sha256": "2bcf1901c1d491ffabcae26afffa06872cdc1ac239f362c2d994438723929c03",
+      "bytes": 42465
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-39.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-39.png",
+      "sha256": "68aaf970dd2986c4b998c9b353aed1a579ca0ecb0f048b0added538c19e9051a",
+      "bytes": 3470
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-55.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-55.png",
+      "sha256": "3aa1f79403219147fc2a3abdb77f21fba0f419be7345ce9a7b52e432bf6f358e",
+      "bytes": 8329
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/I-03-reasignacion-jefatura.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/I-03-reasignacion-jefatura.png",
+      "sha256": "59bb2e4bfb88382566095d56fda4c398134d5760361c58fd7a3d6d1b33816353",
+      "bytes": 37931
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-36.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-36.png",
+      "sha256": "69c7ecbce4359030a40cc9c371d2cb8556b21cf3016cf5d543c69832b82ff375",
+      "bytes": 34427
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-09.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-09.png",
+      "sha256": "2f1faaf730e9c65d0ea52f611d417bd26189ffe5b90689d950963a57b52e2298",
+      "bytes": 28960
+    },
+    {
+      "origen": "Incremento 3/Diagramas de secuencia Incremento III/CU50_Secuencia_de_diseño.drawio",
+      "archivo": "Diagramas de secuencia Incremento III/CU50_Secuencia_de_diseño.drawio",
+      "sha256": "040596bff6c3d5f6c076dc0b36415508280ad971d20e8f82fece52977ff50ed7",
+      "bytes": 60223
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/I-02-tope-sin-asignar.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/I-02-tope-sin-asignar.png",
+      "sha256": "82d2f26718543ab850f64f0e666f22502a03e4aff1dfd7d6da794ec1cc17b0ca",
+      "bytes": 37993
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-54.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-54.png",
+      "sha256": "2a34d364efb19c355ce75a933edc154a42e6508af36af84e61a61010b2229982",
+      "bytes": 7098
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-60.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-60.png",
+      "sha256": "8a2a426d8dfc0d0ec751d9ed5b91dc45c7dc45612f2225ff4871a2b029a25682",
+      "bytes": 8343
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-45.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-45.png",
+      "sha256": "d11b6e33a001f6dfc60a4dd11b1b44c1ef2cb963de3ec25143d1497a849155eb",
+      "bytes": 3402
+    },
+    {
+      "origen": "Incremento 3/Pruebas de Integracion e ISO - EIC25010/Q-01-rendimiento.png",
+      "archivo": "Pruebas de Integracion e ISO - EIC25010/Q-01-rendimiento.png",
+      "sha256": "b0f20bd49e162816f8b6c305d08c320c9db9de6bd61b544b69edd42db72325ae",
+      "bytes": 37506
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-58.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-58.png",
+      "sha256": "17f07683c649a102fd074ed2af5266c99a04b54bd61013f09acf8002ae7f23f2",
+      "bytes": 40677
+    },
+    {
+      "origen": "Incremento 3/Diagramas BD/Modelo Fisico_3.drawio",
+      "archivo": "Diagramas BD/Modelo Fisico_3.drawio",
+      "sha256": "6d047fa4f916dd96dde2504a3a16b1237bdc994b870834f1541fc863725b015b",
+      "bytes": 105148
+    },
+    {
+      "origen": "Incremento 3/Graficos Excel - Incremento III/Burndown del Sprint 3 (Incremento III) figura 11.2.xlsx",
+      "archivo": "Graficos Excel - Incremento III/Burndown del Sprint 3 (Incremento III) figura 11.2.xlsx",
+      "sha256": "73f18545f1529c96d1d1ec2add17d9cebe1de2aa59cee6bffc0f87e7fcd19dec",
+      "bytes": 8090
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-40.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-40.png",
+      "sha256": "d47f4a8003680a4372da7fe182a0ef7ca14b70825e059af74a1e5b6f8bd056a3",
+      "bytes": 25809
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-38.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-38.png",
+      "sha256": "dbfeb96483dab5d19b2ac873b69d802c1e681d306d1a8617309e572d5ce3cdc3",
+      "bytes": 8238
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-15.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-15.png",
+      "sha256": "f1e2fba4d84c53cd607509c20b001ed1bd62de6696d30e4f3a299b0ede5c2523",
+      "bytes": 16190
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-43.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-43.png",
+      "sha256": "e22ea76cc31ce9c623bb0426ddbf9f51409e1c57fc536f60cd4cabbe5a317186",
+      "bytes": 3190
+    },
+    {
+      "origen": "Incremento 3/Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-41.png",
+      "archivo": "Pruebas unitarias y de integración - Incremento III (Con pruebas del Incremento I Y II)/P-41.png",
+      "sha256": "db9fb9fd5e3e0bb458dee9af3a8d112a3e776011c6e31da246ad5d8b7ba078d6",
+      "bytes": 6974
+    },
+    {
+      "origen": "Incremento 3/Graficos Excel - Incremento III/Esfuerzo acumulado del proyecto (Incrementos I a III) Figura 11.3.xlsx",
+      "archivo": "Graficos Excel - Incremento III/Esfuerzo acumulado del proyecto (Incrementos I a III) Figura 11.3.xlsx",
+      "sha256": "da774d7a5ce5525463525364c70f90adb943949243eb25ac9d99b99cf90fc0f8",
+      "bytes": 7472
+    },
+    {
+      "origen": "Incremento 3/Diagramas BD/Diagrama de Despliegue.drawio",
+      "archivo": "Diagramas BD/Diagrama de Despliegue.drawio",
+      "sha256": "6d691838a3f6b99207f7b10965d6f3edb0520fb6647bd67dfaeada7e34e3a4e3",
+      "bytes": 24157
+    },
+    {
+      "origen": "Incremento 3/Diagramas BD/Mere.drawio",
+      "archivo": "Diagramas BD/Mere.drawio",
+      "sha256": "24737982c46839120e634fc0c2888d95b49ec4eccee78afc27ac0e64fcf5295e",
+      "bytes": 134416
+    },
+    {
+      "origen": "Incremento 3/Incremento 3 - Grupo 11 - Ingenieria Software.docx",
+      "archivo": "Incremento 3 - Grupo 11 - Ingenieria Software.docx",
+      "sha256": "63d25e5d5b895891bd519b5479813114cd8d39e61f07372f9f87879fc0df82bc",
+      "bytes": 8867630
+    },
+    {
+      "origen": "Incremento 3/Incremento 2 (Corregido) - Grupo 11 - Ingeniería En Software II.docx",
+      "archivo": "Incremento 2 (Corregido) - Grupo 11 - Ingeniería En Software II.docx",
+      "sha256": "539dbbe28dd2206e73bc979f7b6e0cc0bba947569c0e930a88f103b7a1b48a5a",
+      "bytes": 9053337
+    },
+    {
+      "origen": "Incremento 3/Presentacion Incremento 3 - Grupo 11 + Guía Instalación/Incremento3_CentroClinicoAconcagua.pptx",
+      "archivo": "Presentacion Incremento 3 - Grupo 11 + Guía Instalación/Incremento3_CentroClinicoAconcagua.pptx",
+      "sha256": "a4710741a0cd98f8f476bbfd02449f0c14999d3754ecf78b682607a74b962a8d",
+      "bytes": 849668
+    },
+    {
+      "origen": "Incremento 3/Presentacion Incremento 3 - Grupo 11 + Guía Instalación/Guia instalacion Local.mov",
+      "release": "I3-Presentacion-Incremento-3---Grupo-11-Guia-Instalacion-Guia-instalacion-Local.mov",
+      "sha256": "9036e1be9a79fc0ac4d1d293d7f2c0ac01f2923da3a53e27e9cb1659e70cde6b",
+      "bytes": 309766162
+    }
+  ],
+  "excluidos": [
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU37_Secuencia_de_diseño1.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU49_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU63_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU56_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU07_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU31_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU43_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU54_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU50_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagrama de Casos de Uso Incremento III/.$Diagrama de caso de uso CU-62.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU04_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU46_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU40_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU62_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU30_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU41_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU65_Secuencia_de_diseño.drawio.bkp",
+    "Incremento 3/Diagramas de secuencia Incremento III/.$CU59_Secuencia_de_diseño.drawio.bkp"
+  ]
+}

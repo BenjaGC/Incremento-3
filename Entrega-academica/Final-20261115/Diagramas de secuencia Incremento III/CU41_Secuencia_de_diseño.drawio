@@ -1,0 +1,609 @@
+<mxfile host="Electron">
+  <diagram id="seq" name="Página-1">
+    <mxGraphModel dx="2682" dy="1580" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1700" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d0_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-41 – Flujo principal&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="553" y="-5" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_a" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="45" y="59" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_a" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="148" as="sourcePoint" />
+            <mxPoint x="60" y="646.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_v" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_VariablesConfig" vertex="1">
+          <mxGeometry height="40" width="142" x="534" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_v" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="605" y="114" as="sourcePoint" />
+            <mxPoint x="605" y="649.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_ConfigController" vertex="1">
+          <mxGeometry height="40" width="171" x="969" y="71" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_s" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1054" y="111" as="sourcePoint" />
+            <mxPoint x="1053.76" y="643.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_db" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1554" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="474" width="10" x="55" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_v" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="471" width="10" x="600" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="360" width="10" x="1049" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_db" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="248" width="10" x="1633" y="211" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_m0" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.994;exitY=0.091;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.005;entryY=0.064;entryDx=0;entryDy=0;entryPerimeter=0;" target="d0_bar_v" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;1. Accede a &quot;Configuración &amp;gt; Variables del sistema&quot;&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.0064" y="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="63.940000000000055" y="186.39800000000002" as="sourcePoint" />
+            <mxPoint x="599.03" y="186.26" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_m1" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" target="d0_bar_s" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="610.44" y="213.37" as="sourcePoint" />
+            <mxPoint x="1190.24" y="211.743" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-115" connectable="0" parent="d0_m1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. GET /api/system/env-variables" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="32" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Times New Roman&amp;quot;,serif;mso-fareast-font-family:Aptos;mso-font-kerning:&lt;br/&gt;0pt;mso-ligatures:none;mso-ansi-language:ES-CL;mso-fareast-language:ES-CL;&lt;br/&gt;mso-bidi-language:AR-SA&quot;&gt;CU-41 – Excepción 3: Falla la recarga del servicio&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="227" y="1836" as="geometry" />
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-134" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Times New Roman&amp;quot;,serif;mso-fareast-font-family:Aptos;mso-font-kerning:&lt;br/&gt;0pt;mso-ligatures:none;mso-ansi-language:ES-CL;mso-fareast-language:ES-CL;&lt;br/&gt;mso-bidi-language:AR-SA&quot;&gt;CU-41 – Excepción 1: Valor fuera de rango&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="102" y="684" as="geometry" />
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-135" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Times New Roman&amp;quot;,serif;mso-fareast-font-family:Aptos;mso-font-kerning:&lt;br/&gt;0pt;mso-ligatures:none;mso-ansi-language:ES-CL;mso-fareast-language:ES-CL;&lt;br/&gt;mso-bidi-language:AR-SA&quot;&gt;CU-41 – Excepción 2: Tipo de dato incorrecto&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="452" x="483" y="1265" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-5" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.04;entryY=0.868;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1059" y="224.69499999999994" as="sourcePoint" />
+            <mxPoint x="1633.4" y="221.99599999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-6" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. SELECT key_name, data_type, min_range, max_range, current_value FROM variable_entorno;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="46" y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-8" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.047;exitY=0.939;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. Retorna variables [{ key: &#39;ATTACHMENT_MAX_MB&#39;, type: &#39;INT&#39;, min: 1, max: 25, value: &#39;5&#39; }, ...]">
+          <mxGeometry relative="1" x="0.0031" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1632.5299999999997" y="251.0030000000001" as="sourcePoint" />
+            <mxPoint x="1059" y="252.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-9" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.051;exitY=0.917;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="14. 200 OK { success: true, message: &quot;Variables aplicadas y servicios sincronizados&quot; }">
+          <mxGeometry relative="1" x="-0.0024" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1047.6" y="539.9970000000001" as="sourcePoint" />
+            <mxPoint x="610.0000000000001" y="540.3820000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-10" edge="1" parent="1" source="d0_bar_v" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=1.153;entryY=0.97;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.028;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;" target="d0_bar_a" value="16. Despliega confirmación en pantalla:&amp;nbsp;&lt;div&gt;&quot;Parámetros actualizados y aplicados de forma inmediata en la plataforma&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0007" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="599.03" y="613.23" as="sourcePoint" />
+            <mxPoint x="66.7" y="614.93" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-59" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="9. Valida: type === &#39;INT&#39; &amp;amp;&amp;amp; (10 &amp;gt;= 1 &amp;amp;&amp;amp; 10 &amp;lt;= 25) (true) -&amp;gt; Tipo y rango válidos">
+          <mxGeometry relative="1" x="-0.9136" y="3" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1108" y="360" />
+              <mxPoint x="1108" y="382" />
+            </Array>
+            <mxPoint x="1058" y="360" as="sourcePoint" />
+            <mxPoint x="1058" y="382" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-63" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="15. Alpine.js actualiza current_value en la vista y restablece estado del formulario">
+          <mxGeometry relative="1" x="-0.5672" y="3" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="660" y="571" />
+              <mxPoint x="660" y="593" />
+            </Array>
+            <mxPoint x="610" y="571" as="sourcePoint" />
+            <mxPoint x="610" y="593" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-96" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_HotReloadManager" vertex="1">
+          <mxGeometry height="40" width="168" x="1732" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-97" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1816" y="110" as="sourcePoint" />
+            <mxPoint x="1816" y="658.86" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-98" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="1810" y="489" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-103" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.067;entryY=0.873;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1060" y="431.19499999999994" as="sourcePoint" />
+            <mxPoint x="1633.33" y="430.00400000000013" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-104" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-103" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="10. START TRANSACTION; UPDATE variable_entorno SET previous_value = current_value, current_value = &#39;10&#39;, updated_at =&lt;div&gt;&amp;nbsp;NOW() WHERE key_name = &#39;ATTACHMENT_MAX_MB&#39;; INSERT INTO auditoria (action, key_name, old_val, new_val, user_id, created_at)&amp;nbsp;&lt;/div&gt;&lt;div&gt;VALUES (&#39;ENV_UPDATE&#39;, &#39;ATTACHMENT_MAX_MB&#39;, &#39;5&#39;, &#39;10&#39;, 1, NOW()); COMMIT;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="68" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-106" edge="1" parent="1" source="d0_bar_db" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.141;exitY=0.975;exitDx=0;exitDy=0;entryX=0.963;entryY=0.694;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" target="d0_bar_s" value="11. Confirma transacción exitosa en base de datos">
+          <mxGeometry relative="1" x="0.0032" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1631.5299999999997" y="455.0030000000001" as="sourcePoint" />
+            <mxPoint x="1058" y="456.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-107" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.032;entryY=0.28;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-98" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1060" y="495.69499999999994" as="sourcePoint" />
+            <mxPoint x="1808.44" y="500.04" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-108" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-107" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="12. broadcastReload({ key: &#39;ATTACHMENT_MAX_MB&#39;, newValue: 10 })" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_ll_db" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1638" y="109" as="sourcePoint" />
+            <mxPoint x="1638" y="657.86" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-109" edge="1" parent="1" source="LSGTz4Vfso89_mCbXE9f-98" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.031;exitY=0.909;exitDx=0;exitDy=0;exitPerimeter=0;" value="13. Retorna { reloaded: true, message: &#39;Servicios dependientes sincronizados en caliente&#39; }">
+          <mxGeometry relative="1" x="0.0031" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1809.58" y="526" as="sourcePoint" />
+            <mxPoint x="1058" y="526.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-111" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="31" y="759" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-112" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="46" y="848" as="sourcePoint" />
+            <mxPoint x="46" y="1083.63" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-113" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_VariablesConfig" vertex="1">
+          <mxGeometry height="40" width="142" x="520" y="774" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-114" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="591" y="814" as="sourcePoint" />
+            <mxPoint x="591" y="1083.63" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-115" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_ConfigController" vertex="1">
+          <mxGeometry height="40" width="171" x="955" y="771" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-116" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="811" as="sourcePoint" />
+            <mxPoint x="1039.76" y="1085.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-117" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1390" y="769" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-118" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="194" width="10" x="41" y="852" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-119" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="187" width="10" x="586" y="856" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-120" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="68" width="10" x="1035" y="904" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-122" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.994;exitY=0.091;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.146;entryY=0.158;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-119" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;1. Modifica ATTACHMENT_MAX_MB a &quot;50&quot; (rango permitido: 1 a 25) y presiona &quot;Aplicar&quot;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.0017" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="49.940000000000055" y="886.398" as="sourcePoint" />
+            <mxPoint x="585.03" y="886.26" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-123" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="595.0000000000001" y="913.095" as="sourcePoint" />
+            <mxPoint x="1033.35" y="914.44" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-124" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-123" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. PUT /api/system/env-variables { key: &#39;ATTACHMENT_MAX_MB&#39;, value: 50 }" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="32" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-129" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=0.865;entryY=0.979;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.056;exitY=0.337;exitDx=0;exitDy=0;exitPerimeter=0;" value="6. Despliega aviso en interfaz:&amp;nbsp;&lt;div&gt;&quot;Valor fuera de rango. La variable ATTACHMENT_MAX_MB debe estar comprendida entre 1 y 25 MB.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0027" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="584.44" y="1035.621" as="sourcePoint" />
+            <mxPoint x="49.64999999999998" y="1033.736" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-130" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="3. Ejecuta validación de rango: (value: 50 &amp;gt; max_range: 25) -&amp;gt; Infracción de límites">
+          <mxGeometry relative="1" x="-0.9016" y="6" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1096" y="926" />
+              <mxPoint x="1096" y="948" />
+            </Array>
+            <mxPoint x="1046" y="926" as="sourcePoint" />
+            <mxPoint x="1046" y="948" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-132" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_HotReloadManager" vertex="1">
+          <mxGeometry height="40" width="168" x="1568" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-133" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1652" y="810" as="sourcePoint" />
+            <mxPoint x="1652" y="1089.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-136" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Alpine.js detiene loading, resalta input en rojo y posiciona foco en la variable inválida">
+          <mxGeometry relative="1" x="-0.9144" y="3" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="648" y="991" />
+              <mxPoint x="648" y="1013" />
+            </Array>
+            <mxPoint x="598" y="991" as="sourcePoint" />
+            <mxPoint x="598" y="1013" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-1" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.051;exitY=0.917;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="5. 200 OK { success: true, variables: [...] }">
+          <mxGeometry relative="1" x="-0.0024" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1047.6" y="275.99700000000007" as="sourcePoint" />
+            <mxPoint x="610.0000000000001" y="276.38200000000006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-2" edge="1" parent="1" source="d0_bar_v" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.016;exitY=0.297;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.995;entryY=0.305;entryDx=0;entryDy=0;entryPerimeter=0;" target="d0_bar_a" value="6. Despliega catálogo de variables con tipo de dato, rango y valor actual">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="600" y="295" as="sourcePoint" />
+            <mxPoint x="60.86" y="296.48" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-3" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.994;exitY=0.091;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.007;entryY=0.372;entryDx=0;entryDy=0;entryPerimeter=0;" target="d0_bar_v" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;7. Modifica ATTACHMENT_MAX_MB a &quot;10&quot; y presiona &quot;Aplicar&quot;&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.0014" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="66.00000000000006" y="331.13800000000003" as="sourcePoint" />
+            <mxPoint x="599.45" y="331" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-4" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="611.0000000000001" y="344.005" as="sourcePoint" />
+            <mxPoint x="1051" y="344.90999999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-5" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. PUT /api/system/env-variables { key: &#39;ATTACHMENT_MAX_MB&#39;, value: 10 }" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="32" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-6" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.042;exitY=0.933;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.887;entryY=0.194;entryDx=0;entryDy=0;entryPerimeter=0;" value="4. 422 Unprocessable Entity&amp;nbsp;&lt;div&gt;{ success: false, error: &quot;VALUE_OUT_OF_RANGE&quot;, min: 1, max: 25, unit: &quot;MB&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0024" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1036" y="960" as="sourcePoint" />
+            <mxPoint x="595.8700000000003" y="959.402" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-8" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1473" y="809" as="sourcePoint" />
+            <mxPoint x="1473" y="1089.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-9" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="28" y="1344" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-10" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="43" y="1433" as="sourcePoint" />
+            <mxPoint x="43" y="1668.63" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_VariablesConfig" vertex="1">
+          <mxGeometry height="40" width="142" x="517" y="1359" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-12" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="588" y="1399" as="sourcePoint" />
+            <mxPoint x="588" y="1668.63" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_ConfigController" vertex="1">
+          <mxGeometry height="40" width="171" x="952" y="1356" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-14" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1037" y="1396" as="sourcePoint" />
+            <mxPoint x="1036.76" y="1670.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1387" y="1354" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="194" width="10" x="38" y="1437" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="187" width="10" x="583" y="1441" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="68" width="10" x="1032" y="1489" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-19" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.994;exitY=0.091;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.146;entryY=0.158;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-17" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;1. Modifica ATTACHMENT_MAX_MB a &quot;50&quot; (rango permitido: 1 a 25) y presiona &quot;Aplicar&quot;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.0017" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="46.940000000000055" y="1471.3980000000001" as="sourcePoint" />
+            <mxPoint x="582.03" y="1471.26" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-20" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="592.0000000000001" y="1498.095" as="sourcePoint" />
+            <mxPoint x="1030.35" y="1499.44" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-21" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. PUT /api/system/env-variables { key: &#39;ATTACHMENT_MAX_MB&#39;, value: &#39;diez&#39; }" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="32" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-22" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=0.865;entryY=0.979;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.056;exitY=0.337;exitDx=0;exitDy=0;exitPerimeter=0;" value="6. Despliega aviso en interfaz: &quot;Tipo de dato incorrecto. El campo requiere un valor numérico entero.&quot;">
+          <mxGeometry relative="1" x="-0.0022" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="581.44" y="1620.621" as="sourcePoint" />
+            <mxPoint x="46.64999999999998" y="1618.736" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-23" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="3. Valida tipo de dato: expected:&lt;div&gt;&amp;nbsp;&#39;INT&#39;, received: &#39;STRING&#39; (NaN) -&amp;gt; Incompatibilidad de tipo&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.9016" y="6" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1093" y="1511" />
+              <mxPoint x="1093" y="1533" />
+            </Array>
+            <mxPoint x="1043" y="1511" as="sourcePoint" />
+            <mxPoint x="1043" y="1533" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_HotReloadManager" vertex="1">
+          <mxGeometry height="40" width="168" x="1565" y="1355" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-25" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1649" y="1395" as="sourcePoint" />
+            <mxPoint x="1649" y="1674.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-26" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Alpine.js detiene loading, resalta borde del campo en rojo y conserva el foco">
+          <mxGeometry relative="1" x="-0.9144" y="3" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="645" y="1576" />
+              <mxPoint x="645" y="1598" />
+            </Array>
+            <mxPoint x="595" y="1576" as="sourcePoint" />
+            <mxPoint x="595" y="1598" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-27" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.042;exitY=0.933;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.887;entryY=0.194;entryDx=0;entryDy=0;entryPerimeter=0;" value="4. 422 Unprocessable Entity { success: false, error:&amp;nbsp;&lt;div&gt;&quot;INVALID_DATA_TYPE&quot;, expected: &quot;INTEGER&quot;, received: &quot;STRING&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1033" y="1545" as="sourcePoint" />
+            <mxPoint x="592.8700000000003" y="1544.402" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-28" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1470" y="1394" as="sourcePoint" />
+            <mxPoint x="1470" y="1674.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-29" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="-81" y="1916" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-30" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-66" y="2005" as="sourcePoint" />
+            <mxPoint x="-66" y="2382.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_VariablesConfig" vertex="1">
+          <mxGeometry height="40" width="142" x="408" y="1931" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-32" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="479" y="1971" as="sourcePoint" />
+            <mxPoint x="479" y="2388" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_ConfigController" vertex="1">
+          <mxGeometry height="40" width="171" x="926" y="1928" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-34" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1011" y="1968" as="sourcePoint" />
+            <mxPoint x="1010.76" y="2375.05" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1582" y="1926" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="342" width="10" x="-71" y="2009" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="338" width="10" x="474" y="2013" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="220" width="10" x="1006" y="2061" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="53" width="10" x="1661" y="2068" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-40" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.994;exitY=0.091;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.152;entryY=0.086;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-37" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;1. Modifica variable operativa y pulsa &quot;Aplicar&quot;&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.0067" y="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-62.059999999999945" y="2043.3980000000001" as="sourcePoint" />
+            <mxPoint x="473.03" y="2043.2600000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-41" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=0.007;entryY=0.048;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-38" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="483.44000000000005" y="2070.37" as="sourcePoint" />
+            <mxPoint x="921.8300000000004" y="2071.44" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-42" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-41" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. PUT /api/system/env-variables { key: &#39;MAIL_INGEST_INTERVAL_SEC&#39;, value: 30 }" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="32" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-43" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="JGqaM0a-ywUJLE3DP8s4-39" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1016" y="2081.6949999999997" as="sourcePoint" />
+            <mxPoint x="1590.4" y="2078.996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-44" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-43" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3. START TRANSACTION; UPDATE variable_entorno SET previous_value = current_value,&lt;div&gt;&amp;nbsp;current_value = &#39;30&#39; WHERE key_name = &#39;MAIL_INGEST_INTERVAL_SEC&#39;; COMMIT;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="46" y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-45" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-39" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1.075;entryY=0.126;entryDx=0;entryDy=0;entryPerimeter=0;" value="4. Confirma actualización preliminar en base de datos">
+          <mxGeometry relative="1" x="0.003" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1590.5299999999997" y="2108.003" as="sourcePoint" />
+            <mxPoint x="1017.75" y="2106.36" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-46" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-38" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.119;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="9. 500 Internal Server Error { success: false, error: &quot;HOT_RELOAD_FAILED&quot;,&amp;nbsp;&lt;div&gt;restoredValue: 60, message: &quot;Falla de recarga en servicio dependiente. Se restauró el valor anterior.&quot; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0024" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="922.5999999999999" y="2273.9970000000003" as="sourcePoint" />
+            <mxPoint x="485.0000000000001" y="2274.382" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-47" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=1.153;entryY=0.97;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.028;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;" value="11. Despliega alerta crítica en interfaz: &quot;Falla la recarga de un servicio dependiente.&amp;nbsp;&lt;div&gt;El sistema revirtió al valor anterior de forma segura.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.001" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="472.19000000000005" y="2340.0899999999997" as="sourcePoint" />
+            <mxPoint x="-61.00000000000003" y="2338.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-49" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="10. Alpine.js revierte el valor del input al valor anterior y detiene indicador de guardado">
+          <mxGeometry relative="1" x="-0.5691" y="3" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="537" y="2304" />
+              <mxPoint x="537" y="2326" />
+            </Array>
+            <mxPoint x="487" y="2304" as="sourcePoint" />
+            <mxPoint x="487" y="2326" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_HotReloadManager" vertex="1">
+          <mxGeometry height="40" width="168" x="1760" y="1927" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-51" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1844" y="1967" as="sourcePoint" />
+            <mxPoint x="1844" y="2380.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="63" width="10" x="1840" y="2127" as="geometry" />
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-53" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.012;entryY=0.192;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1016" y="2226.015" as="sourcePoint" />
+            <mxPoint x="1661.12" y="2225.996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-54" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-53" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7. START TRANSACTION; UPDATE variable_entorno SET current_value = previous_value WHERE key_name =&amp;nbsp;&lt;div&gt;&#39;MAIL_INGEST_INTERVAL_SEC&#39;; INSERT INTO auditoria (action, key_name, details, created_at) VALUES (&#39;ENV_REVERT&#39;,&amp;nbsp;&lt;/div&gt;&lt;div&gt;&#39;MAIL_INGEST_INTERVAL_SEC&#39;, &#39;Reversión por falla de recarga de servicio&#39;, NOW()); COMMIT;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="68" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-55" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-68" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.012;exitY=0.824;exitDx=0;exitDy=0;entryX=0.963;entryY=0.694;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" value="8. Confirma reversión de valor anterior en base de datos">
+          <mxGeometry relative="1" x="0.0032" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1588.9599999999996" y="2252.9999999999995" as="sourcePoint" />
+            <mxPoint x="1016.0000000000001" y="2254.0399999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-56" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.948;exitY=0.22;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.017;entryY=0.237;entryDx=0;entryDy=0;entryPerimeter=0;" target="JGqaM0a-ywUJLE3DP8s4-52" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1016.48" y="2140.2000000000003" as="sourcePoint" />
+            <mxPoint x="1768.44" y="2141.32" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-57" connectable="0" parent="JGqaM0a-ywUJLE3DP8s4-56" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="5. broadcastReload({ key: &#39;MAIL_INGEST_INTERVAL_SEC&#39;, newValue: 30 })" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-58" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1666" y="1966" as="sourcePoint" />
+            <mxPoint x="1667.24" y="2376.57" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-59" edge="1" parent="1" source="JGqaM0a-ywUJLE3DP8s4-52" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.048;exitY=0.797;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.202;entryY=0.319;entryDx=0;entryDy=0;entryPerimeter=0;" value="6. Error: SERVICE_RELOAD_TIMEOUT / IPC_FAILURE (Falla de recarga en servicio dependiente)">
+          <mxGeometry relative="1" x="0.0026" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1768.3099999999995" y="2176.9999999999995" as="sourcePoint" />
+            <mxPoint x="1019.02" y="2175.84" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JGqaM0a-ywUJLE3DP8s4-68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="53" width="10" x="1661" y="2211" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,70 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="EmwQote2fVgDe7Sy9Iid">
+    <mxGraphModel dx="1496" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml\nleft to right direction\n\n&#39; Actor\nactor \&quot;Administrador del sistema\&quot; as Admin\n\n&#39; Límite del sistema\nrectangle \&quot;Módulo de Administración y Parametrización\&quot; {\n\n    usecase \&quot;CU-04: Configurando categorías de problemas\&quot; as CU04\n    usecase \&quot;E-1: Gestionando nombre duplicado\&quot; as E1\n    usecase \&quot;E-2: Gestionando categoría con tickets activos\&quot; as E2\n    usecase \&quot;E-3: Gestionando error de conexión con la base de datos\&quot; as E3\n\n}\n\n&#39; Relación del actor con el caso de uso principal\nAdmin --&gt; CU04\n\n&#39; Relaciones de extensión (las flechas entre punteadas apuntan hacia el caso de uso base CU-04)\nE1 .&gt; CU04 : &lt;&lt;extend&gt;&gt;\nE2 .&gt; CU04 : &lt;&lt;extend&gt;&gt;\nE3 .&gt; CU04 : &lt;&lt;extend&gt;&gt;\n\n@endluml&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="7G54_zB9EDcL17rgwaVl-202">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Módulo de Administración y Parametrización" plantUmlId="rect_0" plantUmlBaseStyle="swimlane;collapsible=0;startSize=26;fillColor=none;strokeColor=#181818;fontColor=#000000;fontSize=13;fontStyle=1;whiteSpace=wrap;" plantUmlBaseValue="Módulo de Administración y Parametrización" id="7G54_zB9EDcL17rgwaVl-203">
+          <mxCell parent="7G54_zB9EDcL17rgwaVl-202" style="swimlane;collapsible=0;startSize=26;fillColor=none;strokeColor=#181818;fontColor=#000000;fontSize=13;fontStyle=1;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="472" width="630" x="190" y="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="CU-04: Configurando categorías de problemas" plantUmlId="uc_1" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" plantUmlBaseValue="CU-04: Configurando categorías de problemas" id="7G54_zB9EDcL17rgwaVl-204">
+          <mxCell parent="7G54_zB9EDcL17rgwaVl-203" style="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" vertex="1">
+            <mxGeometry height="71" width="312" x="20" y="174" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="E-1: Gestionando nombre duplicado" plantUmlId="uc_2" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" plantUmlBaseValue="E-1: Gestionando nombre duplicado" id="7G54_zB9EDcL17rgwaVl-205">
+          <mxCell parent="7G54_zB9EDcL17rgwaVl-203" style="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" vertex="1">
+            <mxGeometry height="57" width="263" x="340" y="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="E-2: Gestionando categoría con tickets activos" plantUmlId="uc_3" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" plantUmlBaseValue="E-2: Gestionando categoría con tickets activos" id="7G54_zB9EDcL17rgwaVl-206">
+          <mxCell parent="7G54_zB9EDcL17rgwaVl-203" style="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" vertex="1">
+            <mxGeometry height="71" width="281" x="340" y="245" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="E-3: Gestionando error de conexión con la base de datos" plantUmlId="uc_4" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" plantUmlBaseValue="E-3: Gestionando error de conexión con la base de datos" id="7G54_zB9EDcL17rgwaVl-207">
+          <mxCell parent="7G54_zB9EDcL17rgwaVl-203" style="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" vertex="1">
+            <mxGeometry height="86" width="340" x="260" y="364" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«extend»" plantUmlId="rel_8" plantUmlBaseStyle="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="«extend»" id="7G54_zB9EDcL17rgwaVl-211">
+          <mxCell edge="1" parent="7G54_zB9EDcL17rgwaVl-203" source="7G54_zB9EDcL17rgwaVl-205" style="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="7G54_zB9EDcL17rgwaVl-204">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«extend»" plantUmlId="rel_9" plantUmlBaseStyle="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="«extend»" id="7G54_zB9EDcL17rgwaVl-212">
+          <mxCell edge="1" parent="7G54_zB9EDcL17rgwaVl-203" source="7G54_zB9EDcL17rgwaVl-206" style="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="7G54_zB9EDcL17rgwaVl-204">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«extend»" plantUmlId="rel_10" plantUmlBaseStyle="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="«extend»" id="7G54_zB9EDcL17rgwaVl-213">
+          <mxCell edge="1" parent="7G54_zB9EDcL17rgwaVl-203" source="7G54_zB9EDcL17rgwaVl-207" style="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="7G54_zB9EDcL17rgwaVl-204">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="actor_5" plantUmlBaseStyle="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;" plantUmlBaseValue="" id="7G54_zB9EDcL17rgwaVl-208">
+          <mxCell parent="7G54_zB9EDcL17rgwaVl-202" style="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;" vertex="1">
+            <mxGeometry height="60" width="40" x="80" y="199.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Administrador del sistema" plantUmlId="actorlbl_6" plantUmlBaseStyle="text;html=1;align=center;verticalAlign=top;fontColor=#000000;fontSize=14;" plantUmlBaseValue="Administrador del sistema" id="7G54_zB9EDcL17rgwaVl-209">
+          <mxCell parent="7G54_zB9EDcL17rgwaVl-202" style="text;html=1;align=center;verticalAlign=top;fontColor=#000000;fontSize=14;" vertex="1">
+            <mxGeometry height="17" width="183" x="10" y="270" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="rel_7" plantUmlBaseStyle="endArrow=block;endFill=1;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="7G54_zB9EDcL17rgwaVl-210">
+          <mxCell edge="1" parent="7G54_zB9EDcL17rgwaVl-202" source="7G54_zB9EDcL17rgwaVl-208" style="endArrow=block;endFill=1;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="7G54_zB9EDcL17rgwaVl-204">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

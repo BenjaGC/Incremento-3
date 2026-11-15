@@ -1,5 +1,14 @@
 # Ticketera Clínica Aconcagua — Incremento III
 
+<!-- FINAL-20261115 -->
+## Entrega académica final actualizada
+
+**15 de noviembre de 2026:** [documentos, diagramas, planillas, evidencias y presentación finales](Entrega-academica/Final-20261115/). [Videos finales y descargas](https://github.com/BenjaGC/Incremento-3/releases/tag/entrega-final-20261115). Esta entrega reemplaza la documentación académica anterior como referencia vigente; el código y la instalación revisados se conservan.
+
+- [Presentacion Incremento 3 - Grupo 11 + Guía Instalación\Video Presentación Incremento 3 - Grupo 11.mp4](https://github.com/BenjaGC/Incremento-3/releases/download/entrega-final-20261115/I3-Presentacion-Incremento-3---Grupo-11-Guia-Instalacion-Video-Presentacion-Incremento-3---Grupo-11.mp4)
+- [Presentacion Incremento 3 - Grupo 11 + Guía Instalación\Guia instalacion Local.mov](https://github.com/BenjaGC/Incremento-3/releases/download/entrega-final-20261115/I3-Presentacion-Incremento-3---Grupo-11-Guia-Instalacion-Guia-instalacion-Local.mov)
+<!-- /FINAL-20261115 -->
+
 Sistema de soporte informático con tickets, seguimiento SLA, inventario, reportes, manuales y administración. Backend Node.js/Express, base MySQL y frontend HTML/CSS/JavaScript con Alpine.js.
 
 ## Entregas del proyecto

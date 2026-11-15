@@ -1,0 +1,70 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="rFHpXSMhiDCxsmx75QfF">
+    <mxGraphModel dx="2587" dy="1029" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml\nleft to right direction\n\n&#39; Actor\nactor \&quot;Administrador del sistema\&quot; as Admin\n\n&#39; Límite del sistema\nrectangle \&quot;Módulo de Ciclo de Vida del Dato\&quot; {\n\n    usecase \&quot;CU-46: Gestionando la papelera de evidencias\&quot; as CU46\n    usecase \&quot;E-1: Gestionando archivo purgado físicamente\&quot; as E1\n    usecase \&quot;E-2: Gestionando ticket original archivado\&quot; as E2\n    usecase \&quot;E-3: Gestionando archivo corrupto (hash no coincide)\&quot; as E3\n\n}\n\n&#39; Relación del actor con el caso de uso base\nAdmin --&gt; CU46\n\n&#39; Relaciones de extensión\nE1 .&gt; CU46 : &lt;&lt;extend&gt;&gt;\nE2 .&gt; CU46 : &lt;&lt;extend&gt;&gt;\nE3 .&gt; CU46 : &lt;&lt;extend&gt;&gt;\n\n@enduml&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="NquwoY8W9eJG-fFkSFpm-83">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Módulo de Ciclo de Vida del Dato" plantUmlId="rect_0" plantUmlBaseStyle="swimlane;collapsible=0;startSize=26;fillColor=none;strokeColor=#181818;fontColor=#000000;fontSize=13;fontStyle=1;whiteSpace=wrap;" plantUmlBaseValue="Módulo de Ciclo de Vida del Dato" id="NquwoY8W9eJG-fFkSFpm-84">
+          <mxCell parent="NquwoY8W9eJG-fFkSFpm-83" style="swimlane;collapsible=0;startSize=26;fillColor=none;strokeColor=#181818;fontColor=#000000;fontSize=13;fontStyle=1;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="477" width="710" x="190" y="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="CU-46: Gestionando la papelera de evidencias" plantUmlId="uc_1" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" plantUmlBaseValue="CU-46: Gestionando la papelera de evidencias" id="NquwoY8W9eJG-fFkSFpm-85">
+          <mxCell parent="NquwoY8W9eJG-fFkSFpm-84" style="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" vertex="1">
+            <mxGeometry height="100" width="240" x="91" y="179" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="E-1: Gestionando archivo purgado físicamente" plantUmlId="uc_2" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" plantUmlBaseValue="E-1: Gestionando archivo purgado físicamente" id="NquwoY8W9eJG-fFkSFpm-86">
+          <mxCell parent="NquwoY8W9eJG-fFkSFpm-84" style="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" vertex="1">
+            <mxGeometry height="90" width="250" x="340" y="47" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="E-2: Gestionando ticket original archivado" plantUmlId="uc_3" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" plantUmlBaseValue="E-2: Gestionando ticket original archivado" id="NquwoY8W9eJG-fFkSFpm-87">
+          <mxCell parent="NquwoY8W9eJG-fFkSFpm-84" style="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" vertex="1">
+            <mxGeometry height="100" width="220" x="460" y="188.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="E-3: Gestionando archivo corrupto (hash no coincide)" plantUmlId="uc_4" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" plantUmlBaseValue="E-3: Gestionando archivo corrupto (hash no coincide)" id="NquwoY8W9eJG-fFkSFpm-88">
+          <mxCell parent="NquwoY8W9eJG-fFkSFpm-84" style="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;" vertex="1">
+            <mxGeometry height="90" width="240" x="331" y="350" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«extend»" plantUmlId="rel_8" plantUmlBaseStyle="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="«extend»" id="NquwoY8W9eJG-fFkSFpm-92">
+          <mxCell edge="1" parent="NquwoY8W9eJG-fFkSFpm-84" source="NquwoY8W9eJG-fFkSFpm-86" style="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="NquwoY8W9eJG-fFkSFpm-85">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«extend»" plantUmlId="rel_9" plantUmlBaseStyle="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="«extend»" id="NquwoY8W9eJG-fFkSFpm-93">
+          <mxCell edge="1" parent="NquwoY8W9eJG-fFkSFpm-84" source="NquwoY8W9eJG-fFkSFpm-87" style="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="NquwoY8W9eJG-fFkSFpm-85">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«extend»" plantUmlId="rel_10" plantUmlBaseStyle="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="«extend»" id="NquwoY8W9eJG-fFkSFpm-94">
+          <mxCell edge="1" parent="NquwoY8W9eJG-fFkSFpm-84" source="NquwoY8W9eJG-fFkSFpm-88" style="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="NquwoY8W9eJG-fFkSFpm-85">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="actor_5" plantUmlBaseStyle="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;" plantUmlBaseValue="" id="NquwoY8W9eJG-fFkSFpm-89">
+          <mxCell parent="NquwoY8W9eJG-fFkSFpm-83" style="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;" vertex="1">
+            <mxGeometry height="60" width="40" x="80" y="219" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Administrador del sistema" plantUmlId="actorlbl_6" plantUmlBaseStyle="text;html=1;align=center;verticalAlign=top;fontColor=#000000;fontSize=14;" plantUmlBaseValue="Administrador del sistema" id="NquwoY8W9eJG-fFkSFpm-90">
+          <mxCell parent="NquwoY8W9eJG-fFkSFpm-83" style="text;html=1;align=center;verticalAlign=top;fontColor=#000000;fontSize=14;" vertex="1">
+            <mxGeometry height="17" width="183" y="300" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="rel_7" plantUmlBaseStyle="endArrow=block;endFill=1;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="NquwoY8W9eJG-fFkSFpm-91">
+          <mxCell edge="1" parent="NquwoY8W9eJG-fFkSFpm-83" source="NquwoY8W9eJG-fFkSFpm-89" style="endArrow=block;endFill=1;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="NquwoY8W9eJG-fFkSFpm-85">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

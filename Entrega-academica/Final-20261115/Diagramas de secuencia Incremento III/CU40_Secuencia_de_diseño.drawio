@@ -1,0 +1,652 @@
+<mxfile host="Electron">
+  <diagram id="seq" name="Página-1">
+    <mxGraphModel dx="2011" dy="1233" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1700" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d0_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:115%;&lt;br/&gt;font-family:&amp;quot;Times New Roman&amp;quot;,serif;mso-fareast-font-family:Aptos;mso-font-kerning:&lt;br/&gt;0pt;mso-ligatures:none;mso-ansi-language:ES-CL;mso-fareast-language:ES-CL;&lt;br/&gt;mso-bidi-language:AR-SA&quot;&gt;CU-40 – Flujo principal&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="518" y="-29" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_a" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="45" y="59" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_a" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="148" as="sourcePoint" />
+            <mxPoint x="60" y="646.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_v" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_ImportacionUsuarios" vertex="1">
+          <mxGeometry height="40" width="142" x="534" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_v" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="605" y="114" as="sourcePoint" />
+            <mxPoint x="605" y="649.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_UsuarioImportController" vertex="1">
+          <mxGeometry height="40" width="171" x="969" y="71" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_ll_s" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1054" y="111" as="sourcePoint" />
+            <mxPoint x="1053.76" y="643.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_db" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_CryptoBcrypt" vertex="1">
+          <mxGeometry height="40" width="168" x="1554" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="474" width="10" x="55" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_v" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="471" width="10" x="600" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="360" width="10" x="1049" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_bar_db" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="1633" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="d0_m0" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.994;exitY=0.091;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.003;entryY=0.085;entryDx=0;entryDy=0;entryPerimeter=0;" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;1. Accede a &quot;Usuarios &amp;gt; Importación masiva&quot;, selecciona archivo &quot;empleados.xlsx&quot; y pulsa &quot;Importar&quot;&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.0062" y="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="63.940000000000055" y="186.39800000000002" as="sourcePoint" />
+            <mxPoint x="599.03" y="186.26" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_m1" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" target="d0_bar_s" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="609.0000000000001" y="213.09500000000003" as="sourcePoint" />
+            <mxPoint x="1190.24" y="211.743" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-115" connectable="0" parent="d0_m1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. POST /api/users/batch-import (multipart/form-data: file, size: 2.1MB, rows: 250)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="32" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-40 – Excepción 3: Archivo excede el limite&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="202" y="1854" as="geometry" />
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-134" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-40 – Excepción 1: Filas con errores&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="723" x="517" y="684" as="geometry" />
+        </mxCell>
+        <mxCell id="c90vbPPHIPy1liW-Zpxw-135" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=2;fontColor=#000000;fontFamily=Helvetica;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 12pt; line-height: 150%;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size:9.0pt;line-height:150%;font-family:&lt;br/&gt;&amp;quot;Times New Roman&amp;quot;,serif&quot;&gt;CU-40 – Excepción 2: Plantilla incorrecta&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="452" x="734" y="1418" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-5" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.04;entryY=0.868;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1058" y="369.69499999999994" as="sourcePoint" />
+            <mxPoint x="1632.4" y="366.996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-6" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="6. hashBatchPasswords(tempPasswordsArray, saltRounds = 10)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="46" y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-8" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.047;exitY=0.939;exitDx=0;exitDy=0;exitPerimeter=0;" value="7. Retorna arreglo de hashes seguros bcrypt">
+          <mxGeometry relative="1" x="0.0031" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1631.5299999999997" y="396.0030000000001" as="sourcePoint" />
+            <mxPoint x="1058" y="397.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-9" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.051;exitY=0.917;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="12. 200 OK { success: true, total: 250, processed: 250, successful: 250, failed: 0 }">
+          <mxGeometry relative="1" x="-0.0024" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1047.6" y="539.9970000000001" as="sourcePoint" />
+            <mxPoint x="610.0000000000001" y="540.3820000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-10" edge="1" parent="1" source="d0_bar_v" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=1.069;entryY=0.979;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.028;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;" target="d0_bar_a" value="14. Despliega reporte de éxito: &quot;Importación completada:&amp;nbsp;&lt;div&gt;250 usuarios creados con bandera de cambio obligatorio de clave activada&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="599.03" y="613.23" as="sourcePoint" />
+            <mxPoint x="66.7" y="614.93" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-59" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="3. Valida tamaño (&amp;lt;= 5 MB), total de registros (&amp;lt;= 1.000 filas) y concordancia de columnas de plantilla">
+          <mxGeometry relative="1" x="-0.4407" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1110" y="226" />
+              <mxPoint x="1110" y="248" />
+            </Array>
+            <mxPoint x="1060" y="226" as="sourcePoint" />
+            <mxPoint x="1060" y="248" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-63" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="13. Alpine.js detiene barra de progreso y renderiza panel de resumen estadístico">
+          <mxGeometry relative="1" x="-0.5664" y="3" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="660" y="571" />
+              <mxPoint x="660" y="593" />
+            </Array>
+            <mxPoint x="610" y="571" as="sourcePoint" />
+            <mxPoint x="610" y="593" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-69" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="15" y="1463" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-70" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="1554" as="sourcePoint" />
+            <mxPoint x="30" y="1774.3899999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_ImportacionUsuarios" vertex="1">
+          <mxGeometry height="40" width="142" x="381" y="1475" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-72" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="452" y="1517" as="sourcePoint" />
+            <mxPoint x="452" y="1780.2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_UsuarioImportController" vertex="1">
+          <mxGeometry height="40" width="167" x="873" y="1476" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-74" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="957" y="1517" as="sourcePoint" />
+            <mxPoint x="956.76" y="1774.6100000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-75" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_CryptoBcrypt" vertex="1">
+          <mxGeometry height="40" width="168" x="1167" y="1474" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-76" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1251" y="1514" as="sourcePoint" />
+            <mxPoint x="1251" y="1772.02" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-77" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="204" width="10" x="25" y="1558" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-78" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="198" width="10" x="447" y="1559" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-79" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="77" width="10" x="952" y="1610" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-80" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.044;entryY=0.161;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-78" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.0026" y="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="34.76" y="1592.3200000000002" as="sourcePoint" />
+            <mxPoint x="568.4300000000001" y="1588.631" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-89" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-80" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Selecciona archivo &quot;nomina_incompleta.xlsx&quot; y pulsa &quot;Importar&quot;" vertex="1">
+          <mxGeometry relative="1" x="0.0715" y="1" as="geometry">
+            <mxPoint x="-5" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-82" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.036;entryY=0.092;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-79" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="455.1" y="1617.6799999999998" as="sourcePoint" />
+            <mxPoint x="915.0699999999999" y="1617.2250000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-83" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-82" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. POST /api/users/batch-import (multipart/form-data: file)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="46" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-84" edge="1" parent="1" source="LSGTz4Vfso89_mCbXE9f-78" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=0.954;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.101;entryY=0.933;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-77" value="6. Despliega aviso en pantalla: &quot;Plantilla incorrecta.&amp;nbsp;&lt;div&gt;El archivo no cumple con el formato oficial. Columnas faltantes: RUT, Rol.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0011" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="565.22" y="1747.8400000000001" as="sourcePoint" />
+            <mxPoint x="34.86" y="1750.56" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-85" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="3. Lee encabezados y compara con esquema oficial:&amp;nbsp;&lt;div&gt;detecta ausencia de columnas obligatorias [&#39;rut&#39;, &#39;rol&#39;]&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.9803" y="2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1012" y="1633" />
+              <mxPoint x="1012" y="1655" />
+            </Array>
+            <mxPoint x="962" y="1633" as="sourcePoint" />
+            <mxPoint x="962" y="1655" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-86" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Alpine.js detiene loading, resalta área de carga en rojo y formatea mensaje de error">
+          <mxGeometry relative="1" x="-0.1382" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="506" y="1717" />
+              <mxPoint x="506" y="1739" />
+            </Array>
+            <mxPoint x="456" y="1717" as="sourcePoint" />
+            <mxPoint x="456" y="1739" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-87" edge="1" parent="1" source="LSGTz4Vfso89_mCbXE9f-79" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.036;exitY=0.905;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. 422 Unprocessable Entity { success: false, error:&amp;nbsp;&lt;div&gt;&quot;PLANTILLA_INCORRECTA&quot;, missingColumns: [&#39;RUT&#39;, &#39;Rol&#39;] }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0013" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="915.24" y="1679.6490000000001" as="sourcePoint" />
+            <mxPoint x="457" y="1680.4099999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-96" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1732" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-97" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1816" y="110" as="sourcePoint" />
+            <mxPoint x="1816" y="658.86" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-98" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="143" width="10" x="1811" y="413" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-100" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Valida fila por fila: RUT con algoritmo Módulo 11, estructura de email y roles válidos">
+          <mxGeometry relative="1" x="-0.4407" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1108" y="324" />
+              <mxPoint x="1108" y="346" />
+            </Array>
+            <mxPoint x="1058" y="324" as="sourcePoint" />
+            <mxPoint x="1058" y="346" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-101" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="4. Fragmenta dataset en lotes de 100 filas e inicia procesamiento iterativo">
+          <mxGeometry relative="1" x="-0.4407" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1110" y="280" />
+              <mxPoint x="1110" y="302" />
+            </Array>
+            <mxPoint x="1060" y="280" as="sourcePoint" />
+            <mxPoint x="1060" y="302" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-103" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.049;entryY=0.085;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-98" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1059" y="428.69499999999994" as="sourcePoint" />
+            <mxPoint x="1807.56" y="426" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-104" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-103" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. START TRANSACTION; INSERT INTO user (rut, username, email, password_hash, role, must_change_password) VALUES (...); COMMIT;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="66" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-106" edge="1" parent="1" source="LSGTz4Vfso89_mCbXE9f-98" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.209;exitY=0.293;exitDx=0;exitDy=0;exitPerimeter=0;" value="9. Confirma transacción del lote (affectedRows: 100)">
+          <mxGeometry relative="1" x="0.0031" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1631.5299999999997" y="455.0030000000001" as="sourcePoint" />
+            <mxPoint x="1058" y="456.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-107" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.049;entryY=0.085;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1060" y="495.69499999999994" as="sourcePoint" />
+            <mxPoint x="1812" y="492" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-108" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-107" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="10. INSERT INTO bitacora (user_id, action, details, created_at)&amp;nbsp;&lt;div&gt;VALUES (1, &#39;IMPORTACION_MASIVA_EMPLEADOS&#39;, &#39;250 registros procesados&#39;, NOW());&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0_ll_db" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1638" y="109" as="sourcePoint" />
+            <mxPoint x="1638" y="657.86" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-109" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.209;exitY=0.293;exitDx=0;exitDy=0;exitPerimeter=0;" value="11. Confirma registro de auditoría">
+          <mxGeometry relative="1" x="0.0031" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1809" y="525" as="sourcePoint" />
+            <mxPoint x="1058" y="526.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-111" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="31" y="759" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-112" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="46" y="848" as="sourcePoint" />
+            <mxPoint x="46" y="1416.37" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-113" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_ImportacionUsuarios" vertex="1">
+          <mxGeometry height="40" width="142" x="520" y="774" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-114" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="591" y="814" as="sourcePoint" />
+            <mxPoint x="591" y="1424.19" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-115" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_UsuarioImportController" vertex="1">
+          <mxGeometry height="40" width="171" x="955" y="771" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-116" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="811" as="sourcePoint" />
+            <mxPoint x="1039.76" y="1343.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-117" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_CryptoBcrypt" vertex="1">
+          <mxGeometry height="40" width="168" x="1540" y="769" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-118" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="547" width="10" x="41" y="852" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-119" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="533" width="10" x="586" y="856" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-120" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="360" width="10" x="1035" y="904" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-121" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="1619" y="1019" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-122" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.994;exitY=0.091;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.013;entryY=0.057;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-119" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;1. Sube archivo &quot;empleados.xlsx&quot; con 200 filas&amp;nbsp;&lt;/code&gt;&lt;/p&gt;&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;code style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;(incluyendo registros con RUT/email erróneos) y pulsa &quot;Importar&quot;&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.0031" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="49.940000000000055" y="886.398" as="sourcePoint" />
+            <mxPoint x="585.03" y="886.26" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-123" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.017;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-120" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="595.0000000000001" y="913.095" as="sourcePoint" />
+            <mxPoint x="1176.24" y="911.7429999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-124" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-123" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. POST /api/users/batch-import (multipart/form-data: file)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="32" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-125" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.092;entryY=0.209;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-121" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1044" y="1029.695" as="sourcePoint" />
+            <mxPoint x="1618.4" y="1026.996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-126" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-125" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="5. hashBatchPasswords(validPasswords, saltRounds = 10) (185 contraseñas válidas)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="54" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-127" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;" value="6. Retorna hashes seguros para los 185 registros correctos">
+          <mxGeometry relative="1" x="0.0029" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1617.53" y="1057.95" as="sourcePoint" />
+            <mxPoint x="1044" y="1057.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-128" edge="1" parent="1" source="LSGTz4Vfso89_mCbXE9f-120" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.042;exitY=0.933;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.089;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;" value="12. 207 Multi-Status { success: true, processed: 200,&amp;nbsp;&lt;div&gt;successful: 185, failed: 15, errorLogUrl: &#39;/api/users/import-errors/download/csv&#39; }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0024" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1033.6" y="1239.997" as="sourcePoint" />
+            <mxPoint x="596.0000000000001" y="1240.382" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-129" edge="1" parent="1" source="LSGTz4Vfso89_mCbXE9f-119" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=0.865;entryY=0.979;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.056;exitY=0.858;exitDx=0;exitDy=0;exitPerimeter=0;" value="14. Despliega reporte de éxito: &quot;Importación completada:&amp;nbsp;&lt;div&gt;250 usuarios creados con bandera de cambio obligatorio de clave activada&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.003" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="583.49" y="1313.16" as="sourcePoint" />
+            <mxPoint x="50.64999999999998" y="1316.046" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-130" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="3. Procesa lotes de 100 filas: valida RUT (módulo 11), sintaxis de correo y rol asignado">
+          <mxGeometry relative="1" x="-0.902" y="6" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1096" y="926" />
+              <mxPoint x="1096" y="948" />
+            </Array>
+            <mxPoint x="1046" y="926" as="sourcePoint" />
+            <mxPoint x="1046" y="948" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-131" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="13. Alpine.js renderiza tarjeta resumen con advertencia y activa enlace de descarga CSV">
+          <mxGeometry relative="1" x="-0.9367" y="2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="646" y="1271" />
+              <mxPoint x="646" y="1293" />
+            </Array>
+            <mxPoint x="596" y="1271" as="sourcePoint" />
+            <mxPoint x="596" y="1293" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-132" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1718" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-133" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1802" y="810" as="sourcePoint" />
+            <mxPoint x="1802" y="1358.8600000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-134" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="143" width="10" x="1797" y="1073" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-136" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="4. Detecta 15 filas inválidas: las segrega y agrega a errorBuffer [{ row: 14, rut: &#39;18.999.000-K&#39;, error: &#39;RUT inválido&#39; }, ...]">
+          <mxGeometry relative="1" x="-0.9144" y="3" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1096" y="980" />
+              <mxPoint x="1096" y="1002" />
+            </Array>
+            <mxPoint x="1046" y="980" as="sourcePoint" />
+            <mxPoint x="1046" y="1002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-137" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.114;entryY=0.099;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-134" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1045" y="1088.695" as="sourcePoint" />
+            <mxPoint x="1795.13" y="1087.11" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-138" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-137" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7. START TRANSACTION; INSERT INTO user (...) VALUES (185 registros); COMMIT;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="66" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-139" edge="1" parent="1" source="LSGTz4Vfso89_mCbXE9f-134" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.209;exitY=0.293;exitDx=0;exitDy=0;exitPerimeter=0;" value="8. Confirma inserción exitosa de 185 usuarios">
+          <mxGeometry relative="1" x="0.0036" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1617.5299999999997" y="1115.0030000000002" as="sourcePoint" />
+            <mxPoint x="1044" y="1116.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-140" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=1.186;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.049;entryY=0.085;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1046" y="1155.695" as="sourcePoint" />
+            <mxPoint x="1798" y="1152" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-141" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-140" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="9. INSERT INTO bitacora (user_id, action, details, created_at)&amp;nbsp;&lt;div&gt;VALUES (1, &#39;IMPORT_BATCH_PARTIAL&#39;, &#39;185 exitosos, 15 omitidos por error&#39;, NOW());&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="42" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-142" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1624" y="809" as="sourcePoint" />
+            <mxPoint x="1624" y="1357.8600000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-143" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.209;exitY=0.293;exitDx=0;exitDy=0;exitPerimeter=0;" value="10. Confirma registro en bitácora">
+          <mxGeometry relative="1" y="-1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1795" y="1185" as="sourcePoint" />
+            <mxPoint x="1044" y="1186.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-144" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="11. Genera archivo temporal: &#39;errores_importacion_20260929.csv&#39;">
+          <mxGeometry relative="1" x="-0.446" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1095" y="1211" />
+              <mxPoint x="1095" y="1233" />
+            </Array>
+            <mxPoint x="1045" y="1211" as="sourcePoint" />
+            <mxPoint x="1045" y="1233" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-145" edge="1" parent="1" source="LSGTz4Vfso89_mCbXE9f-118" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0.966;exitY=0.903;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.011;entryY=0.912;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-119" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;15. Pulsa botón &quot;Descargar errores CSV&quot;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.0031" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="50.00000000000006" y="1352.138" as="sourcePoint" />
+            <mxPoint x="585.0899999999999" y="1352" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-146" edge="1" parent="1" source="LSGTz4Vfso89_mCbXE9f-119" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=0.865;entryY=0.979;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.015;exitY=0.96;exitDx=0;exitDy=0;exitPerimeter=0;" value="16. Descarga y abre en navegador el archivo &quot;errores_importacion_20260929.csv&quot;">
+          <mxGeometry relative="1" x="-0.003" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="585.08" y="1368" as="sourcePoint" />
+            <mxPoint x="50.99999999999998" y="1371.1760000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-148" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1339" y="1474" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-149" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1420" y="1514" as="sourcePoint" />
+            <mxPoint x="1420" y="1772.02" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-150" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="23" y="1939" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-151" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="38" y="2030" as="sourcePoint" />
+            <mxPoint x="38" y="2250.39" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-152" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="V_ImportacionUsuarios" vertex="1">
+          <mxGeometry height="40" width="142" x="389" y="1951" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-153" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="1993" as="sourcePoint" />
+            <mxPoint x="460" y="2256.2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-154" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="C_UsuarioImportController" vertex="1">
+          <mxGeometry height="40" width="167" x="881" y="1952" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-155" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="965" y="1993" as="sourcePoint" />
+            <mxPoint x="964.76" y="2250.61" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-156" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="S_CryptoBcrypt" vertex="1">
+          <mxGeometry height="40" width="168" x="1175" y="1950" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-157" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1259" y="1990" as="sourcePoint" />
+            <mxPoint x="1259" y="2248.02" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-158" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="204" width="10" x="33" y="2034" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-159" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="199" width="10" x="455" y="2035" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-160" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="77" width="10" x="960" y="2086" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-161" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.044;entryY=0.161;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-159" value="&lt;p style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_05c7d6bcbc87e7b5-342&quot; style=&quot;font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;span style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important;&quot;&gt;&lt;sup class=&quot;superscript&quot; style=&quot;line-height: 1.15 !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; font-size: 16px !important; background-color: transparent !important;&quot;&gt;&lt;/sup&gt;&lt;/span&gt;   &lt;/p&gt;">
+          <mxGeometry relative="1" x="-0.0026" y="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="42.76" y="2068.32" as="sourcePoint" />
+            <mxPoint x="576.4300000000001" y="2064.6310000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-162" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-161" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1. Selecciona archivo &quot;nomina_general.xlsx&quot;&amp;nbsp;&lt;div&gt;(8.2 MB / 1.450 filas) y pulsa &quot;Importar&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0715" y="1" as="geometry">
+            <mxPoint x="-5" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-163" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;entryX=-0.036;entryY=0.092;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-160" value="">
+          <mxGeometry relative="1" x="0.0035" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="463.1" y="2093.68" as="sourcePoint" />
+            <mxPoint x="923.0699999999999" y="2093.2250000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-164" connectable="0" parent="LSGTz4Vfso89_mCbXE9f-163" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. POST /api/users/batch-import (multipart/form-data: file, size: 8.2MB)" vertex="1">
+          <mxGeometry relative="1" x="-0.1812" y="3" as="geometry">
+            <mxPoint x="46" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-165" edge="1" parent="1" source="LSGTz4Vfso89_mCbXE9f-159" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=0;exitY=0.954;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.977;entryY=0.943;entryDx=0;entryDy=0;entryPerimeter=0;" target="LSGTz4Vfso89_mCbXE9f-158" value="6. Despliega aviso en pantalla: &quot;El archivo excede el límite permitido.&amp;nbsp;&lt;div&gt;La carga masiva soporta un máximo de 5 MB y hasta 1.000 filas por archivo.&quot;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0011" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="573.22" y="2223.84" as="sourcePoint" />
+            <mxPoint x="42.86" y="2226.56" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-166" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="3. Evalúa límites: size &amp;gt; 5 MB ||&amp;nbsp;&lt;div&gt;totalRows &amp;gt; 1.000 (true) -&amp;gt; Infracción de límites de carga&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.9803" y="2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1020" y="2109" />
+              <mxPoint x="1020" y="2131" />
+            </Array>
+            <mxPoint x="970" y="2109" as="sourcePoint" />
+            <mxPoint x="970" y="2131" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-167" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;align=left;" value="5. Alpine.js detiene el procesamiento, limpia el input file y activa alerta de error">
+          <mxGeometry relative="1" x="-0.8556" y="3" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="514" y="2193" />
+              <mxPoint x="514" y="2215" />
+            </Array>
+            <mxPoint x="464" y="2193" as="sourcePoint" />
+            <mxPoint x="464" y="2215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-168" edge="1" parent="1" source="LSGTz4Vfso89_mCbXE9f-160" style="html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#000000;fontColor=#000000;fontSize=11;verticalAlign=bottom;exitX=-0.036;exitY=0.905;exitDx=0;exitDy=0;exitPerimeter=0;" value="4. 413 Payload Too Large { success: false, error: &quot;LIMIT_EXCEEDED&quot;,&lt;div&gt;&amp;nbsp;message: &quot;El archivo excede el máximo permitido (máx. 5 MB / 1.000 filas)&quot;,&amp;nbsp;&lt;/div&gt;&lt;div&gt;limits: { maxSize: &quot;5MB&quot;, maxRows: 1000 } }&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0019" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="923.24" y="2155.6490000000003" as="sourcePoint" />
+            <mxPoint x="465" y="2156.41" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-169" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="DB_MySQL" vertex="1">
+          <mxGeometry height="40" width="168" x="1347" y="1950" as="geometry" />
+        </mxCell>
+        <mxCell id="LSGTz4Vfso89_mCbXE9f-170" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=6 6;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1428" y="1990" as="sourcePoint" />
+            <mxPoint x="1428" y="2248.02" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
